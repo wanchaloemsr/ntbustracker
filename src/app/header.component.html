@@ -1,0 +1,17 @@
+
+<nav class="navbar navbar-toggleable-sm navbar-light" style="background-color: #e3f2fd;">
+    <div class="container">
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" [routerLink]="['/home']">Home</a>
+                <a class="nav-item nav-link" [routerLink]="['/favourites']" >My Favourites</a>
+                <a class="nav-item nav-link" [routerLink]="['/timetables']">Bus Timetables</a>
+                <a class="nav-item nav-link" [routerLink]="['/map']">Map</a>
+				<a class="nav-item nav-link" [routerLink]="['/search']" >Search</a>
+            </div>
+        </div>
+    </div>
+</nav>
