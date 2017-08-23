@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms'
 import { HttpModule } from '@angular/http'
 import { RouterModule, Routes } from '@angular/router';
 
+import { AgmCoreModule } from '@agm/core';
+
 import { AppComponent } from './app.component';
 import { routing } from './app.routing'
 
@@ -30,12 +32,16 @@ const appRoutes: Routes = [
     TimetablesComponent,
     SearchComponent,
     HomeComponent,
+
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBfiDo0zbigHQFKKir0U6SkBT238M0m3V8'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

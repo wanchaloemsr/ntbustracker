@@ -1,3 +1,17 @@
 <p>
-  map works!
+	map works!
 </p>
+
+
+<div class="container">
+	<agm-map [latitude]="lat" [longitude]="lng" [zoom]='zoom' (zoomChange)="zoomChange($event)" [minZoom]="minZoom">
+		<agm-marker *ngFor= 'let m of markers' 
+
+		[latitude]="m.lat" [longitude]="m.lng" [iconUrl] = "m.iconUrl" >
+
+		</agm-marker>
+	</agm-map>
+
+<input type="file" (change)="changeListener($event)">
+
+</div>
