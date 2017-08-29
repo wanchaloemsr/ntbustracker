@@ -1,0 +1,4618 @@
+[
+ {
+   "stop_id": "OOBUS003",
+   "stop_name": "Casuarina Interchange 003",
+   "stop_desc": "This stop is located on Bradshore Tcc on the western side of Casuarina Shoping Square",
+   "stop_lat": -12.37345,
+   "stop_lon": 130.88048,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS004",
+   "stop_name": "Trower 004",
+   "stop_desc": "This stop is located at 301 Trower Rd opposite Henbury School",
+   "stop_lat": -12.36928,
+   "stop_lon": 130.88298,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS005",
+   "stop_name": "Delamere 005",
+   "stop_desc": "This stop is located at 3 Delamere St opposite Dripstone High School",
+   "stop_lat": -12.36686,
+   "stop_lon": 130.88125,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS006",
+   "stop_name": "Willaroo 006",
+   "stop_desc": "This stop is located at 12 Willaroo St opposite Dripstone High School",
+   "stop_lat": -12.36489,
+   "stop_lon": 130.88419,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS007",
+   "stop_name": "Henbury 007",
+   "stop_desc": "This stop is located at 77 Henbury Ave opposite Tracey Village All Sports Club",
+   "stop_lat": -12.36167,
+   "stop_lon": 130.88571,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS008",
+   "stop_name": "Private Hospital 008",
+   "stop_desc": "This stop is located on the corner of Florey Ave and Hippocrates Rd",
+   "stop_lat": -12.35859,
+   "stop_lon": 130.88279,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS009",
+   "stop_name": "Hospital Precinct 009",
+   "stop_desc": "This stop is located at the Main entrance to Royal Darwin Public Hospital Florey Ave",
+   "stop_lat": -12.35611,
+   "stop_lon": 130.8826,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS010",
+   "stop_name": "Rocklands 100",
+   "stop_desc": "This stop is located at 100 Rocklands Drive",
+   "stop_lat": -12.35932,
+   "stop_lon": 130.88215,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS011",
+   "stop_name": "10 Manbulloo 011",
+   "stop_desc": "This stop is located at 10 Manbulloo St",
+   "stop_lat": -12.36049,
+   "stop_lon": 130.88033,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS012",
+   "stop_name": "Tiwi Shops 012",
+   "stop_desc": "This stop is located at Tiwi Gardens Rd, Adj to Tiwi Shops",
+   "stop_lat": -12.36224,
+   "stop_lon": 130.87688,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS013",
+   "stop_name": "Erldunda 013",
+   "stop_desc": "This stop is located at 4 Erldunda St",
+   "stop_lat": -12.3653,
+   "stop_lon": 130.87611,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS014",
+   "stop_name": "Trower 014",
+   "stop_desc": "This stop is located opposite 408 Trower Rd",
+   "stop_lat": -12.3653,
+   "stop_lon": 130.8729,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS015",
+   "stop_name": "Omeo Street",
+   "stop_desc": "This stop is located at 13 Omeo St",
+   "stop_lat": -12.36703,
+   "stop_lon": 130.87133,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS016",
+   "stop_name": "Ellengowen 016",
+   "stop_desc": "This stop is located at 53 Ellengowen St",
+   "stop_lat": -12.36669,
+   "stop_lon": 130.87389,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS017",
+   "stop_name": "Nakara Shops 017",
+   "stop_desc": "This stop is located at Macredie St, Adj to Park, near shops",
+   "stop_lat": -12.36946,
+   "stop_lon": 130.87567,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS018",
+   "stop_name": "Buchanan 018",
+   "stop_desc": "This stop is located at 27 Buchanan Tce next to Park",
+   "stop_lat": -12.37168,
+   "stop_lon": 130.87473,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS019",
+   "stop_name": "Ellengowen CDU 019",
+   "stop_desc": "This stop is located in Ellengowen Drive opposite Charles Darwin University",
+   "stop_lat": -12.37247,
+   "stop_lon": 130.87245,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS020",
+   "stop_name": "Dripstone 020",
+   "stop_desc": "This stop is located on Dripstone Rd opposite University Football Park",
+   "stop_lat": -12.37372,
+   "stop_lon": 130.87382,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS021",
+   "stop_name": "Nungalinya College 021",
+   "stop_desc": "This stop is located on Dripstone Rd next to Nungalinya College",
+   "stop_lat": -12.37525,
+   "stop_lon": 130.87577,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS023",
+   "stop_name": "Swimming Pool 023",
+   "stop_desc": "This stop is located in  Angelo St opposite the Swimming Pool",
+   "stop_lat": -12.37355,
+   "stop_lon": 130.88519,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS024",
+   "stop_name": "Gsell 024",
+   "stop_desc": "This stop is located at 51 Gsell St opposite Wanguri  Primary School",
+   "stop_lat": -12.37053,
+   "stop_lon": 130.8863,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS025",
+   "stop_name": "Tambling 025",
+   "stop_desc": "This stop is located at 20 Tambling Tce",
+   "stop_lat": -12.36611,
+   "stop_lon": 130.88937,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS026",
+   "stop_name": "Wanguri Shops 026",
+   "stop_desc": "This stop is located at 74 Wanguri Tce, opposite Wanguri Shops",
+   "stop_lat": -12.36905,
+   "stop_lon": 130.88948,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS027",
+   "stop_name": "Canaris 027",
+   "stop_desc": "This stop is located at 8 Canaris St",
+   "stop_lat": -12.37077,
+   "stop_lon": 130.89061,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS028",
+   "stop_name": "Lee Point 028",
+   "stop_desc": "This stop is located at 207 Lee Point Rd",
+   "stop_lat": -12.3698,
+   "stop_lon": 130.89171,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS029",
+   "stop_name": "VRD 028",
+   "stop_desc": "This stop is located at 5 VRD Drive",
+   "stop_lat": -12.36887,
+   "stop_lon": 130.89305,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS030",
+   "stop_name": "VRD 030",
+   "stop_desc": "This stop is located at 49 VRD Drive",
+   "stop_lat": -12.37057,
+   "stop_lon": 130.89694,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS031",
+   "stop_name": "Leanyer 031",
+   "stop_desc": "This stop is located at 75 Leanyer Drive",
+   "stop_lat": -12.37224,
+   "stop_lon": 130.89856,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS032",
+   "stop_name": "Leanyer 032",
+   "stop_desc": "This stop is located on Leanyer Drive, Opp St Andrews School",
+   "stop_lat": -12.37259,
+   "stop_lon": 130.89961,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS033",
+   "stop_name": "Leanyer Primary School 033",
+   "stop_desc": "This stop is located on Leanyer Drive, Opp Leanyer School",
+   "stop_lat": -12.37546,
+   "stop_lon": 130.90056,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS034",
+   "stop_name": "Leanyer 034",
+   "stop_desc": "This stop is located at L4272 Leanyer Drive",
+   "stop_lat": -12.37807,
+   "stop_lon": 130.90195,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS035",
+   "stop_name": "Leanyer 035",
+   "stop_desc": "This stop is located at 175 Leanyer Drive",
+   "stop_lat": -12.38021,
+   "stop_lon": 130.90349,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS036",
+   "stop_name": "Leanyer Drive 036",
+   "stop_desc": "This stop is located on the corner of Leanyer Drive and Vanderlin Drive",
+   "stop_lat": -12.38209,
+   "stop_lon": 130.90253,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS037",
+   "stop_name": "Vanderlin 037",
+   "stop_desc": "This stop is located on Vanderlin Drive, Adj to Darwin City Council",
+   "stop_lat": -12.38362,
+   "stop_lon": 130.90264,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS038",
+   "stop_name": "Patterson 038",
+   "stop_desc": "This stop is located on Patterson St, Opp Wulagi Crescent",
+   "stop_lat": -12.3867,
+   "stop_lon": 130.9034,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS039",
+   "stop_name": "Wulagi 039",
+   "stop_desc": "This stop is located at 70 Wulagi Crescent",
+   "stop_lat": -12.38476,
+   "stop_lon": 130.89948,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS040",
+   "stop_name": "Wulagi Shops 040",
+   "stop_desc": "This stop is located on Brolga St, Opp Shops",
+   "stop_lat": -12.38389,
+   "stop_lon": 130.89401,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS041",
+   "stop_name": "Jabiru 041",
+   "stop_desc": "This stop is located at 34 Jabiru St",
+   "stop_lat": -12.38156,
+   "stop_lon": 130.89429,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS042",
+   "stop_name": "Jabiru 042",
+   "stop_desc": "This stop is located at L1627 Jabiru St",
+   "stop_lat": -12.3808,
+   "stop_lon": 130.89132,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS043",
+   "stop_name": "Wagaman Shops 043",
+   "stop_desc": "This stop is located on Wagaman Tce, Adj Wagaman Shops",
+   "stop_lat": -12.38028,
+   "stop_lon": 130.88681,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS044",
+   "stop_name": "Wagaman 044",
+   "stop_desc": "This stop is located on Wagaman Tce, Adj Wagaman School",
+   "stop_lat": -12.37962,
+   "stop_lon": 130.88369,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS045",
+   "stop_name": "Limmen 045",
+   "stop_desc": "This stop is located at 33 Limmen St",
+   "stop_lat": -12.37961,
+   "stop_lon": 130.88192,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS046",
+   "stop_name": "Trower 046",
+   "stop_desc": "This stop is located on Trower Rd, Opp Motor Vehicle Registry",
+   "stop_lat": -12.37377,
+   "stop_lon": 130.88326,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS047",
+   "stop_name": "Scaturchio 047",
+   "stop_desc": "This stop is located on Scaturchio St, Opp Ruis Gym",
+   "stop_lat": -12.37209,
+   "stop_lon": 130.88206,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS049",
+   "stop_name": "Alawa Crescent",
+   "stop_desc": "This stop is located at 212 Trower Rd, Opp Alawa Cres",
+   "stop_lat": -12.38043,
+   "stop_lon": 130.88066,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS050",
+   "stop_name": "Casuarina Senior College 050",
+   "stop_desc": "This stop is located on Trower Rd, Adj to Casuarina Senior College",
+   "stop_lat": -12.38232,
+   "stop_lon": 130.87852,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS051",
+   "stop_name": "Trower 051",
+   "stop_desc": "This stop is located at 156 Trower Rd",
+   "stop_lat": -12.38306,
+   "stop_lon": 130.8748,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS052",
+   "stop_name": "Jingili 052",
+   "stop_desc": "This stop is located at 72 Jingili Tce",
+   "stop_lat": -12.38428,
+   "stop_lon": 130.87368,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS053",
+   "stop_name": "Jingili School",
+   "stop_desc": "This stop is located on Jingili Tce Adj to Jingili School ",
+   "stop_lat": -12.38662,
+   "stop_lon": 130.8733,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS054",
+   "stop_name": "Jingili Shops 054",
+   "stop_desc": "This stop is located on Jingili Tce, Adj to Jingili Shops",
+   "stop_lat": -12.38947,
+   "stop_lon": 130.87498,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS055",
+   "stop_name": "Scales 055",
+   "stop_desc": "This stop is located at 9 Scales St",
+   "stop_lat": -12.39009,
+   "stop_lon": 130.87885,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS056",
+   "stop_name": "Moil Shops 056",
+   "stop_desc": "This stop is located on Moil Cres, Adj to Moil shops",
+   "stop_lat": -12.39116,
+   "stop_lon": 130.88178,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS057",
+   "stop_name": "Lee Point 057",
+   "stop_desc": "This stop is located on Lee Point Rd, Adj to Moil Cres",
+   "stop_lat": -12.39072,
+   "stop_lon": 130.88404,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS058",
+   "stop_name": "Yanyula 058",
+   "stop_desc": "This stop is located at 13 Yanyula Drive",
+   "stop_lat": -12.38983,
+   "stop_lon": 130.88726,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS059",
+   "stop_name": "Anula Shops 059",
+   "stop_desc": "This stop is located on Yanyula Drive, Adj to Anula Shops",
+   "stop_lat": -12.39238,
+   "stop_lon": 130.89095,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS060",
+   "stop_name": "Springhill 060",
+   "stop_desc": "This stop is located at 3 Springhill St",
+   "stop_lat": -12.39195,
+   "stop_lon": 130.89488,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS061",
+   "stop_name": "Sanderson High School 061",
+   "stop_desc": "This stop is located on Mathews Road, Adj to park",
+   "stop_lat": -12.39021,
+   "stop_lon": 130.89655,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS062",
+   "stop_name": "Union 062",
+   "stop_desc": "This stop is located on Union Tce, Eastern end",
+   "stop_lat": -12.38836,
+   "stop_lon": 130.89583,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS063",
+   "stop_name": "Union 063",
+   "stop_desc": "This stop is located on the Cnr Union Tce & Copperfield Cres",
+   "stop_lat": -12.38772,
+   "stop_lon": 130.89312,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS064",
+   "stop_name": "Union 064",
+   "stop_desc": "This stop is located on Union Tce, Western end",
+   "stop_lat": -12.38608,
+   "stop_lon": 130.89021,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS065",
+   "stop_name": "Parer 065",
+   "stop_desc": "This stop is located on Parer Dr, Adj to Water Tower",
+   "stop_lat": -12.38577,
+   "stop_lon": 130.88542,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS066",
+   "stop_name": "Parer 066",
+   "stop_desc": "This stop is located on the Cnr Parer Drv & Moil Cres",
+   "stop_lat": -12.38397,
+   "stop_lon": 130.88229,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS067",
+   "stop_name": "Parer 067",
+   "stop_desc": "This stop is located on Parer Drv, Adj to Casuarina Senior College",
+   "stop_lat": -12.38297,
+   "stop_lon": 130.88094,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS068",
+   "stop_name": "Trower 068",
+   "stop_desc": "This stop is located on Trower Rd, Opp Limmen St",
+   "stop_lat": -12.37976,
+   "stop_lon": 130.88098,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS069",
+   "stop_name": "Darwin Interchange 069",
+   "stop_desc": "This stop is located at Darwin Interchange, Harry Chan Ave (Dep)",
+   "stop_lat": -12.46484,
+   "stop_lon": 130.8444,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS070",
+   "stop_name": "Woolworths Darwin 070",
+   "stop_desc": "This stop is located on Cavenagh St, Adj to Woolworths",
+   "stop_lat": -12.46016,
+   "stop_lon": 130.8406,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS071",
+   "stop_name": "St Mary's 071",
+   "stop_desc": "This stop is located on Cavenagh St, Adj to St Mary's School",
+   "stop_lat": -12.4587,
+   "stop_lon": 130.83907,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS072",
+   "stop_name": "Cavenagh 072",
+   "stop_desc": "This stop is located on Cavenagh St, Opp Greek Church",
+   "stop_lat": -12.45751,
+   "stop_lon": 130.83778,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS073",
+   "stop_name": "Mitchell St Child Care 121",
+   "stop_desc": "This stop is located on Mitchell St, Opp Elkies Backpackers",
+   "stop_lat": -12.4576,
+   "stop_lon": 130.83403,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS074",
+   "stop_name": "Mitchell 074",
+   "stop_desc": "This stop is located on Mitchell St, Adj to old shops",
+   "stop_lat": -12.45537,
+   "stop_lon": 130.83175,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS075",
+   "stop_name": "Mitchell 075",
+   "stop_desc": "This stop is located on the Cnr Mitchell St & Lambell St",
+   "stop_lat": -12.45371,
+   "stop_lon": 130.83005,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS076",
+   "stop_name": "Gilruth Ave/Casino",
+   "stop_desc": "This stop is located on Gilruth Ave, Adj to Casino",
+   "stop_lat": -12.44938,
+   "stop_lon": 130.83169,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS077",
+   "stop_name": "Mindil Beach outbound",
+   "stop_desc": "This stop is located on Gilruth Ave, Adj to Mindil Beach",
+   "stop_lat": -12.44589,
+   "stop_lon": 130.83336,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS078",
+   "stop_name": "East Point Road",
+   "stop_desc": "This stop is located on East Point Rd, Adj to Bowls Club",
+   "stop_lat": -12.43537,
+   "stop_lon": 130.83785,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS079",
+   "stop_name": "Sailing Club",
+   "stop_desc": "This stop is located on East Point Rd, Adj to Sailing Club",
+   "stop_lat": -12.43073,
+   "stop_lon": 130.8371,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS080",
+   "stop_name": "Fannie Bay",
+   "stop_desc": "This stop is located on Dick Ward Drv, Adj to Kurringal Flats",
+   "stop_lat": -12.42448,
+   "stop_lon": 130.83999,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS081",
+   "stop_name": "Dick Ward 081",
+   "stop_desc": "This stop is located on Dick Ward Drv, Adj to Minmarama",
+   "stop_lat": -12.41182,
+   "stop_lon": 130.85034,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS082",
+   "stop_name": "Dick Ward 082",
+   "stop_desc": "This stop is located on Dick Ward Drv, Adj to Clock Tower",
+   "stop_lat": -12.40053,
+   "stop_lon": 130.85228,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS083",
+   "stop_name": "Dick Ward 083",
+   "stop_desc": "This stop is located on the Cnr Dick Ward Drv & Orchid St ",
+   "stop_lat": -12.39753,
+   "stop_lon": 130.85227,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS084",
+   "stop_name": "Dick Ward 084",
+   "stop_desc": "This stop is located at 141 Dick Ward Drv",
+   "stop_lat": -12.39344,
+   "stop_lon": 130.85223,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS085",
+   "stop_name": "Dick Ward 085",
+   "stop_desc": "This stop is located on Dick Ward Drv, Adj to Woolworths",
+   "stop_lat": -12.39011,
+   "stop_lon": 130.85223,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS086",
+   "stop_name": "Nightcliff Shops",
+   "stop_desc": "This stop is located on Phoenix St, Opp Shops",
+   "stop_lat": -12.38793,
+   "stop_lon": 130.85057,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS087",
+   "stop_name": "Bougainvilia 087",
+   "stop_desc": "This stop is located on Bougainvilia St, Opp 10 Bougainvilia St",
+   "stop_lat": -12.38621,
+   "stop_lon": 130.84824,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS088",
+   "stop_name": "Bougainvilia 088",
+   "stop_desc": "This stop is located on the Cnr Bougainvilia St & Grevillea St",
+   "stop_lat": -12.38423,
+   "stop_lon": 130.84828,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS089",
+   "stop_name": "Bougainvilia 089",
+   "stop_desc": "This stop is located on the Cnr Bougainvilia St & Cunjevoi St",
+   "stop_lat": -12.38127,
+   "stop_lon": 130.84769,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS090",
+   "stop_name": "Aralia 090",
+   "stop_desc": "This stop is located on Aralia St, Adj to Tennis Courts",
+   "stop_lat": -12.37952,
+   "stop_lon": 130.84825,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS091",
+   "stop_name": "Nightcliff High School",
+   "stop_desc": "This stop is located on Ryland Rd, Adj to Nightcliff High School",
+   "stop_lat": -12.37936,
+   "stop_lon": 130.85203,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS092",
+   "stop_name": "Ryland 092",
+   "stop_desc": "This stop is located on the Cnr Ryland Rd & Chapman Rd",
+   "stop_lat": -12.3789,
+   "stop_lon": 130.85713,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS093",
+   "stop_name": "Ryland 093",
+   "stop_desc": "This stop is located on the Cnr Ryland Rd & Rossiter St",
+   "stop_lat": -12.38109,
+   "stop_lon": 130.85928,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS094",
+   "stop_name": "Ryland 094",
+   "stop_desc": "This stop is located on the Cnr Ryland Rd & Chrisp St",
+   "stop_lat": -12.38351,
+   "stop_lon": 130.86029,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS095",
+   "stop_name": "Ryland 095",
+   "stop_desc": "This stop is located on the Cnr Ryland Rd & Waters St",
+   "stop_lat": -12.38573,
+   "stop_lon": 130.86102,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS096",
+   "stop_name": "Rapid Creek ",
+   "stop_desc": "This stop is located on Trower Rd, Opp Rapid Creek Shops",
+   "stop_lat": -12.38589,
+   "stop_lon": 130.86282,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS097",
+   "stop_name": "Trower 097",
+   "stop_desc": "This stop is located on Trower Rd, Opp Water Gardens",
+   "stop_lat": -12.38451,
+   "stop_lon": 130.86725,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS098",
+   "stop_name": "Lakeside 098",
+   "stop_desc": "This stop is located on Lakeside Drv, Adj to Park",
+   "stop_lat": -12.3826,
+   "stop_lon": 130.86862,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS099",
+   "stop_name": "Lakeside 099",
+   "stop_desc": "This stop is located on Lakeside Drv, Adj to Oval",
+   "stop_lat": -12.37829,
+   "stop_lon": 130.87018,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS100",
+   "stop_name": "Lakeside 100",
+   "stop_desc": "This stop is located on Lakeside Drv, Adj tp Scout Hall",
+   "stop_lat": -12.37642,
+   "stop_lon": 130.87244,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS101",
+   "stop_name": "Charles Darwin University",
+   "stop_desc": "This stop is located at the Charles Darwin University Main Entrance",
+   "stop_lat": -12.37274,
+   "stop_lon": 130.87062,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS103",
+   "stop_name": "Stuart Highway 103",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Kerrys Car Sales",
+   "stop_lat": -12.44854,
+   "stop_lon": 130.84091,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS104",
+   "stop_name": "Stuart Highway 104",
+   "stop_desc": "This stop is located on Stuart Highway, Opp Westralia St",
+   "stop_lat": -12.44303,
+   "stop_lon": 130.8412,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS105",
+   "stop_name": "Stuart Highway 105",
+   "stop_desc": "This stop is located on the Cnr Stuart Highway & Goyder Rd",
+   "stop_lat": -12.43902,
+   "stop_lon": 130.84099,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS106",
+   "stop_name": "Parap Road",
+   "stop_desc": "This stop is located on the Cnr Stuart Highway & Parap Rd",
+   "stop_lat": -12.43546,
+   "stop_lon": 130.84416,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS107",
+   "stop_name": "Ross Smith Avenue",
+   "stop_desc": "This stop is located on the Cnr Stuart Highway & Ross Smith Ave",
+   "stop_lat": -12.4327,
+   "stop_lon": 130.84952,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS108",
+   "stop_name": "Ludmilla School",
+   "stop_desc": "This stop is located on Bagot Road, Adj to Ludmilla School",
+   "stop_lat": -12.42466,
+   "stop_lon": 130.85601,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS109",
+   "stop_name": "Bagot 109",
+   "stop_desc": "This stop is located on Bagot Road, Adj to Park",
+   "stop_lat": -12.42038,
+   "stop_lon": 130.85599,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS110",
+   "stop_name": "Bagot 110 ",
+   "stop_desc": "This stop is located on the Cnr Bagot Road & Fitzer Drv",
+   "stop_lat": -12.4128,
+   "stop_lon": 130.856,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS112",
+   "stop_name": "Bagot 112 ",
+   "stop_desc": "This stop is located on Bagot Road, Adj to Tennis Courts",
+   "stop_lat": -12.39617,
+   "stop_lon": 130.85592,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS113",
+   "stop_name": "Bagot 113",
+   "stop_desc": "This stop is located on Bagot Road, Adj to KFC",
+   "stop_lat": -12.39138,
+   "stop_lon": 130.85592,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS114",
+   "stop_name": "Trower 114",
+   "stop_desc": "This stop is located on Trower Rd, Adj to St Paul's School",
+   "stop_lat": -12.38748,
+   "stop_lon": 130.85872,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS115",
+   "stop_name": "Alawa Cres115",
+   "stop_desc": "This stop is located on the Cnr Trower Rd & Alawa Cres",
+   "stop_lat": -12.38339,
+   "stop_lon": 130.87144,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS116",
+   "stop_name": "Trower 116",
+   "stop_desc": "This stop is located on the Cnr Trower Rd & Styles St",
+   "stop_lat": -12.38277,
+   "stop_lon": 130.87498,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS118",
+   "stop_name": "Vanderlin 118",
+   "stop_desc": "This stop is located on Vanderlin Drive, Adj to Potters House",
+   "stop_lat": -12.37666,
+   "stop_lon": 130.88594,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS119",
+   "stop_name": "Vanderlin 119",
+   "stop_desc": "This stop is located on Vanderlin Drive",
+   "stop_lat": -12.37721,
+   "stop_lon": 130.8896,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS120",
+   "stop_name": "Hibiscus Shops",
+   "stop_desc": "This stop is located on Vanderlin Drive, Adj to Hibiscus Shops",
+   "stop_lat": -12.37866,
+   "stop_lon": 130.89625,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS121",
+   "stop_name": "Patterson 121",
+   "stop_desc": "This stop is located on Patterson St, Opp Sanderson High School",
+   "stop_lat": -12.38921,
+   "stop_lon": 130.9003,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS122",
+   "stop_name": "Darwent 122",
+   "stop_desc": "This stop is located on Darwent St, Adj to Park",
+   "stop_lat": -12.39136,
+   "stop_lon": 130.8994,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS123",
+   "stop_name": "Darwent 123",
+   "stop_desc": "This stop is located at 18 Darwent St",
+   "stop_lat": -12.39552,
+   "stop_lon": 130.90083,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS124",
+   "stop_name": "Malak Shops",
+   "stop_desc": "This stop is located on Chambers Cres, Adj to Malak Shops",
+   "stop_lat": -12.39717,
+   "stop_lon": 130.90399,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS125",
+   "stop_name": "Chambers 125",
+   "stop_desc": "This stop is located on Chambers Cres, Opp Osborne Rd",
+   "stop_lat": -12.39774,
+   "stop_lon": 130.90585,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS126",
+   "stop_name": "Paqualin126",
+   "stop_desc": "This stop is located at 3 Paqualin Road",
+   "stop_lat": -12.39958,
+   "stop_lon": 130.9083,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS127",
+   "stop_name": "Koolinda 127",
+   "stop_desc": "This stop is located on Koolinda Cres, Opp Dorrigo Cres",
+   "stop_lat": -12.39843,
+   "stop_lon": 130.91052,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS128",
+   "stop_name": "Karama 128",
+   "stop_desc": "This stop is located at 46 Karama Cres",
+   "stop_lat": -12.39958,
+   "stop_lon": 130.91214,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS129",
+   "stop_name": "Karama 129",
+   "stop_desc": "This stop is located on Karama Cres, Before Shops",
+   "stop_lat": -12.40079,
+   "stop_lon": 130.91447,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS130",
+   "stop_name": "Karama Shops",
+   "stop_desc": "This stop is located on Kalymos Cres, Adj to Karama Shops",
+   "stop_lat": -12.40173,
+   "stop_lon": 130.91589,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS131",
+   "stop_name": "Koolinda 131",
+   "stop_desc": "This stop is located on Koolinda Cres, Opp Karama School",
+   "stop_lat": -12.39924,
+   "stop_lon": 130.91516,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS132",
+   "stop_name": "Livistona 132",
+   "stop_desc": "This stop is located on Livistona St, Opp Karama School",
+   "stop_lat": -12.39657,
+   "stop_lon": 130.91341,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS133",
+   "stop_name": "Calytrix 133",
+   "stop_desc": "This stop is located at 14 Calytrix Rd",
+   "stop_lat": -12.39528,
+   "stop_lon": 130.91087,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS134",
+   "stop_name": "Mueller 134",
+   "stop_desc": "This stop is located on Mueller Rd, Opp O'loughlin School",
+   "stop_lat": -12.39347,
+   "stop_lon": 130.90963,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS135",
+   "stop_name": "Dalwood 135",
+   "stop_desc": "This stop is located on the Cnr Dalwood Cres & Hearne Court",
+   "stop_lat": -12.3918,
+   "stop_lon": 130.9091,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS136",
+   "stop_name": "Dalwood 136",
+   "stop_desc": "This stop is located on Dalwood Cres, Opp Moody Court",
+   "stop_lat": -12.38915,
+   "stop_lon": 130.90654,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS137",
+   "stop_name": "Dalwood 137",
+   "stop_desc": "This stop is located on the Cnr Dalwood Cres & Harcus Court",
+   "stop_lat": -12.3884,
+   "stop_lon": 130.90428,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS138",
+   "stop_name": "Malak 138",
+   "stop_desc": "This stop is located on Malak Cres, Opp Red Cross",
+   "stop_lat": -12.38862,
+   "stop_lon": 130.90156,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS139",
+   "stop_name": "Patterson 139",
+   "stop_desc": "This stop is located on the Cnr Patterson St & Wulagi Cres",
+   "stop_lat": -12.38709,
+   "stop_lon": 130.90226,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS140",
+   "stop_name": "Vanderlin Service 140",
+   "stop_desc": "This stop is located on Vanderlin Service Rd, Adj to Park",
+   "stop_lat": -12.38194,
+   "stop_lon": 130.89979,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS141",
+   "stop_name": "Vanderlin Service 141",
+   "stop_desc": "This stop is located on the Cnr Vanderlin Service Rd & Brolga St",
+   "stop_lat": -12.38018,
+   "stop_lon": 130.8975,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS142",
+   "stop_name": "Vanderlin Service Road",
+   "stop_desc": "This stop is located on the Cnr Vanderlin Service Rd, Opp Hibiscus Shops",
+   "stop_lat": -12.37848,
+   "stop_lon": 130.89502,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS143",
+   "stop_name": "Vanderlin 143",
+   "stop_desc": "This stop is located on Vanderlin Drv, Opp Darwin Veterinary Surgery",
+   "stop_lat": -12.37749,
+   "stop_lon": 130.88961,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS144",
+   "stop_name": "Vanderlin Drive",
+   "stop_desc": "This stop is located on Vanderlin Drv, Opp Potters House",
+   "stop_lat": -12.37695,
+   "stop_lon": 130.886,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS148",
+   "stop_name": "Forrest 148",
+   "stop_desc": "This stop is located at 202 Forrest Parade Rosebery",
+   "stop_lat": -12.511786,
+   "stop_lon": 130.988258,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS149",
+   "stop_name": "Trower 149",
+   "stop_desc": "This stop is located on Trower Rd, Opp Alawa Cres",
+   "stop_lat": -12.38369,
+   "stop_lon": 130.87107,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS150",
+   "stop_name": "Water Gardens",
+   "stop_desc": "This stop is located on Trower Rd, Adj to Water Gardens",
+   "stop_lat": -12.38481,
+   "stop_lon": 130.8671,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS151",
+   "stop_name": "Rapid Creek 151",
+   "stop_desc": "This stop is located on Rapid Creek Rd, Opp Sprig St",
+   "stop_lat": -12.38758,
+   "stop_lon": 130.86466,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS152",
+   "stop_name": "Rapid Creek 152",
+   "stop_desc": "This stop is located on Rapid Creek Rd, Opp Robinson Rd",
+   "stop_lat": -12.39008,
+   "stop_lon": 130.8669,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS153",
+   "stop_name": "Rapid Creek 153",
+   "stop_desc": "This stop is located on Rapid Creek Rd, Adj to Stables",
+   "stop_lat": -12.39314,
+   "stop_lon": 130.86886,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS154",
+   "stop_name": "Old McMillan's 154",
+   "stop_desc": "This stop is located on Old McMillan's Rd, Opp Ryland Rd",
+   "stop_lat": -12.39516,
+   "stop_lon": 130.8668,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS155",
+   "stop_name": "Sabine 155",
+   "stop_desc": "This stop is located Sabine Rd, Opp Milner shops",
+   "stop_lat": -12.39349,
+   "stop_lon": 130.86135,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS156",
+   "stop_name": "Robinson 156",
+   "stop_desc": "This stop is located on the Cnr Robinson Rd & Ryland Rd",
+   "stop_lat": -12.39137,
+   "stop_lon": 130.86286,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS157",
+   "stop_name": "Ryland 157",
+   "stop_desc": "This stop is located on the Cnr Ryland Rd & Robinson Rd",
+   "stop_lat": -12.38969,
+   "stop_lon": 130.86263,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS158",
+   "stop_name": "Ryland 158",
+   "stop_desc": "This stop is located on the Cnr Ryland Rd & Trower Rd",
+   "stop_lat": -12.38722,
+   "stop_lon": 130.86153,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS159",
+   "stop_name": "Cummins 159",
+   "stop_desc": "This stop is located on Cummins St, Opp St Paul's School",
+   "stop_lat": -12.3865,
+   "stop_lon": 130.85743,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS160",
+   "stop_name": "Francis 160",
+   "stop_desc": "This stop is located on Francis St, Opp St Paul's School",
+   "stop_lat": -12.38677,
+   "stop_lon": 130.85911,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS161",
+   "stop_name": "Alawa 161",
+   "stop_desc": "This stop is located on Alawa Cres, Opp Stobo Cres",
+   "stop_lat": -12.38201,
+   "stop_lon": 130.87233,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS162",
+   "stop_name": "Alawa 162",
+   "stop_desc": "This stop is located on Alawa Cres, Opp Davern St",
+   "stop_lat": -12.37981,
+   "stop_lon": 130.87311,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS163",
+   "stop_name": "Alawa Shops",
+   "stop_desc": "This stop is located on Alawa Cres, Adj to Alawa Shops",
+   "stop_lat": -12.3782,
+   "stop_lon": 130.87518,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS164",
+   "stop_name": "Scriven 164",
+   "stop_desc": "This stop is located at 9 Scriven St",
+   "stop_lat": -12.37726,
+   "stop_lon": 130.87664,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS165",
+   "stop_name": "Forrest 165",
+   "stop_desc": "This stop is located at 170 Forrest Parade Rosebery",
+   "stop_lat": -12.50949,
+   "stop_lon": 130.99029,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS166",
+   "stop_name": "Rapid Creek Shops",
+   "stop_desc": "This stop is located on Trower Rd, Adj to Rapid Creek Shops",
+   "stop_lat": -12.38633,
+   "stop_lon": 130.86215,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS167",
+   "stop_name": "Trower 167",
+   "stop_desc": "This stop is located on Trower Rd, Opp St Paul's School",
+   "stop_lat": -12.3881,
+   "stop_lon": 130.85802,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS168",
+   "stop_name": "Bagot 168",
+   "stop_desc": "This stop is located on Bagot Rd, Adj to Homemaker Village",
+   "stop_lat": -12.39405,
+   "stop_lon": 130.85625,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS169",
+   "stop_name": "Bunning's",
+   "stop_desc": "This stop is located on Bagot Rd, Adj to Bunning's",
+   "stop_lat": -12.40095,
+   "stop_lon": 130.85625,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS170",
+   "stop_name": "Bagot 170",
+   "stop_desc": "This stop is located on Bagot Rd, Opp Fitzer Drv",
+   "stop_lat": -12.41189,
+   "stop_lon": 130.85629,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS171",
+   "stop_name": "Bagot 171",
+   "stop_desc": "This stop is located on Bagot Rd, Adj to RAAF Base",
+   "stop_lat": -12.42066,
+   "stop_lon": 130.85634,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS172",
+   "stop_name": "Ludmilla School",
+   "stop_desc": "This stop is located on Bagot Rd, Opp Ludmilla School",
+   "stop_lat": -12.42395,
+   "stop_lon": 130.85632,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS173",
+   "stop_name": "Woolner Road",
+   "stop_desc": "This stop is located on the Cnr Stuart Highway & Woolner Rd",
+   "stop_lat": -12.43388,
+   "stop_lon": 130.84754,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS174",
+   "stop_name": "Parap Road",
+   "stop_desc": "This stop is located on Stuart Highway, Opp Parap Rd",
+   "stop_lat": -12.43666,
+   "stop_lon": 130.84302,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS175",
+   "stop_name": "Stuart Highway 175",
+   "stop_desc": "This stop is located on the Cnr Stuart Highway & Charles St",
+   "stop_lat": -12.44444,
+   "stop_lon": 130.84124,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS176",
+   "stop_name": "Stuart Highway 176",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Kerrys Mazda",
+   "stop_lat": -12.44969,
+   "stop_lon": 130.84119,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS177",
+   "stop_name": "Daly Street",
+   "stop_desc": "This stop is located on the Cnr Daly St & Cavenagh St",
+   "stop_lat": -12.45726,
+   "stop_lon": 130.83674,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS178",
+   "stop_name": "Mitchell 178",
+   "stop_desc": "This stop is located on Mitchell St, Opp Entertainment Centre",
+   "stop_lat": -12.46095,
+   "stop_lon": 130.83762,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS179",
+   "stop_name": "Mitchell 179",
+   "stop_desc": "This stop is located on Mitchell St, Adj to Plaza Hotel",
+   "stop_lat": -12.46497,
+   "stop_lon": 130.84186,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS180",
+   "stop_name": "Darwin Interchange 180",
+   "stop_desc": "This stop is located at Darwin Interchange, Harry Chan Ave (Arr)",
+   "stop_lat": -12.46452,
+   "stop_lon": 130.84472,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS181",
+   "stop_name": "Stuart Highway 181",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Shiers St",
+   "stop_lat": -12.42801,
+   "stop_lon": 130.85971,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS182",
+   "stop_name": "Stuart Highway 182",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Winnellie Shops",
+   "stop_lat": -12.427,
+   "stop_lon": 130.86201,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS183",
+   "stop_name": "Stuart Highway 183",
+   "stop_desc": "This stop is located on Stuart Highway, Opp Toms Tyres",
+   "stop_lat": -12.42542,
+   "stop_lon": 130.86715,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS184",
+   "stop_name": "Hickman 184",
+   "stop_desc": "This stop is located on Hickman St, Adj to Carlton Brewery",
+   "stop_lat": -12.42672,
+   "stop_lon": 130.87064,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS185",
+   "stop_name": "Sweet 185",
+   "stop_desc": "This stop is located on Sweet St, Adj to Geminex",
+   "stop_lat": -12.42969,
+   "stop_lon": 130.87255,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS186",
+   "stop_name": "Coonawarra 186",
+   "stop_desc": "This stop is located on the Cnr Coonawarra Rd & Bombing Rd",
+   "stop_lat": -12.43025,
+   "stop_lon": 130.87932,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS187",
+   "stop_name": "Catterthun 187",
+   "stop_desc": "This stop is located on Catterthun St, Opp to ANZ Bank",
+   "stop_lat": -12.42972,
+   "stop_lon": 130.88232,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS188",
+   "stop_name": "Albatross 188",
+   "stop_desc": "This stop is located on Albatross St, Opp Kokoda Industries",
+   "stop_lat": -12.42853,
+   "stop_lon": 130.88472,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS189",
+   "stop_name": "Mataram 189",
+   "stop_desc": "This stop is located on Mataram St, Adj to Coates Hire Service",
+   "stop_lat": -12.42747,
+   "stop_lon": 130.89051,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS190",
+   "stop_name": "Winnellie 190",
+   "stop_desc": "This stop is located on Winnellie Rd, Adj to BP Service Station",
+   "stop_lat": -12.42655,
+   "stop_lon": 130.89366,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS191",
+   "stop_name": "Aviation Museum",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Aviation Museum",
+   "stop_lat": -12.42604,
+   "stop_lon": 130.89727,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS192",
+   "stop_name": "Stuart Highway 192",
+   "stop_desc": "This stop is located on Stuart Highway, Opp Shady Glen C/Park",
+   "stop_lat": -12.42632,
+   "stop_lon": 130.9009,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS193",
+   "stop_name": "Defence Establishment 193",
+   "stop_desc": "This stop is located on Stuart Highway, Opp Coonawarra Naval Base",
+   "stop_lat": -12.42915,
+   "stop_lon": 130.9122,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS194",
+   "stop_name": "Stuart Highway 194",
+   "stop_desc": "This stop is located on Stuart highway, Opp Harvey Norman",
+   "stop_lat": -12.43141,
+   "stop_lon": 130.91826,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS195",
+   "stop_name": "Berrimah",
+   "stop_desc": "This stop is located on Stuart Highway, Opp Hidden Valley Ford",
+   "stop_lat": -12.43283,
+   "stop_lon": 130.92217,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS196",
+   "stop_name": "Vanderlin 196",
+   "stop_desc": "This stop is located on Vanderlin Drive, Adj to Wow",
+   "stop_lat": -12.43085,
+   "stop_lon": 130.92334,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS197",
+   "stop_name": "Vanderlin 197",
+   "stop_desc": "This stop is located on Vanderlin Drive, Opp Stables",
+   "stop_lat": -12.42153,
+   "stop_lon": 130.92325,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS198",
+   "stop_name": "Vanderlin 198",
+   "stop_desc": "This stop is located on Vanderlin Drive, Opp PYC",
+   "stop_lat": -12.41551,
+   "stop_lon": 130.92321,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS199",
+   "stop_name": "McMillan's Road 199",
+   "stop_desc": "This stop is located on Vanderlin Drive, Adj to CSIRO",
+   "stop_lat": -12.41345,
+   "stop_lon": 130.92323,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS200",
+   "stop_name": "McMillan's 200",
+   "stop_desc": "This stop is located on McMillan's Rd, Opp Moray St",
+   "stop_lat": -12.40871,
+   "stop_lon": 130.92018,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS201",
+   "stop_name": "McMillan's 201",
+   "stop_desc": "This stop is located on McMillan's Rd, Adj to Marrara School",
+   "stop_lat": -12.4072,
+   "stop_lon": 130.91749,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS202",
+   "stop_name": "McMillan's 202",
+   "stop_desc": "This stop is located on McMillan's Rd, Adj to Kalymos Club",
+   "stop_lat": -12.40403,
+   "stop_lon": 130.91203,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS203",
+   "stop_name": "McMillan's 203",
+   "stop_desc": "This stop is located on McMillan's Rd, Adj to KOA C/Park",
+   "stop_lat": -12.4006,
+   "stop_lon": 130.90607,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS204",
+   "stop_name": "McMillan's 204",
+   "stop_desc": "This stop is located on McMillan's Rd, East of Northlakes Shops",
+   "stop_lat": -12.39679,
+   "stop_lon": 130.89894,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS205",
+   "stop_name": "Darwin Golf Club 205",
+   "stop_desc": "This stop is located on Links Rd, Adj to Darwin Golf Club",
+   "stop_lat": -12.39627,
+   "stop_lon": 130.89632,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS206",
+   "stop_name": "McMillan's 206",
+   "stop_desc": "This stop is located on McMillan's Rd, West of Northlakes Shops",
+   "stop_lat": -12.39551,
+   "stop_lon": 130.89089,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS207",
+   "stop_name": "McMillan's 207",
+   "stop_desc": "This stop is located on the Cnr McMillan's Rd & Lee Point Rd",
+   "stop_lat": -12.39555,
+   "stop_lon": 130.88208,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS208",
+   "stop_name": "Rothdale 208",
+   "stop_desc": "This stop is located on Rothdale Rd, Adj to Airport Hotel",
+   "stop_lat": -12.39424,
+   "stop_lon": 130.87815,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS209",
+   "stop_name": "Rothdale 209",
+   "stop_desc": "This stop is located on the Cnr Rothdale Rd & Jingili Tce",
+   "stop_lat": -12.38958,
+   "stop_lon": 130.87741,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS210",
+   "stop_name": "Rothdale 210",
+   "stop_desc": "This stop is located at 67 Rothdale Rd",
+   "stop_lat": -12.38667,
+   "stop_lon": 130.87672,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS211",
+   "stop_name": "Rothdale  211",
+   "stop_desc": "This stop is located on Rothdale Rd, Opp Casuarina Senior College",
+   "stop_lat": -12.38386,
+   "stop_lon": 130.87665,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS213",
+   "stop_name": "Dripstone 213",
+   "stop_desc": "This stop is located on Dripstone Rd, Opp Nungalinya College",
+   "stop_lat": -12.37541,
+   "stop_lon": 130.87593,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS214",
+   "stop_name": "Lakeside 214",
+   "stop_desc": "This stop is located at 82 Lakeside Drv",
+   "stop_lat": -12.37552,
+   "stop_lon": 130.87369,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS215",
+   "stop_name": "Lakeside 215",
+   "stop_desc": "This stop is located at 50 Lakeside Drv",
+   "stop_lat": -12.3781,
+   "stop_lon": 130.87059,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS216",
+   "stop_name": "Lakeside 216",
+   "stop_desc": "This stop is located on Lakeside Drv, Southern end",
+   "stop_lat": -12.38231,
+   "stop_lon": 130.86879,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS217",
+   "stop_name": "Ryland 217",
+   "stop_desc": "This stop is located on the Cnr Ryland Rd & Merry Place",
+   "stop_lat": -12.38548,
+   "stop_lon": 130.86077,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS218",
+   "stop_name": "Ryland 218",
+   "stop_desc": "This stop is located on the Cnr Ryland Rd & Crisp St",
+   "stop_lat": -12.38298,
+   "stop_lon": 130.86001,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS219",
+   "stop_name": "Ryland 219",
+   "stop_desc": "This stop is located on the Cnr Ryland Rd & Rossiter Rd",
+   "stop_lat": -12.38038,
+   "stop_lon": 130.85849,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS220",
+   "stop_name": "Ryland 220",
+   "stop_desc": "This stop is located on the Cnr Ryland Rd & Chapman Rd",
+   "stop_lat": -12.37885,
+   "stop_lon": 130.85521,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS221",
+   "stop_name": "Ryland 221",
+   "stop_desc": "This stop is located on Ryland Rd, Opp to Nightcliff High School",
+   "stop_lat": -12.3795,
+   "stop_lon": 130.85189,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS222",
+   "stop_name": "Aralia 222",
+   "stop_desc": "This stop is located on Aralia St, Adj to Aralia St Shops",
+   "stop_lat": -12.37909,
+   "stop_lon": 130.84905,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS223",
+   "stop_name": "Bougainvilia 223",
+   "stop_desc": "This stop is located on Bougainvilia St, Northern end",
+   "stop_lat": -12.38125,
+   "stop_lon": 130.84779,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS224",
+   "stop_name": "Bougainvilia 224",
+   "stop_desc": "This stop is located on Bougainvilia St, Opp Grevillea St",
+   "stop_lat": -12.38333,
+   "stop_lon": 130.84836,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS225",
+   "stop_name": "Bougainvilia 225",
+   "stop_desc": "This stop is located on Bougainvilia St, Southern end",
+   "stop_lat": -12.38644,
+   "stop_lon": 130.84836,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS226",
+   "stop_name": "Progress Drive 226",
+   "stop_desc": "This stop is located on Progress Drv, Adj to Shops",
+   "stop_lat": -12.38785,
+   "stop_lon": 130.84953,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS227",
+   "stop_name": "Dick Ward 227",
+   "stop_desc": "This stop is located on Dick Ward Drv, Adj to Medical Centre",
+   "stop_lat": -12.38886,
+   "stop_lon": 130.85234,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS228",
+   "stop_name": "Dick Ward 228",
+   "stop_desc": "This stop is located on the Cnr Dick Ward Drv & Musgrave St ",
+   "stop_lat": -12.39263,
+   "stop_lon": 130.85235,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS229",
+   "stop_name": "Dick Ward 229",
+   "stop_desc": "This stop is located on the Cnr Dick Ward Drv & Old McMillan's Rd",
+   "stop_lat": -12.39595,
+   "stop_lon": 130.85237,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS230",
+   "stop_name": "Dick Ward 230",
+   "stop_desc": "This stop is located on Dick Ward Drv, Adj to U-Cart",
+   "stop_lat": -12.39999,
+   "stop_lon": 130.8524,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS231",
+   "stop_name": "Dick Ward 231",
+   "stop_desc": "This stop is located on Dick Ward Drv, Opp Minmarama",
+   "stop_lat": -12.41296,
+   "stop_lon": 130.85058,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS232",
+   "stop_name": "Fannie Bay Jail 232",
+   "stop_desc": "This stop is located on Dick Ward Drv, Opp Fanny Bay Shops",
+   "stop_lat": -12.42453,
+   "stop_lon": 130.83626,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS233",
+   "stop_name": "East Point 233",
+   "stop_desc": "This stop is located on East Point Rd, Opp Sailing Club",
+   "stop_lat": -12.43114,
+   "stop_lon": 130.83738,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS234",
+   "stop_name": "East Point 234",
+   "stop_desc": "This stop is located on East Point Rd, Opp Bowls Club",
+   "stop_lat": -12.43481,
+   "stop_lon": 130.83798,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS235",
+   "stop_name": "East Point 235",
+   "stop_desc": "This stop is located on East Point Rd, Adj to Hastings on Mindil",
+   "stop_lat": -12.43867,
+   "stop_lon": 130.83775,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS236",
+   "stop_name": "Mindil Beach 236",
+   "stop_desc": "This stop is located on Gilruth Ave, Adj to Waratahs Club",
+   "stop_lat": -12.44613,
+   "stop_lon": 130.83346,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS237",
+   "stop_name": "Gilruth Ave/Casino 237",
+   "stop_desc": "This stop is located on Gilruth Ave, Opp Casino",
+   "stop_lat": -12.44966,
+   "stop_lon": 130.83167,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS238",
+   "stop_name": "Mitchell 238",
+   "stop_desc": "This stop is located on Mitchell St, Opp Shop",
+   "stop_lat": -12.45356,
+   "stop_lon": 130.83004,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS239",
+   "stop_name": "Mitchell 239",
+   "stop_desc": "This stop is located on Mitchell St, Opp 145 Mitchell St",
+   "stop_lat": -12.4551,
+   "stop_lon": 130.83166,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS240",
+   "stop_name": "Mitchell 240",
+   "stop_desc": "This stop is located at 110 Mitchell St",
+   "stop_lat": -12.45769,
+   "stop_lon": 130.83431,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS241",
+   "stop_name": "Gregory 241",
+   "stop_desc": "This stop is located on the Cnr Gregory St & Knight St",
+   "stop_lat": -12.43212,
+   "stop_lon": 130.83885,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS242",
+   "stop_name": "Parap Shopping Centre 242",
+   "stop_desc": "This stop is located at 33 PARAP RD Opp Parap Rd Shops",
+   "stop_lat": -12.43129,
+   "stop_lon": 130.84328,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS243",
+   "stop_name": "Ross Smith 243",
+   "stop_desc": "This stop is located on Ross Smith Ave, Adj to Parap Pool",
+   "stop_lat": -12.42738,
+   "stop_lon": 130.84191,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS244",
+   "stop_name": "Ross Smith 244",
+   "stop_desc": "This stop is located on Ross Smith Ave, Opp BP Service Station",
+   "stop_lat": -12.42547,
+   "stop_lon": 130.83926,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS245",
+   "stop_name": "Progress 245",
+   "stop_desc": "This stop is located on Progress Drv, Adj to Litchfield Units",
+   "stop_lat": -12.38794,
+   "stop_lon": 130.85451,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS246",
+   "stop_name": "Old McMillan's 246",
+   "stop_desc": "This stop is located at 95 Old McMillan's Rd",
+   "stop_lat": -12.39531,
+   "stop_lon": 130.85378,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS247",
+   "stop_name": "Ryland 247",
+   "stop_desc": "This stop is located on the Cnr Ryland Rd & Trower Rd",
+   "stop_lat": -12.38723,
+   "stop_lon": 130.86163,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS248",
+   "stop_name": "Ryland 248",
+   "stop_desc": "This stop is located at 46 Ryland Rd",
+   "stop_lat": -12.38988,
+   "stop_lon": 130.86284,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS249",
+   "stop_name": "Ryland 249",
+   "stop_desc": "This stop is located at 22 Ryland Rd",
+   "stop_lat": -12.39258,
+   "stop_lon": 130.86369,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS250",
+   "stop_name": "Ryland 250",
+   "stop_desc": "This stop is located on the Cnr Ryland Rd & Old McMillan's Rd",
+   "stop_lat": -12.39489,
+   "stop_lon": 130.8637,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS251",
+   "stop_name": "Old McMillan's 251",
+   "stop_desc": "This stop is located on the Cnr Old McMillan's Rd & Brooking St",
+   "stop_lat": -12.39512,
+   "stop_lon": 130.86605,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS252",
+   "stop_name": "Old McMillan's 252",
+   "stop_desc": "This stop is located on the Cnr Old McMillan's Rd & Rapid Creek Rd",
+   "stop_lat": -12.39512,
+   "stop_lon": 130.86825,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS253",
+   "stop_name": "Abala 253",
+   "stop_desc": "This stop is located on Abala Rd, Opp BMX Track",
+   "stop_lat": -12.39917,
+   "stop_lon": 130.88035,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS254",
+   "stop_name": "Marrara Sporting Complex 254",
+   "stop_desc": "This stop is located on Abala Rd, Adj to Hockey Centre",
+   "stop_lat": -12.40059,
+   "stop_lon": 130.88562,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS255",
+   "stop_name": "Abala 255",
+   "stop_desc": "This stop is located on Abala Rd, Adj to TIO Stadium",
+   "stop_lat": -12.39777,
+   "stop_lon": 130.88631,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS256",
+   "stop_name": "Abala 256",
+   "stop_desc": "This stop is located on Abala Rd, Adj to Basketball Stadium",
+   "stop_lat": -12.39778,
+   "stop_lon": 130.88209,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS257",
+   "stop_name": "Mathews 257",
+   "stop_desc": "This stop is located at 18 Mathews Rd",
+   "stop_lat": -12.39277,
+   "stop_lon": 130.89781,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS258",
+   "stop_name": "Lee Point 258",
+   "stop_desc": "This stop is located at 61 Lee Point Rd",
+   "stop_lat": -12.38768,
+   "stop_lon": 130.88579,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS259",
+   "stop_name": "Lee Point 259",
+   "stop_desc": "This stop is located on the Cnr Lee Point Rd & Maria St",
+   "stop_lat": -12.38445,
+   "stop_lon": 130.88771,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS260",
+   "stop_name": "Chapman 260",
+   "stop_desc": "This stop is located on Chapman Rd, Opp Essington School",
+   "stop_lat": -12.38258,
+   "stop_lon": 130.85592,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS261",
+   "stop_name": "Pandanus 261",
+   "stop_desc": "This stop is located on Pandanus St, Opp Nightcliff Primary School",
+   "stop_lat": -12.38044,
+   "stop_lon": 130.85097,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS262",
+   "stop_name": "Harney 262",
+   "stop_desc": "This stop is located on the Cnr Harney St & Fitzer Drv",
+   "stop_lat": -12.41122,
+   "stop_lon": 130.852,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS263",
+   "stop_name": "Harney  263",
+   "stop_desc": "This stop is located on the Cnr Harney St & Maranungi St",
+   "stop_lat": -12.41344,
+   "stop_lon": 130.85259,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS264",
+   "stop_name": "Nadpur 264",
+   "stop_desc": "This stop is located on the Cnr Nadpur St & Nemarluk Drv",
+   "stop_lat": -12.41653,
+   "stop_lon": 130.8523,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS265",
+   "stop_name": "Berrimah 265",
+   "stop_desc": "This stop is located in Kormilda College on Berrimah Rd",
+   "stop_lat": -12.44218,
+   "stop_lon": 130.92301,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS266",
+   "stop_name": "Crocodylus Park 266",
+   "stop_desc": "This stop is located in Crocodylus Park on McMillan's Rd",
+   "stop_lat": -12.41151,
+   "stop_lon": 130.9278,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS268",
+   "stop_name": "Rothdale 268",
+   "stop_desc": "This stop is located on Rothdale Rd, Northern end",
+   "stop_lat": -12.38611,
+   "stop_lon": 130.87684,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS269",
+   "stop_name": "Rothdale 269",
+   "stop_desc": "This stop is located on the Cnr Rothdale Rd & Scales St",
+   "stop_lat": -12.38934,
+   "stop_lon": 130.87759,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS270",
+   "stop_name": "Rothdale 270",
+   "stop_desc": "This stop is located on Rothdale Rd, Opp Freshwater Rd",
+   "stop_lat": -12.3912,
+   "stop_lon": 130.87803,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS271",
+   "stop_name": "Rothdale 271",
+   "stop_desc": "This stop is located on Rothdale Rd, Opp Airport Hotel",
+   "stop_lat": -12.394,
+   "stop_lon": 130.87837,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS272",
+   "stop_name": "Airport Hotel",
+   "stop_desc": "This stop is located on the Cnr McMillan's Rd & Rothdale Rd",
+   "stop_lat": -12.39531,
+   "stop_lon": 130.87971,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS273",
+   "stop_name": "McMillan's 273",
+   "stop_desc": "This stop is located on the Cnr McMillan's Rd & Lee Point Rd",
+   "stop_lat": -12.39527,
+   "stop_lon": 130.88431,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS274",
+   "stop_name": "McMillan's 274",
+   "stop_desc": "This stop is located on the Cnr McMillan's Rd & Tolmer St",
+   "stop_lat": -12.39528,
+   "stop_lon": 130.89021,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS275",
+   "stop_name": "Northlakes Shops 275",
+   "stop_desc": "This stop is located on McMillan's Rd, Opp Northlakes Shops",
+   "stop_lat": -12.39531,
+   "stop_lon": 130.89555,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS276",
+   "stop_name": "McMillan's 276",
+   "stop_desc": "This stop is located on the Cnr McMillan's Rd & Mathews Rd",
+   "stop_lat": -12.39648,
+   "stop_lon": 130.89896,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS277",
+   "stop_name": "McMillan's 277",
+   "stop_desc": "This stop is located on McMillan's Rd, Opp KOA C/Park",
+   "stop_lat": -12.40029,
+   "stop_lon": 130.90608,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS278",
+   "stop_name": "McMillan's 278",
+   "stop_desc": "This stop is located on the Cnr McMillan's Rd & Kalymos Rd",
+   "stop_lat": -12.4033,
+   "stop_lon": 130.91126,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS279",
+   "stop_name": "McMillan's 279",
+   "stop_desc": "This stop is located on McMillan's Rd, Opp Marrara School",
+   "stop_lat": -12.40686,
+   "stop_lon": 130.91742,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS280",
+   "stop_name": "Berrimah Police Centre 280",
+   "stop_desc": "This stop is located on Vanderlin Drv, Adj to Peter McCauley Centre",
+   "stop_lat": -12.41277,
+   "stop_lon": 130.92338,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS281",
+   "stop_name": "Vanderlin 281",
+   "stop_desc": "This stop is located on Vanderlin Drv, Adj to PYC",
+   "stop_lat": -12.41557,
+   "stop_lon": 130.92343,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS282",
+   "stop_name": "Vanderlin 282",
+   "stop_desc": "This stop is located on Vanderlin Drv, Adj to Stables",
+   "stop_lat": -12.42195,
+   "stop_lon": 130.92344,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS283",
+   "stop_name": "Vanderlin 283",
+   "stop_desc": "This stop is located on Cnr Vanderlin Drv & Stuart Hwy",
+   "stop_lat": -12.43136,
+   "stop_lon": 130.92355,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS284",
+   "stop_name": "Ford Berrimah 284",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Hidden Valley Ford",
+   "stop_lat": -12.43289,
+   "stop_lon": 130.92135,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS285",
+   "stop_name": "Defence Establishment 285",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Harvey Norman",
+   "stop_lat": -12.43177,
+   "stop_lon": 130.91851,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS286",
+   "stop_name": "Stuart Highway 286",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Coonawarra Naval Base",
+   "stop_lat": -12.42929,
+   "stop_lon": 130.91181,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS287",
+   "stop_name": "Stuart Highway 287",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Shady Glen C/Park",
+   "stop_lat": -12.4265,
+   "stop_lon": 130.9003,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS288",
+   "stop_name": "Show Grounds 288",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Show Grounds",
+   "stop_lat": -12.42628,
+   "stop_lon": 130.89751,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS289",
+   "stop_name": "Winnellie 289",
+   "stop_desc": "This stop is located on Winnellie Rd, Opp BP Service Station",
+   "stop_lat": -12.42668,
+   "stop_lon": 130.89334,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS290",
+   "stop_name": "Albatross 290",
+   "stop_desc": "This stop is located on the Cnr Albatross St & Mataram St",
+   "stop_lat": -12.42865,
+   "stop_lon": 130.88988,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS291",
+   "stop_name": "Albatross 291",
+   "stop_desc": "This stop is located on Albatross St, Adj to Kokoda Industries",
+   "stop_lat": -12.42865,
+   "stop_lon": 130.88606,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS292",
+   "stop_name": "Catterthun 292",
+   "stop_desc": "This stop is located on Catterthun St, Adj to ANZ Bank",
+   "stop_lat": -12.42972,
+   "stop_lon": 130.8824,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS293",
+   "stop_name": "Coonawarra 293",
+   "stop_desc": "This stop is located on Coonawarra Rd, Adj to Coonawarra Wreckers",
+   "stop_lat": -12.43036,
+   "stop_lon": 130.88036,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS294",
+   "stop_name": "Coonawarra 294",
+   "stop_desc": "This stop is located on Coonawarra Rd, Adj to Shell Service Station",
+   "stop_lat": -12.43037,
+   "stop_lon": 130.87651,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS295",
+   "stop_name": "Sweet 295",
+   "stop_desc": "This stop is located on Sweet St, Opp Geminex",
+   "stop_lat": -12.42927,
+   "stop_lon": 130.87238,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS296",
+   "stop_name": "Hickman 296",
+   "stop_desc": "This stop is located on Hickman St, Opp Carlton Brewery",
+   "stop_lat": -12.4277,
+   "stop_lon": 130.87051,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS297",
+   "stop_name": "Stuart Highway 297",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Shell Airport",
+   "stop_lat": -12.42541,
+   "stop_lon": 130.86905,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS298",
+   "stop_name": "Winnellie Post Office 298",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Winnellie Post Office",
+   "stop_lat": -12.42659,
+   "stop_lon": 130.86449,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS299",
+   "stop_name": "Stuart Highway 299",
+   "stop_desc": "This stop is located on Stuart Highway, Opp Shiers St",
+   "stop_lat": -12.42826,
+   "stop_lon": 130.8596,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS301",
+   "stop_name": "Phillip Street Shops 301",
+   "stop_desc": "This stop is located on Phillip St, Adj to Fanny Bay Shops",
+   "stop_lat": -12.42375,
+   "stop_lon": 130.8375,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS302",
+   "stop_name": "Phillip 302",
+   "stop_desc": "This stop is located on the Cnr Phillip St & Hinkler Cres",
+   "stop_lat": -12.41976,
+   "stop_lon": 130.83665,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS303",
+   "stop_name": "George 303",
+   "stop_desc": "This stop is located on George Cres, Adj to Park",
+   "stop_lat": -12.41972,
+   "stop_lon": 130.83384,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS304",
+   "stop_name": "George 304",
+   "stop_desc": "This stop is located at 6 George Cres",
+   "stop_lat": -12.42248,
+   "stop_lon": 130.83526,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS305",
+   "stop_name": "Ross Smith  305",
+   "stop_desc": "This stop is located on Ross Smith Ave, Adj to BP",
+   "stop_lat": -12.42545,
+   "stop_lon": 130.83963,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS306",
+   "stop_name": "Ross Smith 306",
+   "stop_desc": "This stop is located on Ross Smith Ave, Opp Parap Pool",
+   "stop_lat": -12.42722,
+   "stop_lon": 130.84209,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS307",
+   "stop_name": "Ross Smith 307",
+   "stop_desc": "This stop is located on Ross Smith Ave, Opp Parap School",
+   "stop_lat": -12.42966,
+   "stop_lon": 130.84546,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS308",
+   "stop_name": "Vickers 308",
+   "stop_desc": "This stop is located on Vickers St, Opp Parap Post Office",
+   "stop_lat": -12.43088,
+   "stop_lon": 130.84479,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS309",
+   "stop_name": "Parap shops 309",
+   "stop_desc": "This stop is located on Gregory St, Opp Parap Shops",
+   "stop_lat": -12.43218,
+   "stop_lon": 130.84359,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS310",
+   "stop_name": "Parap Road 310",
+   "stop_desc": "This stop is located on Parap Rd, Adj to Park",
+   "stop_lat": -12.43524,
+   "stop_lon": 130.84339,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS311",
+   "stop_name": "Westralia Street Shops 311",
+   "stop_desc": "This stop is located on Westralia St, Adj to Shops",
+   "stop_lat": -12.44504,
+   "stop_lon": 130.84324,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS312",
+   "stop_name": "Westralia 312",
+   "stop_desc": "This stop is located at 39 Westralia St",
+   "stop_lat": -12.4449,
+   "stop_lon": 130.84595,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS313",
+   "stop_name": "Meigs 313",
+   "stop_desc": "This stop is located on the Cnr Meigs St & Mary St",
+   "stop_lat": -12.44628,
+   "stop_lon": 130.84473,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS314",
+   "stop_name": "Guy 314",
+   "stop_desc": "This stop is located on Guy St, Adj to Dinah Oval",
+   "stop_lat": -12.44914,
+   "stop_lon": 130.84675,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS315",
+   "stop_name": "Gothenburg 315",
+   "stop_desc": "This stop is located at Gothenburg Cres, Adj to Park",
+   "stop_lat": -12.44898,
+   "stop_lon": 130.8448,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS316",
+   "stop_name": "Margaret 316",
+   "stop_desc": "This stop is located on Margaret St, Adj to Park",
+   "stop_lat": -12.44895,
+   "stop_lon": 130.84302,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS317",
+   "stop_name": "Duke 317",
+   "stop_desc": "This stop is located on the Cnr Duke St & Dinah Beach Rd",
+   "stop_lat": -12.45099,
+   "stop_lon": 130.84253,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS318",
+   "stop_name": "Packard 318",
+   "stop_desc": "This stop is located on Packard St, Adj to Larrakeyah Primary School",
+   "stop_lat": -12.45854,
+   "stop_lon": 130.8302,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS319",
+   "stop_name": "Smith 319",
+   "stop_desc": "This stop is located on Smith St, Adj to St Mary's Church",
+   "stop_lat": -12.45943,
+   "stop_lon": 130.83804,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS320",
+   "stop_name": "Hudson Fysh 320",
+   "stop_desc": "This stop is located on the Cnr Hudson Fysh Ave & Douglas St",
+   "stop_lat": -12.43017,
+   "stop_lon": 130.85078,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS321",
+   "stop_name": "Bremer 321",
+   "stop_desc": "This stop is located on the Cnr Bremer & Hudson Fysh Ave",
+   "stop_lat": -12.42929,
+   "stop_lon": 130.85145,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS322",
+   "stop_name": "Nadpur 322",
+   "stop_desc": "This stop is located at 3 Nadpur St",
+   "stop_lat": -12.4164,
+   "stop_lon": 130.8522,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS323",
+   "stop_name": "Harney 323",
+   "stop_desc": "This stop is located at 30 Harney St",
+   "stop_lat": -12.41338,
+   "stop_lon": 130.85252,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS324",
+   "stop_name": "Harney 324",
+   "stop_desc": "This stop is located at 12 Harney St",
+   "stop_lat": -12.41131,
+   "stop_lon": 130.85197,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS325",
+   "stop_name": "Amy Johnson 325",
+   "stop_desc": "This stop is located on Amy Johnson Blvd, Adj to Marrara School",
+   "stop_lat": -12.4072,
+   "stop_lon": 130.91606,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS326",
+   "stop_name": "Darwin Interchange 326",
+   "stop_desc": "This stop is located at Darwin Interchange, Harry Chan Ave (S&G)",
+   "stop_lat": -12.464987,
+   "stop_lon": 130.844233,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS327",
+   "stop_name": "Stuart Highway 327",
+   "stop_desc": "This stop is located on Stuart Highway, Opp Repco",
+   "stop_lat": -12.4251,
+   "stop_lon": 130.87644,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS328",
+   "stop_name": "Stuart Highway 328",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Water Tower",
+   "stop_lat": -12.42505,
+   "stop_lon": 130.87921,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS329",
+   "stop_name": "Stuart Highway 329",
+   "stop_desc": "This stop is located on Stuart Highway, Opp Lee St",
+   "stop_lat": -12.42513,
+   "stop_lon": 130.8851,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS330",
+   "stop_name": "Stuart Highway 330",
+   "stop_desc": "This stop is located on Stuart Highway, Opp Carla Furnishing",
+   "stop_lat": -12.42573,
+   "stop_lon": 130.89294,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS331",
+   "stop_name": "Stuart Highway 331",
+   "stop_desc": "This stop is located Stuart Highway, Adj to Caltex Service Station",
+   "stop_lat": -12.43397,
+   "stop_lon": 130.92516,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS332",
+   "stop_name": "Stuart Highway 332",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Knuckey Lagoon",
+   "stop_lat": -12.43791,
+   "stop_lon": 130.93555,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS333",
+   "stop_name": "Berrimah Prison 333",
+   "stop_desc": "This stop is located on the Cnr Stuart Highway & Thorak Rd",
+   "stop_lat": -12.44187,
+   "stop_lon": 130.94632,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS334",
+   "stop_name": "Stuart Highway 334",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to ADF",
+   "stop_lat": -12.44767,
+   "stop_lon": 130.9569,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS335",
+   "stop_name": "Stuart Highway 335 ",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to TCs Fuel",
+   "stop_lat": -12.45184,
+   "stop_lon": 130.9622,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS336",
+   "stop_name": "BP Palms",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to BP Palms",
+   "stop_lat": -12.45905,
+   "stop_lon": 130.97098,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS337",
+   "stop_name": "Roystonia 337",
+   "stop_desc": "This stop is located on Roystonia Ave, Adj to Shell Service Station",
+   "stop_lat": -12.47385,
+   "stop_lon": 130.9838,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS339",
+   "stop_name": "Cambridge 339",
+   "stop_desc": "This stop is located on Cambridge St, Opp McDonalds",
+   "stop_lat": -12.47826,
+   "stop_lon": 130.98311,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS340",
+   "stop_name": "Coles",
+   "stop_desc": "This stop is located on Chun Wah Tce, Adj to Coles Supermarket",
+   "stop_lat": -12.48154,
+   "stop_lon": 130.98426,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS341",
+   "stop_name": "Dwyer 341",
+   "stop_desc": "This stop is located on Dwyer Circuit, Opp 12 Dwyer Circuit",
+   "stop_lat": -12.48439,
+   "stop_lon": 130.9792,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS342",
+   "stop_name": "Dwyer 342",
+   "stop_desc": "This stop is located at 45 Dwyer Circuit",
+   "stop_lat": -12.48126,
+   "stop_lon": 130.98067,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS343",
+   "stop_name": "Dwyer 343",
+   "stop_desc": "This stop is located at 89 Dwyer Circuit",
+   "stop_lat": -12.4809,
+   "stop_lon": 130.97799,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS344",
+   "stop_name": "Woodlake 344",
+   "stop_desc": "This stop is located on Woodlake Blvd, Opp Vet Surgery",
+   "stop_lat": -12.4793,
+   "stop_lon": 130.97575,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS345",
+   "stop_name": "Woodlake School 345",
+   "stop_desc": "This stop is located on Woodlake Blvd, Opp Durack School",
+   "stop_lat": -12.47653,
+   "stop_lon": 130.9735,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS346",
+   "stop_name": "Woodlake Blvd School 346",
+   "stop_desc": "This stop is located at 75 Woodlake Blvd",
+   "stop_lat": -12.47358,
+   "stop_lon": 130.9731,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS347",
+   "stop_name": "Woodlake Blvd 347",
+   "stop_desc": "This stop is located at 127 Woodlake Blvd",
+   "stop_lat": -12.46982,
+   "stop_lon": 130.97022,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS348",
+   "stop_name": "Woodlake 348",
+   "stop_desc": "This stop is located on Woodlake Blvd, Opp 60 Woodlake Blvd",
+   "stop_lat": -12.47231,
+   "stop_lon": 130.96607,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS349",
+   "stop_name": "Woodlake Blvd West 349",
+   "stop_desc": "This stop is located on Woodlake Blvd, Opp 34 Woodlake Blvd",
+   "stop_lat": -12.4744,
+   "stop_lon": 130.96575,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS350",
+   "stop_name": "University 350",
+   "stop_desc": "This stop is located on University Ave, Adj to Shell Service Station",
+   "stop_lat": -12.4805,
+   "stop_lon": 130.97317,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS351",
+   "stop_name": "CDU Palmerston 351",
+   "stop_desc": "This stop is located at the Palmerston University, Campus Car Park",
+   "stop_lat": -12.47597,
+   "stop_lon": 130.97945,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS352",
+   "stop_name": "Maluka Street 352",
+   "stop_desc": "This stop is located on Maluka St, Adj to Overflow",
+   "stop_lat": -12.48125,
+   "stop_lon": 130.98741,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS353",
+   "stop_name": "Palmerston Interchange 353",
+   "stop_desc": "This stop is located at Palmerston Interchange, Roystonia Ave (Dep)",
+   "stop_lat": -12.47919,
+   "stop_lon": 130.98735,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS354",
+   "stop_name": "Lakeview 354",
+   "stop_desc": "This stop is located on the Cnr Lakeview Blvd & Kakadu St",
+   "stop_lat": -12.48867,
+   "stop_lon": 130.99319,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS355",
+   "stop_name": "Lakeview 355",
+   "stop_desc": "This stop is located on the Cnr Lakeview Blvd & Buscall Ave",
+   "stop_lat": -12.48971,
+   "stop_lon": 130.9978,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS356",
+   "stop_name": "Bakewell School 356",
+   "stop_desc": "This stop is located on Forrest Pde, Adj to Bakewell School",
+   "stop_lat": -12.49401,
+   "stop_lon": 130.99267,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS357",
+   "stop_name": "Landsborough 357",
+   "stop_desc": "This stop is located at 9 Landsborough St",
+   "stop_lat": -12.49543,
+   "stop_lon": 130.99391,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS358",
+   "stop_name": "Landsborough 358",
+   "stop_desc": "This stop is located at 37 Landsborough St",
+   "stop_lat": -12.49806,
+   "stop_lon": 130.9938,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS359",
+   "stop_name": "Aunger 359",
+   "stop_desc": "This stop is located on the Cnr Aunger Cres & Ewing Ct",
+   "stop_lat": -12.50082,
+   "stop_lon": 130.99571,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS360",
+   "stop_name": "Rosebery Shops 360",
+   "stop_desc": "This stop is located on Granites Cres, Adj to Shops",
+   "stop_lat": -12.50309,
+   "stop_lon": 130.99374,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS361",
+   "stop_name": "Rosebery 361",
+   "stop_desc": "This stop is located at 68 Rosebery Cres",
+   "stop_lat": -12.50424,
+   "stop_lon": 130.98985,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS362",
+   "stop_name": "Rosebery 362",
+   "stop_desc": "This stop is located at 42 Rosebery Cres",
+   "stop_lat": -12.50427,
+   "stop_lon": 130.98806,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS363",
+   "stop_name": "Rosebery 363",
+   "stop_desc": "This stop is located at 2 Rosebery Cres",
+   "stop_lat": -12.5011,
+   "stop_lon": 130.98866,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS364",
+   "stop_name": "Shearwater Drive 364",
+   "stop_desc": "This stop is located on Shearwater Cres, Opp 32 Shearwater Cres",
+   "stop_lat": -12.49867,
+   "stop_lon": 130.98851,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS365",
+   "stop_name": "Shearwater 365",
+   "stop_desc": "This stop is located on Shearwater Cres, Opp 68 Shearwater Cres",
+   "stop_lat": -12.49531,
+   "stop_lon": 130.98996,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS367",
+   "stop_name": "Vanderlin 367",
+   "stop_desc": "This stop is located on Vanderlin Drv, Adj to Lake Leanyer",
+   "stop_lat": -12.38903,
+   "stop_lon": 130.90942,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS368",
+   "stop_name": "Calytrix 368",
+   "stop_desc": "This stop is located at 32 Calytrix Rd",
+   "stop_lat": -12.39378,
+   "stop_lon": 130.91308,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS369",
+   "stop_name": "Applegum 369",
+   "stop_desc": "This stop is located at 13 Applegum St",
+   "stop_lat": -12.39517,
+   "stop_lon": 130.915,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS370",
+   "stop_name": "Applegum 370",
+   "stop_desc": "This stop is located at 37 Applegum St",
+   "stop_lat": -12.39606,
+   "stop_lon": 130.91714,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS371",
+   "stop_name": "Applegum 371",
+   "stop_desc": "This stop is located at 69 Applegum St",
+   "stop_lat": -12.39875,
+   "stop_lon": 130.91976,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS372",
+   "stop_name": "Bauer 372",
+   "stop_desc": "This stop is located at 7 Bauer Cres",
+   "stop_lat": -12.40148,
+   "stop_lon": 130.91971,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS373",
+   "stop_name": "Bauer 373",
+   "stop_desc": "This stop is located on Bauer Cres, Opp Manunda School",
+   "stop_lat": -12.40401,
+   "stop_lon": 130.92015,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS374",
+   "stop_name": "Moray 374",
+   "stop_desc": "This stop is located on the Cnr Moray St & McMillan's Rd",
+   "stop_lat": -12.4072,
+   "stop_lon": 130.91943,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS375",
+   "stop_name": "Farrer 375",
+   "stop_desc": "This stop is located on Farrer Blvd, Opp 119 Farrer Blvd",
+   "stop_lat": -12.48292,
+   "stop_lon": 131.00212,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS376",
+   "stop_name": "Farrer 376",
+   "stop_desc": "This stop is located at 84 Farrer Blvd",
+   "stop_lat": -12.47981,
+   "stop_lon": 131.00083,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS377",
+   "stop_name": "Farrar Blvd 377",
+   "stop_desc": "This stop is located on Farrar Boulevard 55 Meters west of Nutwood Crescent",
+   "stop_lat": -12.4798,
+   "stop_lon": 130.996,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS378",
+   "stop_name": "Farrer 378",
+   "stop_desc": "This stop is located on Farrer Blvd, Adj to Retirement Village",
+   "stop_lat": -12.47832,
+   "stop_lon": 130.99377,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS379",
+   "stop_name": "Health Precinct 379",
+   "stop_desc": "This stop is located on Cook St, Farrer Medical Centre",
+   "stop_lat": -12.47937,
+   "stop_lon": 130.99014,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS380",
+   "stop_name": "Kokoda Industries 380",
+   "stop_desc": "This stop is located on Georgina Cres, Adj to Kokoda Industries",
+   "stop_lat": -12.47565,
+   "stop_lon": 130.99126,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS381",
+   "stop_name": "Callanan 381",
+   "stop_desc": "This stop is located on Callanan St, Opp Elders",
+   "stop_lat": -12.47277,
+   "stop_lon": 130.98911,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS382",
+   "stop_name": "Adams Road 382",
+   "stop_desc": "This stop is located at 12 Adams Rd",
+   "stop_lat": -12.47538,
+   "stop_lon": 130.98899,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS383",
+   "stop_name": "Georgina 383",
+   "stop_desc": "This stop is located on Georgina Cres, Opp Plasta Masta",
+   "stop_lat": -12.4745,
+   "stop_lon": 130.9857,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS385",
+   "stop_name": "Roystonia 385",
+   "stop_desc": "This stop is located on Roystonia Ave, Opp Shell Service Station",
+   "stop_lat": -12.47408,
+   "stop_lon": 130.98359,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS386",
+   "stop_name": "BP Palms 386",
+   "stop_desc": "This stop is located on Stuart Highway, Opp BP Palms",
+   "stop_lat": -12.45843,
+   "stop_lon": 130.96959,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS387",
+   "stop_name": "Stuart Highway 387",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Southern Cross",
+   "stop_lat": -12.45348,
+   "stop_lon": 130.96355,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS388",
+   "stop_name": "Stuart Highway 388",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Radio Towers",
+   "stop_lat": -12.44809,
+   "stop_lon": 130.95662,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS389",
+   "stop_name": "Tivendale Road 389",
+   "stop_desc": "This stop is located on the Cnr Stuart Highway & Tivendale Rd",
+   "stop_lat": -12.44173,
+   "stop_lon": 130.9446,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS390",
+   "stop_name": "Stuart Highway 390",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Berrimah Farm",
+   "stop_lat": -12.43772,
+   "stop_lon": 130.93375,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS391",
+   "stop_name": "Stuart Highway 391",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Trade Centre",
+   "stop_lat": -12.43578,
+   "stop_lon": 130.92883,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS392",
+   "stop_name": "Moray Street 392",
+   "stop_desc": "This stop is located at 23 Moray St",
+   "stop_lat": -12.40566,
+   "stop_lon": 130.9203,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS393",
+   "stop_name": "Bauer 393",
+   "stop_desc": "This stop is located on Bauer Cres, Adj to Manunda School",
+   "stop_lat": -12.40353,
+   "stop_lon": 130.92025,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS394",
+   "stop_name": "Bauer 394",
+   "stop_desc": "This stop is located at 12 Bauer Cres",
+   "stop_lat": -12.40136,
+   "stop_lon": 130.91962,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS395",
+   "stop_name": "Applegum 395",
+   "stop_desc": "This stop is located at 60 Applegum St",
+   "stop_lat": -12.39847,
+   "stop_lon": 130.91952,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS396",
+   "stop_name": "Applegum 396",
+   "stop_desc": "This stop is located at 40 Applegum St",
+   "stop_lat": -12.39686,
+   "stop_lon": 130.91796,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS397",
+   "stop_name": "Applegum 397",
+   "stop_desc": "This stop is located at 4 Applegum St",
+   "stop_lat": -12.39529,
+   "stop_lon": 130.91365,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS398",
+   "stop_name": "Calytrix Road 398",
+   "stop_desc": "This stop is located on Calytrix St, Opp 44 Calytrix",
+   "stop_lat": -12.39282,
+   "stop_lon": 130.9136,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS399",
+   "stop_name": "Vanderlin 399",
+   "stop_desc": "This stop is located on Vanderlin Drv, Opp Lake Leanyer",
+   "stop_lat": -12.3887,
+   "stop_lon": 130.90883,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS400",
+   "stop_name": "Trower 400",
+   "stop_desc": "This stop is located at 341 Trower Rd",
+   "stop_lat": -12.36685,
+   "stop_lon": 130.87901,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS401",
+   "stop_name": "Erldunda 401",
+   "stop_desc": "This stop is located at 7 Erldunda St",
+   "stop_lat": -12.36505,
+   "stop_lon": 130.87605,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS402",
+   "stop_name": "Tiwi Gardens 402",
+   "stop_desc": "This stop is located at 160 Tiwi Gardens Rd",
+   "stop_lat": -12.3619,
+   "stop_lon": 130.87725,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS403",
+   "stop_name": "Manbullo 403",
+   "stop_desc": "This stop is located at 9 Manbullo St",
+   "stop_lat": -12.36045,
+   "stop_lon": 130.88026,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS404",
+   "stop_name": "Trower 404",
+   "stop_desc": "This stop is located at 356 Trower Rd",
+   "stop_lat": -12.36662,
+   "stop_lon": 130.87867,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS406",
+   "stop_name": "Livistona 406",
+   "stop_desc": "This stop is located on Livistona St, Opp 30 Livistona",
+   "stop_lat": -12.39705,
+   "stop_lon": 130.91352,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS407",
+   "stop_name": "Koolinda 407",
+   "stop_desc": "This stop is located at 26 Koolinda Cres",
+   "stop_lat": -12.39883,
+   "stop_lon": 130.9125,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS408",
+   "stop_name": "Koolinda 408",
+   "stop_desc": "This stop is located on Koolinda Cres, Opp 9 Koolinda Cres",
+   "stop_lat": -12.39853,
+   "stop_lon": 130.91057,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS409",
+   "stop_name": "Ringwood 409",
+   "stop_desc": "This stop is located on Ringwood St, Opp 3 Ringwood",
+   "stop_lat": -12.39477,
+   "stop_lon": 130.89832,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS410",
+   "stop_name": "Airport Hotel 410",
+   "stop_desc": "This stop is located on McMillan's Rd, Opp Airport Hotel",
+   "stop_lat": -12.39558,
+   "stop_lon": 130.87725,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS411",
+   "stop_name": "Odegaard 411",
+   "stop_desc": "This stop is located at 2 Odegaard Place Rosebery",
+   "stop_lat": -12.5042,
+   "stop_lon": 130.9922,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS412",
+   "stop_name": "Lee Point 412",
+   "stop_desc": "This stop is located at 121 Lee Point Rd",
+   "stop_lat": -12.38096,
+   "stop_lon": 130.88975,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS413",
+   "stop_name": "Lee Point 413",
+   "stop_desc": "This stop is located at 207 Lee Point Rd",
+   "stop_lat": -12.37368,
+   "stop_lon": 130.89115,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS414",
+   "stop_name": "Leanyer 414",
+   "stop_desc": "This stop is located on Leanyer Drive, Adj to Park",
+   "stop_lat": -12.38082,
+   "stop_lon": 130.90326,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS415",
+   "stop_name": "Leanyer 415",
+   "stop_desc": "This stop is located at 140 Leanyer Drive",
+   "stop_lat": -12.37768,
+   "stop_lon": 130.90149,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS416",
+   "stop_name": "Leanyer 416",
+   "stop_desc": "This stop is located on Leanyer Drive, Adj to Leanyer School",
+   "stop_lat": -12.37474,
+   "stop_lon": 130.90071,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS417",
+   "stop_name": "Leanyer 417",
+   "stop_desc": "This stop is located on Leanyer Drive, Adj to St Andrews School",
+   "stop_lat": -12.3732,
+   "stop_lon": 130.9001,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS418",
+   "stop_name": "VRD 418",
+   "stop_desc": "This stop is located at 58 VRD Drive",
+   "stop_lat": -12.37116,
+   "stop_lon": 130.8971,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS419",
+   "stop_name": "VRD 419",
+   "stop_desc": "This stop is located at 8 VRD Drive",
+   "stop_lat": -12.36892,
+   "stop_lon": 130.89286,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS420",
+   "stop_name": "Lee Point 420",
+   "stop_desc": "This stop is located on Lee Point Rd, Opp 203 Lee Point Rd",
+   "stop_lat": -12.3704,
+   "stop_lon": 130.89166,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS421",
+   "stop_name": "Lee Point 421",
+   "stop_desc": "This stop is located on Lee Point Rd, Opp 179 Lee Point Rd",
+   "stop_lat": -12.37377,
+   "stop_lon": 130.89119,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS422",
+   "stop_name": "Lee Point 422",
+   "stop_desc": "This stop is located on Lee Point Rd, Opp 119 Lee Point Rd",
+   "stop_lat": -12.38145,
+   "stop_lon": 130.88973,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS423",
+   "stop_name": "Lee Point 423",
+   "stop_desc": "This stop is located on Lee Point Rd, Opp 67 Lee Point Rd",
+   "stop_lat": -12.38723,
+   "stop_lon": 130.88631,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS424",
+   "stop_name": "Lee Point 424",
+   "stop_desc": "This stop is located on Lee Point Rd, Opp Moil Cres",
+   "stop_lat": -12.39054,
+   "stop_lon": 130.88436,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS426",
+   "stop_name": "Angelo 426",
+   "stop_desc": "This stop is located on Angelo St, Adj to Casuarina Pool",
+   "stop_lat": -12.37338,
+   "stop_lon": 130.88434,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS427",
+   "stop_name": "Parap Markets 427",
+   "stop_desc": "This stop is located on the Cnr Gregory St & Parap Rd",
+   "stop_lat": -12.43225,
+   "stop_lon": 130.84252,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS428",
+   "stop_name": "Gregory 428",
+   "stop_desc": "This stop is located at 8 Gregory St",
+   "stop_lat": -12.43223,
+   "stop_lon": 130.83915,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS430",
+   "stop_name": "Victoria 430",
+   "stop_desc": "This stop is located at 13 Victoria Ave",
+   "stop_lat": -12.49037,
+   "stop_lon": 130.98101,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS431",
+   "stop_name": "Victoria 431",
+   "stop_desc": "This stop is located on Victoria Ave, Opp School",
+   "stop_lat": -12.49111,
+   "stop_lon": 130.97927,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS432",
+   "stop_name": "Victoria 432",
+   "stop_desc": "This stop is located at 55 Victoria Ave",
+   "stop_lat": -12.49315,
+   "stop_lon": 130.97814,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS433",
+   "stop_name": "Sacred Heart Primary 433",
+   "stop_desc": "This stop is located on Emery Ave, Opp Sacred Heart School",
+   "stop_lat": -12.49472,
+   "stop_lon": 130.97879,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS434",
+   "stop_name": "Emery 434",
+   "stop_desc": "This stop is located on Emery Ave, Opp Fire Station",
+   "stop_lat": -12.49554,
+   "stop_lon": 130.98152,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS435",
+   "stop_name": "Sibbald 435",
+   "stop_desc": "This stop is located at 13 Sibbald Cres",
+   "stop_lat": -12.49731,
+   "stop_lon": 130.98208,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS436",
+   "stop_name": "Sibbald 436",
+   "stop_desc": "This stop is located at 35 Sibbald Cres",
+   "stop_lat": -12.49986,
+   "stop_lon": 130.98114,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS437",
+   "stop_name": "Woodroffe 437",
+   "stop_desc": "This stop is located at 11 Woodroffe Ave",
+   "stop_lat": -12.50259,
+   "stop_lon": 130.98149,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS438",
+   "stop_name": "Woodroffe School 438",
+   "stop_desc": "This stop is located on Woodroffe Ave, Adj to Woodroffe School",
+   "stop_lat": -12.50655,
+   "stop_lon": 130.98133,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS439",
+   "stop_name": "Woodroffe 439",
+   "stop_desc": "This stop is located on the Cnr Woodroffe Ave & Zenith St",
+   "stop_lat": -12.50809,
+   "stop_lon": 130.97986,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS440",
+   "stop_name": "Sibbald 440",
+   "stop_desc": "This stop is located at 64 Sibbald Cres",
+   "stop_lat": -12.50198,
+   "stop_lon": 130.98382,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS441",
+   "stop_name": "Sibbald 441",
+   "stop_desc": "This stop is located at 40 Sibbald Cres",
+   "stop_lat": -12.49989,
+   "stop_lon": 130.98105,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS442",
+   "stop_name": "Baldwin 442",
+   "stop_desc": "This stop is located at 42 Baldwin St",
+   "stop_lat": -12.49978,
+   "stop_lon": 130.9799,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS443",
+   "stop_name": "St Joseph's School 443",
+   "stop_desc": "This stop is located at 16 Baldwin St",
+   "stop_lat": -12.50071,
+   "stop_lon": 130.97669,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS444",
+   "stop_name": "Temple Terrace 444",
+   "stop_desc": "This stop is located on Temple Tce, Adj to Palmerston High School",
+   "stop_lat": -12.4949,
+   "stop_lon": 130.97492,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS445",
+   "stop_name": "Emery 445",
+   "stop_desc": "This stop is located at 19 Emery Ave",
+   "stop_lat": -12.49412,
+   "stop_lon": 130.97696,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS446",
+   "stop_name": "Chun Wah 446",
+   "stop_desc": "This stop is located on the Cnr Chun Wah Tce & Emery Ave",
+   "stop_lat": -12.49628,
+   "stop_lon": 130.98654,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS447",
+   "stop_name": "Essington 447",
+   "stop_desc": "This stop is located on Essington Ave, Adj to Park",
+   "stop_lat": -12.49217,
+   "stop_lon": 130.98368,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS448",
+   "stop_name": "Essington 448",
+   "stop_desc": "This stop is located on Essington Ave, Adj to Shops",
+   "stop_lat": -12.48943,
+   "stop_lon": 130.98184,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS449",
+   "stop_name": "Raffles 449",
+   "stop_desc": "This stop is located on Raffles Rd, West",
+   "stop_lat": -12.48807,
+   "stop_lon": 130.98256,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS450",
+   "stop_name": "Raffles 450",
+   "stop_desc": "This stop is located on Raffles Rd, East",
+   "stop_lat": -12.48768,
+   "stop_lon": 130.98492,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS451",
+   "stop_name": "Raffles 451",
+   "stop_desc": "This stop is located at 6 Raffles Rd",
+   "stop_lat": -12.48631,
+   "stop_lon": 130.98745,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS452",
+   "stop_name": "Woolworths Palmerston 452",
+   "stop_desc": "This stop is located on Chun Wah Tce, Adj to Woolworths",
+   "stop_lat": -12.48436,
+   "stop_lon": 130.98714,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS453",
+   "stop_name": "Gray Shops 453",
+   "stop_desc": "This stop is located on the corner Essington Ave & Dunbar St",
+   "stop_lat": -12.48704,
+   "stop_lon": 130.98212,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS454",
+   "stop_name": "Essington 454",
+   "stop_desc": "This stop is located on the Cnr Essington Ave & Dillon Circuit",
+   "stop_lat": -12.49382,
+   "stop_lon": 130.98578,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS456",
+   "stop_name": "Stuart Highway 456",
+   "stop_desc": "This stop is located on Stuart Highway, Adj to Carla Furnishers",
+   "stop_lat": -12.42594,
+   "stop_lon": 130.89245,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS457",
+   "stop_name": "Stuart Highway 457",
+   "stop_desc": "This stop is located at 440 Stuart Highway",
+   "stop_lat": -12.42527,
+   "stop_lon": 130.87994,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS458",
+   "stop_name": "Stuart Highway 458",
+   "stop_desc": "This stop is located at 430 Stuart Highway ",
+   "stop_lat": -12.42533,
+   "stop_lon": 130.8763,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS459",
+   "stop_name": "Stuart Highway 459",
+   "stop_desc": "This stop is located at 478 Stuart Highway",
+   "stop_lat": -12.42534,
+   "stop_lon": 130.88468,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS460",
+   "stop_name": "Canaris 460",
+   "stop_desc": "This stop is located at 15 Canaris St",
+   "stop_lat": -12.37057,
+   "stop_lon": 130.88962,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS462",
+   "stop_name": "Driver 462",
+   "stop_desc": "This stop is located on Driver Ave, Adj to Driver Primary School",
+   "stop_lat": -12.48458,
+   "stop_lon": 130.97527,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS463",
+   "stop_name": "Driver Avenue Shops 463",
+   "stop_desc": "This stop is located on Driver Ave, Adj to Driver Shops",
+   "stop_lat": -12.48574,
+   "stop_lon": 130.97307,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS464",
+   "stop_name": "Driver 464",
+   "stop_desc": "This stop is located on Driver Ave, Adj to Park",
+   "stop_lat": -12.48867,
+   "stop_lon": 130.97279,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS465",
+   "stop_name": "Driver 465",
+   "stop_desc": "This stop is located at 117 Driver Ave",
+   "stop_lat": -12.49031,
+   "stop_lon": 130.97061,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS466",
+   "stop_name": "Elrundie 466",
+   "stop_desc": "This stop is located on the Cnr Elrundie & Tilston",
+   "stop_lat": -12.49267,
+   "stop_lon": 130.96914,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS467",
+   "stop_name": "Tilston 467",
+   "stop_desc": "This stop is located on Tilston Ave, Adj to Palmerston High School",
+   "stop_lat": -12.49536,
+   "stop_lon": 130.97098,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS468",
+   "stop_name": "Bonson 468",
+   "stop_desc": "This stop is located on Bonson Tce, Northern end",
+   "stop_lat": -12.49966,
+   "stop_lon": 130.97161,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS469",
+   "stop_name": "Bonson 469",
+   "stop_desc": "This stop is located on Bonson Tce, Central",
+   "stop_lat": -12.50257,
+   "stop_lon": 130.97222,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS470",
+   "stop_name": "Moulden School 470",
+   "stop_desc": "This stop is located on Bonson Tce, Adj to Moulden Primary School",
+   "stop_lat": -12.50604,
+   "stop_lon": 130.97056,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS471",
+   "stop_name": "Elrundie 471",
+   "stop_desc": "This stop is located on Elrundie Ave, Opp Archer Oval",
+   "stop_lat": -12.51494,
+   "stop_lon": 130.97349,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS472",
+   "stop_name": "Moulden 472",
+   "stop_desc": "This stop is located on the Cnr Moulden Tce & Cuthbertson St",
+   "stop_lat": -12.51379,
+   "stop_lon": 130.97637,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS473",
+   "stop_name": "Kafcaloudes 473",
+   "stop_desc": "This stop is located on Kafcaloudes Cres, Adj to Park",
+   "stop_lat": -12.50818,
+   "stop_lon": 130.97583,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS474",
+   "stop_name": "Temple 474",
+   "stop_desc": "This stop is located on the Cnr Temple Tce & Tamarind St",
+   "stop_lat": -12.50337,
+   "stop_lon": 130.97528,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS475",
+   "stop_name": "Waterhouse 475",
+   "stop_desc": "This stop is located at 21 Waterhouse Cres",
+   "stop_lat": -12.49097,
+   "stop_lon": 130.97236,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS476",
+   "stop_name": "Driver 476",
+   "stop_desc": "This stop is located at 102 Driver Ave",
+   "stop_lat": -12.4887,
+   "stop_lon": 130.97268,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS477",
+   "stop_name": "Driver Shops 477",
+   "stop_desc": "This stop is located at 70 Driver Ave",
+   "stop_lat": -12.48574,
+   "stop_lon": 130.97302,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS478",
+   "stop_name": "Driver 478",
+   "stop_desc": "This stop is located on Driver Ave, Opp Driver Primary School",
+   "stop_lat": -12.48443,
+   "stop_lon": 130.9758,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS479",
+   "stop_name": "Waler 479",
+   "stop_desc": "This stop is located on Waler Rd, Adj to Palmerston Christian School",
+   "stop_lat": -12.49125,
+   "stop_lon": 130.9643,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS480",
+   "stop_name": "Kafcaloudes Crescent 480",
+   "stop_desc": "This stop is located on Kafcaloudes Cres, Adj to Moulden Shops",
+   "stop_lat": -12.51079,
+   "stop_lon": 130.97538,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS481",
+   "stop_name": "Woodlake & Bangalow 481",
+   "stop_desc": "This stop is located on the Cnr Woodlake Blvd & Banga St",
+   "stop_lat": -12.4744,
+   "stop_lon": 130.96567,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS482",
+   "stop_name": "Woodlake 482",
+   "stop_desc": "This stop is located on the Cnr Woodlake Blvd & Phoenix St",
+   "stop_lat": -12.47223,
+   "stop_lon": 130.96604,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS483",
+   "stop_name": "Woodlake 483",
+   "stop_desc": "This stop is located on Woodlake Blvd, Opp 133 Woodlake Blvd",
+   "stop_lat": -12.46973,
+   "stop_lon": 130.97001,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS484",
+   "stop_name": "Drack School 484",
+   "stop_desc": "This stop is located on Woodlake Blvd, Adj to Durak Primary School",
+   "stop_lat": -12.47661,
+   "stop_lon": 130.97365,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS485",
+   "stop_name": "Woodlake 485",
+   "stop_desc": "This stop is located at 16 Woodlake Blvd",
+   "stop_lat": -12.47842,
+   "stop_lon": 130.97548,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS498",
+   "stop_name": "Palmerston Interchange 498",
+   "stop_desc": "This stop is located at Palmerston Interchange (Arr)",
+   "stop_lat": -12.47909,
+   "stop_lon": 130.98753,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS502",
+   "stop_name": "Stuart Highway 502",
+   "stop_desc": "This stop is located on Stuart Highway, Opp Morgan Road ",
+   "stop_lat": -12.50735,
+   "stop_lon": 131.01965,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS503",
+   "stop_name": "Stuart Highway 503",
+   "stop_desc": "This stop is located on Stuart Highway, Opp Virginia Road",
+   "stop_lat": -12.51533,
+   "stop_lon": 131.02952,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS504",
+   "stop_name": "Coolalinga 504",
+   "stop_desc": "This stop is located on Stuart Highway, Opp Coolalinga Shops",
+   "stop_lat": -12.52368,
+   "stop_lon": 131.04336,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS505",
+   "stop_name": "Coolalinga 505",
+   "stop_desc": "This stop is located at 505 Stuart Highway, Coolalinga",
+   "stop_lat": -12.52156,
+   "stop_lon": 131.03925,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS506",
+   "stop_name": "Stuart Highway 596",
+   "stop_desc": "This stop is located on the Cnr Stuart Highway and Morgan Road ",
+   "stop_lat": -12.50638,
+   "stop_lon": 131.01869,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS507",
+   "stop_name": "Virginia 507",
+   "stop_desc": "This stop is located on the Cnr Virginia Road, 17 Miles Service & Muffler Centre",
+   "stop_lat": -12.51606,
+   "stop_lon": 131.02934,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS508",
+   "stop_name": "Lowther  508",
+   "stop_desc": "This stop is located on the Cnr Lowther and London Roads",
+   "stop_lat": -12.55468,
+   "stop_lon": 131.03843,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS509",
+   "stop_name": "Bees Creek 509",
+   "stop_desc": "This stop is located on the Cnr Bees Creek Road and Thorburn Roads",
+   "stop_lat": -12.56229,
+   "stop_lon": 131.05911,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS510",
+   "stop_name": "Gulnare Road 510",
+   "stop_desc": "This stop is located on the Cnr Gulnare Road, Near Stuart Wighway",
+   "stop_lat": -12.58406,
+   "stop_lon": 131.07282,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS511",
+   "stop_name": "Gulnare 511",
+   "stop_desc": "This stop is located on the Cnr Gulnare Road & Bees Creek Road",
+   "stop_lat": -12.5839,
+   "stop_lon": 131.05892,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS512",
+   "stop_name": "Lowther Road 512",
+   "stop_desc": "This stop is located on Lowther Road, Near Goodenia Drive",
+   "stop_lat": -12.5549,
+   "stop_lon": 131.04695,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS513",
+   "stop_name": "Virginia 513",
+   "stop_desc": "This stop is located on Virginia Road, near Jervios Rd",
+   "stop_lat": -12.54172,
+   "stop_lon": 131.02926,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS514",
+   "stop_name": "Virginia 514",
+   "stop_desc": "This stop is located on Virginia Road, near Irwin Rd",
+   "stop_lat": -12.52244,
+   "stop_lon": 131.02918,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS523",
+   "stop_name": "Hillier 523",
+   "stop_desc": "This stop is located at 184 Hillier Rd",
+   "stop_lat": -12.50807,
+   "stop_lon": 131.05909,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS524",
+   "stop_name": "McMinns 524",
+   "stop_desc": "This stop is located at 225 McMinns Dv",
+   "stop_lat": -12.53336,
+   "stop_lon": 131.07947,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS525",
+   "stop_name": "Anglesey 525",
+   "stop_desc": "This stop is located at 291 Anglesey Rd",
+   "stop_lat": -12.52971,
+   "stop_lon": 131.10723,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS526",
+   "stop_name": "Pioneer 526",
+   "stop_desc": "This stop is located on the southern side of Pioneer Rd & Produce Dr",
+   "stop_lat": -12.55504,
+   "stop_lon": 131.11846,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS533",
+   "stop_name": "Bayview 533",
+   "stop_desc": "This stop is located in Bayview Drv opposite Half Moon Park ",
+   "stop_lat": -12.44083,
+   "stop_lon": 130.85643,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS534",
+   "stop_name": "Stoddart 534",
+   "stop_desc": "This stop is located on the southern side of Stoddart Drive near the Fanning Drive intersection",
+   "stop_lat": -12.43573,
+   "stop_lon": 130.85752,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS535",
+   "stop_name": "Gulnare 535",
+   "stop_desc": "This stop is located on Gulnare road near the Stuart Highway intersection",
+   "stop_lat": -12.584108,
+   "stop_lon": 131.072596,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS538",
+   "stop_name": "Catchlove 538",
+   "stop_desc": "This stop is located at 14 Catchlove Street Rosebery",
+   "stop_lat": -12.50581,
+   "stop_lon": 130.98563,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS542",
+   "stop_name": "Virginia 542",
+   "stop_desc": "This stop is located at 71 Virginia road Virginia",
+   "stop_lat": -12.522403,
+   "stop_lon": 131.029438,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS544",
+   "stop_name": "Virginia 544",
+   "stop_desc": "This stop is located at 201 Virginia Road Virginia",
+   "stop_lat": -12.533863,
+   "stop_lon": 131.02938,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS545",
+   "stop_name": "Virginia 545",
+   "stop_desc": "This stop is located at 285 Virginia Road Virginia",
+   "stop_lat": -12.541707,
+   "stop_lon": 131.029515,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS546",
+   "stop_name": "Jacomb 546",
+   "stop_desc": "This stop is located at 25 Jacomb Place Virginia",
+   "stop_lat": -12.5505,
+   "stop_lon": 131.03195,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS547",
+   "stop_name": "Francesca 547",
+   "stop_desc": "This stop is located at 65 Francesca CCT Virginia",
+   "stop_lat": -12.54662,
+   "stop_lon": 131.03521,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS548",
+   "stop_name": "Lowther 548",
+   "stop_desc": "This stop is located at 320 Lowther Road Virginia",
+   "stop_lat": -12.554671,
+   "stop_lon": 131.038569,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS549",
+   "stop_name": "Lowther  Road 549",
+   "stop_desc": "This stop is located at the rear of 115 Durian Rd on Lowther Road Virginia",
+   "stop_lat": -12.554715,
+   "stop_lon": 131.047079,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS553",
+   "stop_name": "Gulnare 553",
+   "stop_desc": "This stop is located at 150 Gulnare Road Bees Creak",
+   "stop_lat": -12.583777,
+   "stop_lon": 131.059252,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS554",
+   "stop_name": "Gulnare Road 554",
+   "stop_desc": "This stop is located at 30 Gulnare Road Bees Creak",
+   "stop_lat": -12.584041,
+   "stop_lon": 131.07107,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS569",
+   "stop_name": "Casuarina Bus Interchange 569",
+   "stop_desc": "This stop is located at Casuarina Interchange (Dep)",
+   "stop_lat": -12.37364,
+   "stop_lon": 130.88044,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS572",
+   "stop_name": "Forrest Parade 572",
+   "stop_desc": "This stop is located at 137 Forrest Pd",
+   "stop_lat": -12.50664,
+   "stop_lon": 130.99108,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS573",
+   "stop_name": "Owston Avenue 573",
+   "stop_desc": "This stop is located at Opposite the rear of 6 Price Court on Owston Pd",
+   "stop_lat": -12.50987,
+   "stop_lon": 130.9851,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS574",
+   "stop_name": "Owston Avenue 574",
+   "stop_desc": "This stop is located at the rear of 5 Price Court on Owston Pd",
+   "stop_lat": -12.5099,
+   "stop_lon": 130.98533,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS575",
+   "stop_name": "Forrest 575",
+   "stop_desc": "This stop is located at 184 Forrest Pd ",
+   "stop_lat": -12.51065,
+   "stop_lon": 130.98961,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS576",
+   "stop_name": "Forrest 576",
+   "stop_desc": "This stop is located at Opposite 135 Forrest Pd",
+   "stop_lat": -12.50654,
+   "stop_lon": 130.99104,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS579",
+   "stop_name": "Rodgers St",
+   "stop_desc": "This stop is located near the intersection of Rodgers & Girraween Rd",
+   "stop_lat": -12.52519,
+   "stop_lon": 131.09628,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS581",
+   "stop_name": "Humpty Doo Shops 581",
+   "stop_desc": "This stop is located at Fred's Pass  Rd at Humpty Doo Shopping centre",
+   "stop_lat": -12.57387,
+   "stop_lon": 131.10134,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS583",
+   "stop_name": "Whitewood 583",
+   "stop_desc": "This stop is located at 300 Whitewood Rd",
+   "stop_lat": -12.49631,
+   "stop_lon": 131.04554,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS584",
+   "stop_name": "Whitewood 584",
+   "stop_desc": "This stop is located at 276 Whitewood Rd",
+   "stop_lat": -12.49633,
+   "stop_lon": 131.04346,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS586",
+   "stop_name": "Whitewood 586",
+   "stop_desc": "This stop is located at 191 Whitewood Rd",
+   "stop_lat": -12.49623,
+   "stop_lon": 131.03483,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS587",
+   "stop_name": "Whitewood 587",
+   "stop_desc": "This stop is located at 309 Whitewood Rd",
+   "stop_lat": -12.49624,
+   "stop_lon": 131.04608,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS588",
+   "stop_name": "Humpty Doo 588",
+   "stop_desc": "This stop is located at 28 Challoner Cct",
+   "stop_lat": -12.57659,
+   "stop_lon": 131.10027,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS589",
+   "stop_name": "Copx Peninsular 589",
+   "stop_desc": "This stop is located on the corner of Cox Peninsula Road & Stuart Highway Noonamah",
+   "stop_lat": -12.67366,
+   "stop_lon": 131.07807,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS593",
+   "stop_name": "Howard Springs 593",
+   "stop_desc": "This stop is located at 62 Howard Springs Rd",
+   "stop_lat": -12.49321,
+   "stop_lon": 131.01843,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS596",
+   "stop_name": "Stoddart 596",
+   "stop_desc": "This stop is located at Stoddart Dr near Tiger Brennan Dr ",
+   "stop_lat": -12.43941,
+   "stop_lon": 130.85182,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS597",
+   "stop_name": "Tipperary Waters 597",
+   "stop_desc": "This stop is located at Frances Bay Dr near Tipperary Dr",
+   "stop_lat": -12.44872,
+   "stop_lon": 130.84945,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS643",
+   "stop_name": "Danimila Terrace 643",
+   "stop_desc": "This stop is located opposite 29 Danimila Terrace Lyons",
+   "stop_lat": -12.363101,
+   "stop_lon": 130.889516,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS644",
+   "stop_name": "Lyons Community Centre 644",
+   "stop_desc": "This stop is located opposite 24 Damabla Drive Lyons",
+   "stop_lat": -12.359679,
+   "stop_lon": 130.888248,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS655",
+   "stop_name": "Daldawa Terrace 655",
+   "stop_desc": "This stop is located at 8 Daldawa Terrace Lyons",
+   "stop_lat": -12.357024,
+   "stop_lon": 130.889232,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS656",
+   "stop_name": "Odegarrd 656",
+   "stop_desc": "This stop is located at19 Odegarrd Drive Rosebery",
+   "stop_lat": -12.50524,
+   "stop_lon": 130.99311,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS657",
+   "stop_name": "Odegarrd 657",
+   "stop_desc": "This Stop is located at 55 Odegarrd Drive Rosebery",
+   "stop_lat": -12.50769,
+   "stop_lon": 130.99491,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS661",
+   "stop_name": "Gardens Rd 661",
+   "stop_desc": "This stop is located at Gardens Rd near Melville St",
+   "stop_lat": -12.45033,
+   "stop_lon": 130.83634,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS662",
+   "stop_name": "Rosebery School 662",
+   "stop_desc": "This stop is located opposite 12 Belyuen Rd Rosebery",
+   "stop_lat": -12.50906,
+   "stop_lon": 130.992,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS693",
+   "stop_name": "Haydon 693",
+   "stop_desc": "This stop is located adjacent to 40 Haydon Street Rosebery",
+   "stop_lat": -12.50825,
+   "stop_lon": 130.98962,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS694",
+   "stop_name": "Antonino 694",
+   "stop_desc": "This stop is located at 19 Antonino Drive Rosebery",
+   "stop_lat": -12.50742,
+   "stop_lon": 130.98682,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS756",
+   "stop_name": "Playford Street 756",
+   "stop_desc": "This stop is located at 48 Playford Street",
+   "stop_lat": -12.42839,
+   "stop_lon": 130.84729,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS757",
+   "stop_name": "Bagot Road Car Wash 757",
+   "stop_desc": "This stop is located at Bagot Road Opp Bunnings",
+   "stop_lat": -12.40137,
+   "stop_lon": 130.85596,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS758",
+   "stop_name": "Casuarina Interchange 758",
+   "stop_desc": "This stop is located at Casuarina Interchange",
+   "stop_lat": -12.3736,
+   "stop_lon": 130.88076,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS761",
+   "stop_name": "Indigenous Village 761",
+   "stop_desc": "This stop is located at Stuart Highway at the Palmerston Indigenous Village",
+   "stop_lat": -12.48998,
+   "stop_lon": 131.01137,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS763",
+   "stop_name": "Virginia 763",
+   "stop_desc": "This stop is located at 30 Virginia Rd at Shops",
+   "stop_lat": -12.51784,
+   "stop_lon": 131.02919,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS766",
+   "stop_name": "London 766",
+   "stop_desc": "This stop is located at 78 London St  Route Marker",
+   "stop_lat": -12.55127,
+   "stop_lon": 131.0383,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS768",
+   "stop_name": "Jacomb 768",
+   "stop_desc": "This stop is located at 68 Jacomb Pl",
+   "stop_lat": -12.55059,
+   "stop_lon": 131.03113,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS769",
+   "stop_name": "Noonamah Store 769",
+   "stop_desc": "This stop is located at Stuart Highway at Noonamah Store",
+   "stop_lat": -12.63359,
+   "stop_lon": 131.07416,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS770",
+   "stop_name": "Elizabeth Valley 770",
+   "stop_desc": "This stop is located at 240 Elizabeth valley Rd Route marker",
+   "stop_lat": -12.64276,
+   "stop_lon": 131.0827,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS771",
+   "stop_name": "Elizabeth Valley 771",
+   "stop_desc": "This stop is located at 345 Elizabeth valley Rd Route marker",
+   "stop_lat": -12.64266,
+   "stop_lon": 131.10972,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS772",
+   "stop_name": "Redcliffe 772",
+   "stop_desc": "This stop is located at Corner of Redcliffe Rd and Noel Rd Route Marker",
+   "stop_lat": -12.63734,
+   "stop_lon": 131.11856,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS773",
+   "stop_name": "Redcliffe 773",
+   "stop_desc": "This stop is located at 359 Redcliffe Rd Route Marker",
+   "stop_lat": -12.60797,
+   "stop_lon": 131.11858,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS774",
+   "stop_name": "Fred's Pass 774",
+   "stop_desc": "This stop is located at 298 Fred's Pass Rd Route Marker",
+   "stop_lat": -12.59317,
+   "stop_lon": 131.11343,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS775",
+   "stop_name": "Forrest Pde",
+   "stop_desc": "This stop is located at 67 Forrest Pde Bakewell for Orb 076 ",
+   "stop_lat": -12.4996,
+   "stop_lon": 130.993,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS776",
+   "stop_name": "Stuart Hwy & Virginia 776",
+   "stop_desc": "This stop is located at 279 Stuart Highway at intersection of Virginia Rd ",
+   "stop_lat": -12.51537,
+   "stop_lon": 131.02859,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS778",
+   "stop_name": "Stuart Highway 778",
+   "stop_desc": "This stop is located opposite 1142 Stuart Highway ",
+   "stop_lat": -12.57368,
+   "stop_lon": 131.07372,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS779",
+   "stop_name": "Stuart Highway 779",
+   "stop_desc": "This stop is located at Stuart Highway South of Gulnare Rd",
+   "stop_lat": -12.585,
+   "stop_lon": 131.07366,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS780",
+   "stop_name": "Stuart Highway 780",
+   "stop_desc": "This stop is located opposite 1326 Stuart Highway near Gonnerman Rd Southern  End ",
+   "stop_lat": -12.59635,
+   "stop_lon": 131.07361,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS781",
+   "stop_name": "Stuart highway 781",
+   "stop_desc": "This stop is located at Stuart Highway and Jenkins Rd",
+   "stop_lat": -12.61243,
+   "stop_lon": 131.07329,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS782",
+   "stop_name": "Stuart Highway 782",
+   "stop_desc": "This stop is located at Stuart Highway South of Crocodile Farm",
+   "stop_lat": -12.59481,
+   "stop_lon": 131.07336,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS783",
+   "stop_name": "Stuart Highway 783",
+   "stop_desc": "This stop is located at 1272 Stuart Highway North of Crocodile Farm",
+   "stop_lat": -12.58828,
+   "stop_lon": 131.07334,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS784",
+   "stop_name": "Stuart Highway 784",
+   "stop_desc": "This stop is located at 1204 Stuart Highway north of Gulnare Rd",
+   "stop_lat": -12.58318,
+   "stop_lon": 131.07335,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS785",
+   "stop_name": "Stuart Highway 785",
+   "stop_desc": "This stop is located at 1126 Stuart Highway",
+   "stop_lat": -12.57199,
+   "stop_lon": 131.07336,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS787",
+   "stop_name": "Stuart Highway 787",
+   "stop_desc": "This stop is located at 940 Stuart Highway opposite Sayer Rd",
+   "stop_lat": -12.55558,
+   "stop_lon": 131.06926,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS788",
+   "stop_name": "Arnhem Hwy West 788",
+   "stop_desc": "This stop is located on Cnr Arnhem Hwy & Hayball Roads Humpty Doo",
+   "stop_lat": -12.56856,
+   "stop_lon": 131.087283,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS791",
+   "stop_name": "Arnhem Hwy West 2 791",
+   "stop_desc": "This stop is located on Arnhem Highway Near Hayball Road Intersection",
+   "stop_lat": -12.56835,
+   "stop_lon": 131.087116,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS798",
+   "stop_name": "Sayer Rd 798",
+   "stop_desc": "This stop is located 30 meters south of Stuart Highway & Sayer Rd Intersection",
+   "stop_lat": -12.55585,
+   "stop_lon": 131.06986,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS802",
+   "stop_name": "Coolalinga 802",
+   "stop_desc": "This stop is located at Coolalinga Shopping Centre in the Stuart Hway Service Rd School Stop",
+   "stop_lat": -12.5234,
+   "stop_lon": 131.04163,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS805",
+   "stop_name": "Marina 805",
+   "stop_desc": "This stop is located in Marina Boulevard Cullen Bay near the slipway",
+   "stop_lat": -12.44987,
+   "stop_lon": 130.82363,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS806",
+   "stop_name": "Cullen Bay 806",
+   "stop_desc": "This stop is located in Marina Boulevard Cullen Bay at the Mandorah Ferry Terminal",
+   "stop_lat": -12.45155,
+   "stop_lon": 130.82082,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS809",
+   "stop_name": "Marina 809",
+   "stop_desc": "This stop is located in Marina Boulevard Cullen Bay opposite No 20 (Nautilus)",
+   "stop_lat": -12.44987,
+   "stop_lon": 130.82601,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS811",
+   "stop_name": "Bayview 811",
+   "stop_desc": "This stop is located on Bayview Drive near Bayview shops and turnaround",
+   "stop_lat": -12.44153,
+   "stop_lon": 130.85817,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS812",
+   "stop_name": "Frances Bay _ Fisherman's Place 812",
+   "stop_desc": "This stop is located on Francis Bay Drive at Fisherman's Place ",
+   "stop_lat": -12.45917,
+   "stop_lon": 130.84747,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS813",
+   "stop_name": "Stoddart 813",
+   "stop_desc": "This stop is located entering Bayview on Stoddart Drive at Woolner Road and Tiger Brennan Drive ",
+   "stop_lat": -12.43942,
+   "stop_lon": 130.85291,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS815",
+   "stop_name": "Coolalinga P&R 815",
+   "stop_desc": "This stop is located on the Stuart Highway opposite Coolalinga Shopping Village outbound",
+   "stop_lat": -12.524695,
+   "stop_lon": 131.045675,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS814",
+   "stop_name": "Kalymnos Drive 814",
+   "stop_desc": "This stop is located on Kalymnos Drive opposite Karama Shopping Village ",
+   "stop_lat": -12.4019,
+   "stop_lon": 130.916,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS816",
+   "stop_name": "Charles Eaton Drive 816",
+   "stop_desc": "This stop is located on the corner of Charles Eaton drive and Pederson Road ",
+   "stop_lat": -12.4043,
+   "stop_lon": 130.878,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS817",
+   "stop_name": "Stokes Hill Road 817",
+   "stop_desc": "This stop is located on the corner of McMinn Street &  Stokes Hill Road Darwin City",
+   "stop_lat": -12.465449,
+   "stop_lon": 130.847881,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS818",
+   "stop_name": "Johnstone 818",
+   "stop_desc": "This stop is located on southern end of Farrer Boulevard in Johnstone ",
+   "stop_lat": -12.4987,
+   "stop_lon": 131.006,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS819",
+   "stop_name": "Farrer 819",
+   "stop_desc": "This stop is located on the corner of Farrer Boulevard and Flinders Street in Johnston",
+   "stop_lat": -12.494,
+   "stop_lon": 131.006,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS820",
+   "stop_name": "Boulter Road East 820",
+   "stop_desc": "This stop is located at 81 Boulter Berrimah",
+   "stop_lat": -12.4149,
+   "stop_lon": 130.921,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS821",
+   "stop_name": "Boulter Road 821",
+   "stop_desc": "This stop is located at 47 Boulter Road Berrimah",
+   "stop_lat": -12.4144,
+   "stop_lon": 130.917,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS825",
+   "stop_name": "Cullen Bay 825",
+   "stop_desc": "This stop is located at Cullen Bay on the Cullen Bay Jetty",
+   "stop_lat": -12.4517,
+   "stop_lon": 130.82,
+   "zone_id": 2
+ },
+ {
+   "stop_id": "OOBUS826",
+   "stop_name": "Mandorah 826",
+   "stop_desc": "This stop is located at Mandorah on the Mandorah Jetty",
+   "stop_lat": -12.443,
+   "stop_lon": 130.768,
+   "zone_id": 2
+ },
+ {
+   "stop_id": "OOBUS827",
+   "stop_name": "Gurd 827",
+   "stop_desc": "This stop is located on Gurd St opposite Health Clinic",
+   "stop_lat": -12.47994,
+   "stop_lon": 130.990718,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS828",
+   "stop_name": "Conacher Street 828",
+   "stop_desc": "This stop is located on Conacher Street at the Arts Museum",
+   "stop_lat": -12.437098,
+   "stop_lon": 130.833423,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS829",
+   "stop_name": "Chung Wah 829",
+   "stop_desc": "This Stop is located on Chung Wah Terrace Gunn",
+   "stop_lat": -12.493344,
+   "stop_lon": 130.987422,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS830",
+   "stop_name": "Forrest Parade 830",
+   "stop_desc": "This stop is located on Forrest Parade Bellamack ",
+   "stop_lat": -12.513605,
+   "stop_lon": 130.986239,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS831",
+   "stop_name": "Forrest Parade 831",
+   "stop_desc": "This stop is located on the southern end of Forrest Parade in Bellamack",
+   "stop_lat": -12.51495,
+   "stop_lon": 130.980723,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS832",
+   "stop_name": "Flynn Circuit 832",
+   "stop_desc": "This stop is located at 133 Flynn Circuit ",
+   "stop_lat": -12.512772,
+   "stop_lon": 130.980612,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS833",
+   "stop_name": "Flynn Circuit 833",
+   "stop_desc": "This stop is located adjacent to the park on Flynn Circuit",
+   "stop_lat": -12.512456,
+   "stop_lon": 130.983477,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS834",
+   "stop_name": "Zuccoli 834",
+   "stop_desc": "This stop is located on Zuccoli Parade ",
+   "stop_lat": -12.504983,
+   "stop_lon": 131.008123,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS835",
+   "stop_name": "Zuccoli 835",
+   "stop_desc": "This stop is located on Zuccoli Parade ",
+   "stop_lat": -12.503413,
+   "stop_lon": 131.006732,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS841",
+   "stop_name": "Dawarra Crescent 841",
+   "stop_desc": "This stop is located adjacent to the northern-most park in Lyons",
+   "stop_lat": -12.352656,
+   "stop_lon": 130.88684,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS842",
+   "stop_name": "Limmen Street 842",
+   "stop_desc": "This stop is located on Limmen St opposite 3 Limmen Street",
+   "stop_lat": -12.382182,
+   "stop_lon": 130.884947,
+   "zone_id": 1
+ },
+ {
+   "stop_id": "OOBUS843",
+   "stop_name": "Lee Point Road 843",
+   "stop_desc": "This stop is located on Lee Point Road adjacent to Muirhead",
+   "stop_lat": -12.360111,
+   "stop_lon": 130.89125,
+   "zone_id": 1
+ }
+]

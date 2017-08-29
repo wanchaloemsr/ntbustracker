@@ -1,14 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 import { AgmPolyline, AgmMarker, PolylineManager } from '@agm/core';
 
+//json file require
+import { ShapesService } from '../shapes.service';
+
+
 @Component({
 	selector: 'app-map',
 	templateUrl: './map.component.html',
 	styleUrls: ['./map.component.css']
 })
+
 export class MapComponent implements OnInit {
 
+	shapes = [];
+	allStops = [];
+	routeShape = [];
+
 	title: string = 'My first AGM project';
+
+	iconUrl: string = './assets/icon/map-marker.png';
+	stopIconUrl: string = './assets/icon/bus-stop-sign.png';
 
 
 	lat: number = -12.483321;
@@ -21,6 +33,17 @@ export class MapComponent implements OnInit {
 
 	latitudeArray: number[] = [];
 	longitudeArray: number[] = [];
+
+		constructor(private _shapesService: ShapesService) { }
+
+	ngOnInit() {
+		this._shapesService.getShapes()
+			.subscribe(resShapesData => this.shapes = resShapesData)
+		this._shapesService.getStops()
+			.subscribe(resStopsData => this.allStops = resStopsData);
+		this._shapesService.getShapes()
+	}
+
 
 	//markers property
 	markers: Marker [] = [
@@ -38,21 +61,17 @@ export class MapComponent implements OnInit {
 	}
 	]
 
-	file: File;
-
-	reader = new FileReader();
-
 	changeListener($event) : void {
 		this.text = readThis($event.target);
 		console.log(this.text);
 	}
 
-	constructor() { }
 
+	  placeMarker($event){
+    console.log($event.coords.lat);
+    console.log($event.coords.lng);
+  }
 
-
-	ngOnInit() {
-	}
 
 	//listen to map zoom level
 	zoomChange(event){
@@ -61,6 +80,7 @@ export class MapComponent implements OnInit {
 	}
 
 }
+
 
 
 
@@ -92,4 +112,19 @@ interface Marker{
 	lat: number;
 	lng: number;
 	iconUrl: string;
+}
+
+function getShapesByID(shapesID: string, shapes: any){
+
+	var routeShape = [];
+
+	for (var i = shapes.length - 1; i >= 0; i--) {
+		if(shapes[i].shapes_id == 'i1_shp'){
+			console.log(shapes[i].shapes_id);
+			routeShape[i] == shapes[i];
+		}
+	}
+
+	return routeShape;
+
 }
