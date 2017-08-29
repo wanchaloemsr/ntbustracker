@@ -14,21 +14,17 @@
 
 		</agm-marker>
 
-		-->
-		
-		<agm-marker *ngFor= "let stop of allStops"
+	-->
+	<agm-marker *ngFor= "let stop of allStops" [latitude]="stop.stop_lat" [longitude]="stop.stop_lon" [iconUrl]= 'stopIconUrl' [title] = "stop.stop_desc" >
+	</agm-marker>
 
-		[latitude]="stop.stop_lat" [longitude]="stop.stop_lon" [iconUrl]= 'stopIconUrl' [title] = "stop.stop_desc" >
+<agm-polyline [title]="'Routes'">
+	<agm-polyline-point *ngFor= "let shape of aShape" [latitude]="shape.shape_pt_lat" [longitude]="shape.shape_pt_lon">
 
-		</agm-marker>
+	</agm-polyline-point>
 
-		<agm-polyline>
-			<agm-polyline-point *ngFor= "let shape of shapes" [latitude]="shape.shape_pt_lat" [longitude]="shape.shape_pt_lon">
-				
-			</agm-polyline-point>
 
-			
-		</agm-polyline>
+</agm-polyline>
 
 </agm-map>
 
@@ -36,10 +32,14 @@
 
 <h2>Test JSON Reader</h2>
 
-
-<ul *ngFor="let stop of allStops">
-<li>{{stop.stop_id}}</li>
-
-
-</ul>
+<div class="row">
+	<div class="col">
+		<div class="form-group">
+			<label for="exampleSelect1">Shape IDs</label>
+			<select class="form-control" [ngModel] = "selectedShapeID" (ngModelChange)="onChange($event)" placeholder="Password">
+				<option *ngFor="let shapeID of shapeIDs">{{shapeID.shape_id}}</option>
+			</select>
+		</div>
+	</div>
+</div>
 </div>

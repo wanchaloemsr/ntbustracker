@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { AgmPolyline, AgmMarker, PolylineManager } from '@agm/core';
 
 //json file require
-import { ShapesService } from '../shapes.service';
+import { DataService } from '../data.service';
 
 
 @Component({
@@ -14,35 +14,52 @@ import { ShapesService } from '../shapes.service';
 export class MapComponent implements OnInit {
 
 	shapes = [];
+	shapeIDs = [];
+	aShape = [];
 	allStops = [];
 	routeShape = [];
+
+	shapeID: any;
 
 	title: string = 'My first AGM project';
 
 	iconUrl: string = './assets/icon/map-marker.png';
-	stopIconUrl: string = './assets/icon/bus-stop-sign.png';
+	stopIconUrl: string = './assets/icon/bus-stop-sign-none.png';
 
 
-	lat: number = -12.483321;
-	lng: number = 130.997988;
-	zoom: number = 15;
+	lat: number = -12.479048;
+	lng: number = 130.987067;
+	zoom: number = 11;
 	minZoom:number = 11;
 	routeNumber: string = '10';
 
 	text:any;
 
+	selectedShapeID: string;
+	onChange(newValue) {
+		console.log(newValue);
+		this.selectedShapeID = newValue;
+		this._dataService.getShapeByID(newValue)
+		.subscribe(resShapesData => this.aShape = resShapesData);
+	}	
+
 	latitudeArray: number[] = [];
 	longitudeArray: number[] = [];
 
-		constructor(private _shapesService: ShapesService) { }
+	constructor(private _dataService: DataService) { }
 
 	ngOnInit() {
-		this._shapesService.getShapes()
-			.subscribe(resShapesData => this.shapes = resShapesData)
-		this._shapesService.getStops()
-			.subscribe(resStopsData => this.allStops = resStopsData);
-		this._shapesService.getShapes()
+		this._dataService.getShapeByID(this.selectedShapeID)
+		.subscribe(resShapesData => this.aShape = resShapesData);
+		this._dataService.getShapes()
+		.subscribe(resShapesData => this.shapes = resShapesData);
+		this._dataService.getShapeIDs()
+		.subscribe(resShapesData => this.shapeIDs = resShapesData);
+		this._dataService.getStops()
+		.subscribe(resStopsData => this.allStops = resStopsData);
+		
 	}
+
 
 
 	//markers property
@@ -67,21 +84,39 @@ export class MapComponent implements OnInit {
 	}
 
 
-	  placeMarker($event){
-    console.log($event.coords.lat);
-    console.log($event.coords.lng);
-  }
+	placeMarker($event){
+		console.log($event.coords.lat);
+		console.log($event.coords.lng);
+	}
 
 
 	//listen to map zoom level
 	zoomChange(event){
 		console.log(event);
+		if (event >= 15){
+			this.stopIconUrl = './assets/icon/bus-stop-sign.png';
+
+		}else if (event >= 13){
+			this.stopIconUrl = './assets/icon/bus-stop-sign-small.png';
+		}else{
+			this.stopIconUrl = './assets/icon/bus-stop-sign-none.png';
+		}
 
 	}
 
 }
 
-
+function remove_duplicates(arr) {
+	let obj = {};
+	for (let i = 0; i < arr.length; i++) {
+		obj[arr[i]] = true;
+	}
+	arr = [];
+	for (let key in obj) {
+		arr.push(key);
+	}
+	return arr;
+}
 
 
 //Show specific route function
@@ -91,21 +126,21 @@ function displayARoute(): void {
 
 
 //file reader
-	function readThis(inputValue: any) : any {
-		console.log(inputValue)
-		var file:File = inputValue.files[0]; 
-		var myReader:FileReader = new FileReader();
+function readThis(inputValue: any) : any {
+	console.log(inputValue)
+	var file:File = inputValue.files[0]; 
+	var myReader:FileReader = new FileReader();
 
-		myReader.onloadend = function(e){
-			// you can perform an action with readed data here
-			console.log(myReader.result);
-		}
-		//myReader.readAsBinaryString(file);
-
-		myReader.readAsText(file);
-		return myReader.result;
-
+	myReader.onloadend = function(e){
+		// you can perform an action with readed data here
+		console.log(myReader.result);
 	}
+	//myReader.readAsBinaryString(file);
+
+	myReader.readAsText(file);
+	return myReader.result;
+
+}
 
 interface Marker{
 	name?: string;
@@ -128,3 +163,4 @@ function getShapesByID(shapesID: string, shapes: any){
 	return routeShape;
 
 }
+

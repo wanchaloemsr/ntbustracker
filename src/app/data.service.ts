@@ -1,15 +1,16 @@
-import  { Injectable } from '@angular/core';
+import  { Injectable} from '@angular/core';
 import { Http, Response } from '@angular/http';
 import '../../node_modules/rxjs/add/operator/map';
 import {Observable} from '../../node_modules/rxjs/Observable';
 
 @Injectable()
-export class ShapesService{
+export class DataService{
 
 	shape = [];
 
 
 	private _url:string = "../assets/data/google-transit/shapes-json.json";
+	private _shape_id_url:string = "../assets/data/google-transit/shapes-id.json";
 	private _stopJSONUrl:string = "../assets/data/google-transit/stops.json";
 
 	constructor(private _http:Http){
@@ -21,8 +22,14 @@ export class ShapesService{
 					.map((response: Response) => response.json());
 	}
 
-	getShape(): Observable<Shape[]> {
+	getShapeByID(shape_id: string): Observable<Shape[]> {
 		return this._http.get(this._url)
+					.map((response: Response) => response.json()
+					.filter(item => item.shape_id === shape_id));
+	}
+
+	getShapeIDs(): Observable<ShapeID[]> {
+		return this._http.get(this._shape_id_url)
 					.map((response: Response) => response.json());
 	}
 
@@ -34,6 +41,7 @@ export class ShapesService{
 
 }
 
+
 export class Shape{
 
    shape_id: string;
@@ -41,5 +49,11 @@ export class Shape{
    shape_pt_lon: number;
    shape_pt_sequence: number;
    shape_dist_traveled: number;
+
+}
+
+export class ShapeID{
+
+   shape_id: string;
 
 }
