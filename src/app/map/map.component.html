@@ -4,7 +4,7 @@
 
 
 <div class="container">
-	<agm-map [latitude]="lat" [longitude]="lng" [zoom]='zoom' (zoomChange)="zoomChange($event)" [minZoom]="minZoom" (mapClick)="placeMarker($event)">
+	<agm-map [latitude]="lat" [longitude]="lng" [zoom]='zoom' [styles] = 'style' (zoomChange)="zoomChange($event)" [minZoom]="minZoom" (mapClick)="placeMarker($event)" [fullscreenControl]=true>
 		
 		<!--
 
@@ -15,17 +15,18 @@
 		</agm-marker>
 
 	-->
+	
 	<agm-marker *ngFor= "let stop of allStops" [latitude]="stop.stop_lat" [longitude]="stop.stop_lon" [iconUrl]= 'stopIconUrl' [title] = "stop.stop_desc" >
 	</agm-marker>
 
-<agm-polyline [title]="'Routes'">
-	<agm-polyline-point *ngFor= "let shape of aShape" [latitude]="shape.shape_pt_lat" [longitude]="shape.shape_pt_lon">
+	<agm-polyline [title]="'Routes'">
+		<agm-polyline-point *ngFor= "let shape of aShape" [latitude]="shape.shape_pt_lat" [longitude]="shape.shape_pt_lon">
 
-	</agm-polyline-point>
+		</agm-polyline-point>
 
 
-</agm-polyline>
-
+	</agm-polyline>
+	<button>AA</button>
 </agm-map>
 
 <input type="file" (change)="changeListener($event)">
@@ -42,4 +43,6 @@
 		</div>
 	</div>
 </div>
+
+
 </div>

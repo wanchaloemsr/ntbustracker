@@ -12,6 +12,7 @@ export class DataService{
 	private _url:string = "../assets/data/google-transit/shapes-json.json";
 	private _shape_id_url:string = "../assets/data/google-transit/shapes-id.json";
 	private _stopJSONUrl:string = "../assets/data/google-transit/stops.json";
+	private _key_shape_id_url:string = "../assets/data/google-transit/shape-keyed.json";
 
 	constructor(private _http:Http){
 
