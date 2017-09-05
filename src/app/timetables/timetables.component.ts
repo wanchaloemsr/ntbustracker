@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { DataService } from '../data.service';
+
 @Component({
   selector: 'app-timetables',
   templateUrl: './timetables.component.html',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimetablesComponent implements OnInit {
 
-  constructor() { }
+	tripByID = [];
+	allRoutes = [];
+
+  constructor(private _dataService: DataService) { }
 
   ngOnInit() {
+  		this._dataService.getTripByRouteID('1')
+		.subscribe(resShapesData => this.tripByID = resShapesData);
+		this._dataService.getAllRoutes()
+		.subscribe(resShapesData => this.allRoutes = resShapesData);
+
   }
 
 }

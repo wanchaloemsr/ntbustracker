@@ -1,3 +1,12 @@
-<p>
-  timetables works!
-</p>
+<div class="container">
+	<div class="list-group">
+		<button type="button" class="list-group-item list-group-item-action" *ngFor="let route of allRoutes">
+			Route: {{route.route_id}} - {{route.route_long_name}} {{route.route_desc}}
+		</button>
+	</div>
+	
+</div>
+
+
+
+

@@ -17,7 +17,15 @@ export class MapComponent implements OnInit {
 	shapeIDs = [];
 	aShape = [];
 	allStops = [];
+	interchangeList = [];
 	routeShape = [];
+	zindex = 10000;
+
+	location = {};
+
+	stopZoomLevel = false;
+
+	mapStyle = [];
 
 	shapeID: any;
 
@@ -25,6 +33,7 @@ export class MapComponent implements OnInit {
 
 	iconUrl: string = './assets/icon/map-marker.png';
 	stopIconUrl: string = './assets/icon/bus-stop-sign-none.png';
+	interchangeIconUrl: string = './assets/icon/interchange-icon-lg.png';
 
 
 	lat: number = -12.479048;
@@ -42,6 +51,7 @@ export class MapComponent implements OnInit {
 		this.selectedShapeID = newValue;
 		this._dataService.getShapeByID(newValue)
 		.subscribe(resShapesData => this.aShape = resShapesData);
+		console.log(this.zindex);
 	}	
 
 
@@ -60,342 +70,17 @@ export class MapComponent implements OnInit {
 		.subscribe(resShapesData => this.shapeIDs = resShapesData);
 		this._dataService.getStops()
 		.subscribe(resStopsData => this.allStops = resStopsData);
+		this._dataService.getInterchanges()
+		.subscribe(resStopsData => this.interchangeList = resStopsData);
+		this._dataService.getMapStyle()
+		.subscribe(resStopsData => this.mapStyle = resStopsData);
+
+		
 		
 	}
 
 	//Map Style
-	style = [
-    {
-        "featureType": "administrative",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#6195a0"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.province",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative.land_parcel",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "lightness": "0"
-            },
-            {
-                "saturation": "0"
-            },
-            {
-                "color": "#f5f5f2"
-            },
-            {
-                "gamma": "1"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape.man_made",
-        "elementType": "all",
-        "stylers": [
-            {
-                "lightness": "-3"
-            },
-            {
-                "gamma": "1.00"
-            },
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape.natural.landcover",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "landscape.natural.terrain",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "poi.park",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#bae5ce"
-            },
-            {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "road",
-        "elementType": "all",
-        "stylers": [
-            {
-                "saturation": -100
-            },
-            {
-                "lightness": 45
-            },
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#fff0b1"
-            },
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "labels.text",
-        "stylers": [
-            {
-                "color": "#4e4e4e"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "saturation": "-99"
-            },
-            {
-                "lightness": "-100"
-            },
-            {
-                "gamma": "5.09"
-            },
-            {
-                "weight": "1.22"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "saturation": "-34"
-            },
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#787878"
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "simplified"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.line",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.station.airport",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "hue": "#0a00ff"
-            },
-            {
-                "saturation": "-77"
-            },
-            {
-                "gamma": "0.57"
-            },
-            {
-                "lightness": "0"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.station.bus",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.station.rail",
-        "elementType": "all",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.station.rail",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "color": "#43321e"
-            }
-        ]
-    },
-    {
-        "featureType": "transit.station.rail",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "hue": "#ff6c00"
-            },
-            {
-                "lightness": "4"
-            },
-            {
-                "gamma": "0.75"
-            },
-            {
-                "saturation": "-68"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "all",
-        "stylers": [
-            {
-                "color": "#eaf6f8"
-            },
-            {
-                "visibility": "on"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#c7eced"
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "lightness": "-49"
-            },
-            {
-                "saturation": "-53"
-            },
-            {
-                "gamma": "0.79"
-            }
-        ]
-    }
-]
+
 
 	//markers property
 	markers: Marker [] = [
@@ -425,16 +110,26 @@ export class MapComponent implements OnInit {
 	}
 
 
-	//listen to map zoom level
+	//listen to map zoom level and change stop signs size
 	zoomChange(event){
 		console.log(event);
-		if (event >= 15){
-			this.stopIconUrl = './assets/icon/bus-stop-sign.png';
+		if (event >= 17){
+			this.stopIconUrl = './assets/icon/bus-stop-lg.png';
+			this.interchangeIconUrl = './assets/icon/interchange-icon-lg.png';
+			this.stopZoomLevel = true;
+
+		}else if (event >= 15){
+			this.stopIconUrl = './assets/icon/bus-stop-md.png';
+			this.interchangeIconUrl = './assets/icon/interchange-icon-md.png';
+			this.stopZoomLevel = true;
 
 		}else if (event >= 13){
-			this.stopIconUrl = './assets/icon/bus-stop-sign-small.png';
+			this.stopIconUrl = './assets/icon/bus-stop-sm.png';
+			this.interchangeIconUrl = './assets/icon/interchange-icon-md.png';
+			this.stopZoomLevel = true;
 		}else{
-			this.stopIconUrl = './assets/icon/bus-stop-sign-none.png';
+			this.stopZoomLevel = false;
+			this.interchangeIconUrl = './assets/icon/interchange-icon-lg.png';
 		}
 
 	}

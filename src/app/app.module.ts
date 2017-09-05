@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http'
 import { RouterModule, Routes } from '@angular/router';
 
 import { AgmCoreModule } from '@agm/core';
+import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 
 import { AppComponent } from './app.component';
 import { routing } from './app.routing'
@@ -41,7 +42,8 @@ const appRoutes: Routes = [
     routing,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBfiDo0zbigHQFKKir0U6SkBT238M0m3V8'
-    })
+    }),
+    AgmSnazzyInfoWindowModule
   ],
   providers: [],
   bootstrap: [AppComponent]
