@@ -1,0 +1,86 @@
+[
+  {
+    "service_id": "FULLW",
+    "monday": 1,
+    "tuesday": 1,
+    "wednesday": 1,
+    "thursday": 1,
+    "friday": 1,
+    "saturday": 0,
+    "sunday": 0,
+    "start_date": 20161219,
+    "end_date": 20171231
+  },
+  {
+    "service_id": "FULLWT",
+    "monday": 0,
+    "tuesday": 0,
+    "wednesday": 0,
+    "thursday": 1,
+    "friday": 0,
+    "saturday": 0,
+    "sunday": 0,
+    "start_date": 20161219,
+    "end_date": 20171231
+  },
+  {
+    "service_id": "FULLWTM",
+    "monday": 0,
+    "tuesday": 0,
+    "wednesday": 0,
+    "thursday": 1,
+    "friday": 0,
+    "saturday": 0,
+    "sunday": 0,
+    "start_date": 20170427,
+    "end_date": 20171026
+  },
+  {
+    "service_id": "FULLWF",
+    "monday": 0,
+    "tuesday": 0,
+    "wednesday": 0,
+    "thursday": 0,
+    "friday": 1,
+    "saturday": 0,
+    "sunday": 0,
+    "start_date": 20161219,
+    "end_date": 20171231
+  },
+  {
+    "service_id": "WESA",
+    "monday": 0,
+    "tuesday": 0,
+    "wednesday": 0,
+    "thursday": 0,
+    "friday": 0,
+    "saturday": 1,
+    "sunday": 0,
+    "start_date": 20161219,
+    "end_date": 20171231
+  },
+  {
+    "service_id": "WESAN",
+    "monday": 0,
+    "tuesday": 0,
+    "wednesday": 0,
+    "thursday": 0,
+    "friday": 0,
+    "saturday": 1,
+    "sunday": 0,
+    "start_date": 20161219,
+    "end_date": 20171231
+  },
+  {
+    "service_id": "WESU",
+    "monday": 0,
+    "tuesday": 0,
+    "wednesday": 0,
+    "thursday": 0,
+    "friday": 0,
+    "saturday": 0,
+    "sunday": 1,
+    "start_date": 20161219,
+    "end_date": 20171231
+  }
+]

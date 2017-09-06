@@ -1,32 +1,35 @@
-<agm-map [latitude]="lat" [longitude]="lng" [zoom]='zoom' [styles] = 'mapStyle' (zoomChange)="zoomChange($event)" [minZoom]="minZoom" (mapClick)="placeMarker($event)" [fullscreenControl]=true [mapTypeControl] = true [streetViewControl] = false>
+<div class="container-fluid">
+	<agm-map [latitude]="lat" [longitude]="lng" [zoom]='zoom' [styles] = 'mapStyle' (zoomChange)="zoomChange($event)" [minZoom]="minZoom" (mapClick)="placeMarker($event)" [fullscreenControl]=true [mapTypeControl] = true [streetViewControl] = false>
 
-	<!-- Draw Stop and interchanges -->
-	<div *ngIf="stopZoomLevel">
-		<agm-marker *ngFor= "let stop of allStops" [latitude]="stop.stop_lat" [longitude]="stop.stop_lon" [iconUrl]= 'stopIconUrl' [title] = "stop.stop_desc" >
-			<agm-snazzy-info-window [maxWidth]="300" [closeWhenOthersOpen]="true" [backgroundColor]="red">
-			<ng-template>
-				<h3>{{stop.stop_name}}</h3>
-				{{stop.stop_desc}}
-			</ng-template>
-		</agm-snazzy-info-window>
+		<!-- Draw Stop and interchanges -->
+		<div *ngIf="stopZoomLevel">
+			<agm-marker *ngFor= "let stop of allStops" [latitude]="stop.stop_lat" [longitude]="stop.stop_lon" [iconUrl]= 'stopIconUrl' [title] = "stop.stop_id" >
+				<agm-snazzy-info-window [maxWidth]="300" [closeWhenOthersOpen]="true" [backgroundColor]="red">
+					<ng-template>
+						<h3>{{stop.stop_name}}</h3>
+						{{stop.stop_desc}}
+					</ng-template>
+				</agm-snazzy-info-window>
+			</agm-marker>
+		</div>
+
+		<agm-marker *ngFor= "let int of interchangeList" [latitude]="int.interchange_lat" [longitude]="int.interchange_lon" [iconUrl]= 'interchangeIconUrl' [title] = "int.interchange_desc" [zIndex]='zindex'>
+			<agm-snazzy-info-window [maxWidth]="400" [closeWhenOthersOpen]="true" [backgroundColor]="red">
+				<ng-template>
+					<h3>{{int.interchange_name}}</h3>
+					{{int.interchange_desc}}
+				</ng-template>
+			</agm-snazzy-info-window>
 		</agm-marker>
-	</div>
 
-	<agm-marker *ngFor= "let int of interchangeList" [latitude]="int.interchange_lat" [longitude]="int.interchange_lon" [iconUrl]= 'interchangeIconUrl' [title] = "int.interchange_desc" [zIndex]='zindex'>
-		<agm-snazzy-info-window [maxWidth]="400" [closeWhenOthersOpen]="true" [backgroundColor]="red">
-			<ng-template>
-				<h3>{{int.interchange_name}}</h3>
-				{{int.interchange_desc}}
-			</ng-template>
-		</agm-snazzy-info-window>
-	</agm-marker>
+		<agm-polyline [title]="'Routes'" [zIndex]='zindex'>
+			<agm-polyline-point *ngFor= "let shape of aShape" [latitude]="shape.shape_pt_lat" [longitude]="shape.shape_pt_lon">
+				
+			</agm-polyline-point>
+		</agm-polyline>
+	</agm-map>
+</div>
 
-	<agm-polyline [title]="'Routes'" [zIndex]='zindex'>
-		<agm-polyline-point *ngFor= "let shape of aShape" [latitude]="shape.shape_pt_lat" [longitude]="shape.shape_pt_lon">
-			
-		</agm-polyline-point>
-	</agm-polyline>
-</agm-map>
 
 
 <div class="container">

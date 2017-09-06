@@ -1,12 +1,46 @@
+
 <div class="container">
-	<div class="list-group">
-		<button type="button" class="list-group-item list-group-item-action" *ngFor="let route of allRoutes">
-			Route: {{route.route_id}} - {{route.route_long_name}} {{route.route_desc}}
-		</button>
+	<div class="row">
+		<div class="col">
+			<div class="form-group">
+				<hr>
+				<label for="search">Search:</label>
+			<select class="form-control form-control" [(ngModel)] = "searchFilter" >
+				<option>Route Number</option>
+				<option>Stop Number</option>
+				<option>Origin</option>
+				<option>Destination</option>
+				<option>Street Name</option>
+			</select>
+			<hr>
+			<input *ngIf = "searchFilter == 'Route Number'" id="search field" type="text" class="form-control" aria-label="Search Field" placeholder="Route Number" [(ngModel)]="searchtext" (input)="searchFromInput()"/>
+			</div>
+			
+			
+		</div>
+		<div class="col-md-8">
+			<ngb-accordion #acc="ngbAccordion" [closeOthers]="true">
+
+				<div *ngIf = "searchtext ==''; else searchResult ">
+					<ngb-panel *ngFor="let route of allRoutes" title="Route: {{route.route_id}} - {{route.route_long_name}} {{route.route_desc}}">
+						<ng-template ngbPanelContent>
+							<route [route_id] = "route.route_id"></route>
+						</ng-template>
+					</ngb-panel>
+				</div>
+				<ng-template #searchResult>
+					<label for="search">Search:</label>
+					<ngb-panel *ngFor="let route of searchRoutes" title="Route: {{route.route_id}} - {{route.route_long_name}} {{route.route_desc}}">
+						<ng-template ngbPanelContent>
+							<route [route_id] = "route.route_id"></route>
+						</ng-template>
+					</ngb-panel>
+				</ng-template>
+
+				
+			</ngb-accordion>
+		</div>
+
 	</div>
-	
+
 </div>
-
-
-
-

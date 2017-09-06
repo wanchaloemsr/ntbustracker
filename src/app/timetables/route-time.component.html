@@ -1,0 +1,65 @@
+<!--
+<ngb-accordion [closeOthers]="true">
+	<div *ngFor = "let trip of tripStopTime ; let i = index">
+		<ngb-panel *ngIf = "i == 0" title="Departure time: {{trip.departure_time}}" (click)="departTimeClick($event)">
+			<ng-template ngbPanelContent>
+			</ng-template>
+		</ngb-panel>
+	</div>
+
+</ngb-accordion>
+
+<p>
+	<button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
+	[attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+		Toggle
+	</button>
+</p>
+<div id="collapseExample" [ngbCollapse]="isCollapsed">
+	<div class="card">
+		<div class="card-body">
+			<ng-template #content let-c="close" let-d="dismiss">
+				<div class="modal-header">
+					<h4 class="modal-title">Modal title</h4>
+					<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>One fine body&hellip;</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+				</div>
+			</ng-template>
+
+			<div *ngFor = "let trip of tripStopTime ; let i = index">
+				<button class="row top-buffer" *ngIf = "i == 0" class="btn btn-outline-primary" (click)="open(content)">{{i}}. Depart At: {{trip.departure_time}}</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+-->
+		<div class="card">
+			<div class="card-body">
+				<ng-template #content let-c="close" let-d="dismiss">
+					<div class="modal-header">
+						<h4 class="modal-title">Modal title</h4>
+						<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div *ngFor ="let stopList of stopTimeListById" class="modal-body">
+						<li>{{stopList.stop_sequence}}. estimate arrival time at {{stopList.stop_id}}: {{stopList.arrival_time}}</li>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+					</div>
+				</ng-template>
+
+				<div *ngFor = "let trip of tripStopTime ; let i = index">
+					<button class="row top-buffer" *ngIf = "i == 0" class="btn btn-outline-primary" (click)="open(content, trip.trip_id)">Depart At: {{trip.departure_time}}</button>
+				</div>
+			</div>
+		</div>

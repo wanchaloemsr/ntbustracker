@@ -18,6 +18,8 @@ export class DataService{
 
 	private _trip_url: string = "../assets/data/google-transit/trips.json";
 	private _routes_url: string = "../assets/data/google-transit/routes.json";
+	private _stopTime_url: string = "../assets/data/google-transit/stop-time.json";
+	private _calender_url: string = "../assets/data/google-transit/calender.json";
 
 	constructor(private _http:Http){
 
@@ -70,6 +72,28 @@ export class DataService{
 					.map((response: Response) => response.json());
 	}
 
+	getRouteByID(route_id: string): Observable<Routes[]>{
+		return this._http.get(this._routes_url)
+					.map((response: Response) => response.json()
+					.filter(item => item.route_id === route_id));
+	}
+
+	getStopTimeByTripId(trip_id: string): Observable<StopTime[]>{
+		return this._http.get(this._stopTime_url)
+					.map((response: Response) => response.json()
+					.filter(item => item.trip_id === trip_id));
+	}
+
+	getAllCalender(){
+		return this._http.get(this._calender_url)
+					.map((response: Response) => response.json());
+	}
+
+	getCalenderByServiceId(service_id: string): Observable<Calender[]>{
+		return this._http.get(this._calender_url)
+					.map((response: Response) => response.json()
+					.filter(item => item.service_id === service_id));
+	}
 
 }
 
@@ -103,6 +127,7 @@ export class Trip{
 }
 
 export class Routes{
+
 	route_id: string;
 	agency_id: string;
 	route_short_name: string;
@@ -112,5 +137,34 @@ export class Routes{
 	route_url: string;
 	route_color: string;
 	route_text_color: string;
+
+}
+
+export class StopTime{
+
+	trip_id: string;
+	arrival_time: string;
+	departure_time: string;
+	stop_id: string;
+	stop_sequence: number;
+	stop_headsign: string;
+	pickup_type: string;
+	drop_off_type: string;
+	shape_dist_traveled: string;
+
+}
+
+export class Calender{
+
+	service_id: string;
+	monday: number;
+	tuesday: number;
+	wednesday: number;
+	thursday: number;
+	friday: number;
+	saturday: number;
+	sunday: number;
+	start_date: string;
+	end_date: string;
 
 }

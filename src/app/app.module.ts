@@ -4,18 +4,23 @@ import { FormsModule } from '@angular/forms'
 import { HttpModule } from '@angular/http'
 import { RouterModule, Routes } from '@angular/router';
 
+
 import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
 
 import { AppComponent } from './app.component';
-import { routing } from './app.routing'
+import { routing } from './app.routing';
+
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { FavouritesComponent } from './favourites/favourites.component';
 import { HeaderComponent } from './header.component';
 import { MapComponent } from './map/map.component';
 import { TimetablesComponent } from './timetables/timetables.component';
+import { RouteComponent } from './timetables/route.component';
+import { RouteTimeComponent } from './timetables/route-time.component';
 import { SearchComponent } from './search/search.component';
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
 
 /*
 const appRoutes: Routes = [
@@ -23,6 +28,7 @@ const appRoutes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 */
+
 
 @NgModule({
   declarations: [
@@ -33,6 +39,8 @@ const appRoutes: Routes = [
     TimetablesComponent,
     SearchComponent,
     HomeComponent,
+    RouteComponent,
+    RouteTimeComponent
 
   ],
   imports: [
@@ -43,7 +51,8 @@ const appRoutes: Routes = [
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyBfiDo0zbigHQFKKir0U6SkBT238M0m3V8'
     }),
-    AgmSnazzyInfoWindowModule
+    AgmSnazzyInfoWindowModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
