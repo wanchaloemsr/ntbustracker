@@ -49,8 +49,14 @@
 							<span aria-hidden="true">&times;</span>
 						</button>
 					</div>
-					<div *ngFor ="let stopList of stopTimeListById" class="modal-body">
-						<li>{{stopList.stop_sequence}}. Estimate arrival time at {{stopList.stop_id}}: {{stopList.arrival_time}}</li>
+					<div class="modal-body">
+						<ul *ngFor ="let stopList of stopTimeListById" class="list-group">
+							<li class="list-group-item">
+							<p>Stop <span class="badge badge-pill badge-dark">{{stopList.stop_sequence}}</span> Estimate arrival time: {{stopList.arrival_time}}</p>
+							<small>Stop Number: {{stopList.stop_id}}</small></li>
+
+						</ul>
+						
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
