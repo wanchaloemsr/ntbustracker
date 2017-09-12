@@ -41,8 +41,7 @@
 </div>
 
 -->
-		<div class="card">
-			<div class="card-body">
+
 				<ng-template #content let-c="close" let-d="dismiss">
 					<div class="modal-header">
 						<h4 class="modal-title">Modal title</h4>
@@ -51,15 +50,12 @@
 						</button>
 					</div>
 					<div *ngFor ="let stopList of stopTimeListById" class="modal-body">
-						<li>{{stopList.stop_sequence}}. estimate arrival time at {{stopList.stop_id}}: {{stopList.arrival_time}}</li>
+						<li>{{stopList.stop_sequence}}. Estimate arrival time at {{stopList.stop_id}}: {{stopList.arrival_time}}</li>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
 					</div>
 				</ng-template>
-
-				<div *ngFor = "let trip of tripStopTime ; let i = index">
-					<button class="row top-buffer" *ngIf = "i == 0" class="btn btn-outline-primary" (click)="open(content, trip.trip_id)">Depart At: {{trip.departure_time}}</button>
+				<div class="btn-noborder" *ngFor = "let trip of stopTimeListById ; let i = index">
+					<li class="top-buffer list-group-item list-group-item-action" *ngIf = "i == 0"  (click)="open(content, trip.trip_id)"><span class="badge badge-dark">{{a_trip_id}}</span> departure time {{trip.departure_time}} to {{trip_headsign}}</li>
 				</div>
-			</div>
-		</div>

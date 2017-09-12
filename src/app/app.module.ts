@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms'
 import { HttpModule } from '@angular/http'
 import { RouterModule, Routes } from '@angular/router';
 
+import { DevExtremeModule } from 'devextreme-angular';
 
 import { AgmCoreModule } from '@agm/core';
 import { AgmSnazzyInfoWindowModule } from '@agm/snazzy-info-window';
@@ -52,7 +53,8 @@ const appRoutes: Routes = [
       apiKey: 'AIzaSyBfiDo0zbigHQFKKir0U6SkBT238M0m3V8'
     }),
     AgmSnazzyInfoWindowModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    DevExtremeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -84,6 +84,11 @@ export class DataService{
 					.filter(item => item.trip_id === trip_id));
 	}
 
+	getAllStopTime(): Observable<StopTime[]>{
+		return this._http.get(this._stopTime_url)
+					.map((response: Response) => response.json());
+	}
+
 	getAllCalender(){
 		return this._http.get(this._calender_url)
 					.map((response: Response) => response.json());

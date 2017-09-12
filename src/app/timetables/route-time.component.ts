@@ -3,50 +3,63 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 import { DataService } from '../data.service';
 
+
 @Component({
   selector: 'route-time',
   templateUrl: './route-time.component.html',
-  styles: ['.top-buffer { margin-top:20px; }']
+  styles: ['.agm-map {height: 450px;}']
 })
 
 export class RouteTimeComponent implements OnInit{
 
 
 	@Input() trip_id: string;
-  @Input() trip: Trip[];
+  @Input() trip_headsign: string;
+  @Input() stopTimeList: StopTime[];
+
 
   public isCollapsed = true;
   tripStopTime = [];
-  stopTimeListById =[];
-  calenderList: Calender[];
-  calenderById: Calender[];
+
+  stopTimeListById: StopTime[];
+  modalStopTimeListById: StopTime[];
 
   closeResult: string;
 
+  a_trip_array = [];
+  a_trip_id: string;
 
   constructor(private _dataService: DataService, private modalService: NgbModal) { }
 
   ngOnInit(){
 
-    this._dataService.getStopTimeByTripId(this.trip_id)
-    .subscribe(resData => this.tripStopTime = resData);
-    this._dataService.getAllCalender()
-    .subscribe(resData => this.calenderList = resData);
+    this.stopTimeListById = this.stopTimeList.filter(item => item.trip_id === this.trip_id);
+    this.setATrip();
 
   }
 
+  setATrip(){
+    this.a_trip_array = this.trip_id.split("_", 1);
+    for(let item of this.a_trip_array){
+
+      this.a_trip_id = item;
+
+    }
+    this.a_trip_id = this.a_trip_id.slice(1, 3);
+    console.log("Atrip : " + this.a_trip_id);
+  }
+
   open(content, trip_id) {
+
     this.modalService.open(content).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
       this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
     });
-    this._dataService.getStopTimeByTripId(trip_id)
-    .subscribe(resData => this.stopTimeListById = resData);
 
-    for(let trip of this.trip){
-      console.log(trip.trip_id);
-    }
+    this.modalStopTimeListById = this.stopTimeListById;
+    
+
   }
 
   private getDismissReason(reason: any): string {
@@ -58,6 +71,8 @@ export class RouteTimeComponent implements OnInit{
       return  `with: ${reason}`;
     }
   }
+
+
 
   departTimeClick(){
     console.log('is click');
@@ -90,5 +105,19 @@ export class Calender{
   sunday: number;
   start_date: string;
   end_date: string;
+
+}
+
+export class StopTime{
+
+  trip_id: string;
+  arrival_time: string;
+  departure_time: string;
+  stop_id: string;
+  stop_sequence: number;
+  stop_headsign: string;
+  pickup_type: string;
+  drop_off_type: string;
+  shape_dist_traveled: string;
 
 }

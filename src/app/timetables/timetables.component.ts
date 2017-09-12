@@ -14,25 +14,42 @@ import { DataService } from '../data.service';
 export class TimetablesComponent implements OnInit {
 
 	searchtext = '';
-	tripByID = [];
 	allRoutes = [];
 	searchRoutes: Routes[] = [];
 	route_id: string;
+	allTrips = [];
+
+	stopTimeList= [];
+	calender = [];
 
 
 	constructor(private _dataService: DataService) { }
 
 	ngOnInit() {
-		this._dataService.getTripByRouteID('1')
-		.subscribe(resShapesData => this.tripByID = resShapesData);
+
 		this._dataService.getAllRoutes()
 		.subscribe(resShapesData => this.allRoutes = resShapesData);
+		this._dataService.getAllStopTime()
+		.subscribe(resShapesData => {this.stopTimeList = resShapesData}
+			, err => {console.log('Something went wrong!')});
+		console.log(this.allRoutes.length);
+
+		this._dataService.getAllTrip()
+		.subscribe(resShapesData => this.allTrips = resShapesData);
+
+
+    this._dataService.getAllCalender()
+      .subscribe(resData => this.calender = resData);
+
+
+
 
 	}
 
 	onSelect(route_id: string){
 		this.route_id = route_id;
 		console.log(this.route_id);
+
 	}
 
 	searchFromInput(){
@@ -83,5 +100,19 @@ export class Routes{
 	route_url: string;
 	route_color: string;
 	route_text_color: string;
+
+}
+
+export class StopTime{
+
+	trip_id: string;
+	arrival_time: string;
+	departure_time: string;
+	stop_id: string;
+	stop_sequence: number;
+	stop_headsign: string;
+	pickup_type: string;
+	drop_off_type: string;
+	shape_dist_traveled: string;
 
 }

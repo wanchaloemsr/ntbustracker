@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 html {
-  overflow-y: scroll;
 }
 
 h1{
@@ -9,6 +8,6 @@ h1{
 }
 
 body {
-  min-height: 75rem;
   padding-top: 4.5rem;
+
 }
