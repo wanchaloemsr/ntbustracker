@@ -20,6 +20,9 @@ import { RouteComponent } from './timetables/route.component';
 import { RouteTimeComponent } from './timetables/route-time.component';
 import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
+import { MaprouteComponent } from './maproute/maproute.component';
+
+import { UiSwitchModule } from '../../node_modules/angular2-ui-switch';
 
 /*
 const appRoutes: Routes = [
@@ -39,7 +42,8 @@ const appRoutes: Routes = [
     SearchComponent,
     HomeComponent,
     RouteComponent,
-    RouteTimeComponent
+    RouteTimeComponent,
+    MaprouteComponent
 
   ],
   imports: [
@@ -51,7 +55,8 @@ const appRoutes: Routes = [
       apiKey: 'AIzaSyBfiDo0zbigHQFKKir0U6SkBT238M0m3V8'
     }),
     AgmSnazzyInfoWindowModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    UiSwitchModule
   ],
   providers: [],
   bootstrap: [AppComponent]

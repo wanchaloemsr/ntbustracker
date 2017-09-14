@@ -3,6 +3,11 @@ import { Component, OnInit } from '@angular/core';
 
 import { DataService } from '../data.service';
 
+import {Observable} from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/debounceTime';
+import 'rxjs/add/operator/distinctUntilChanged';
+
 
 @Component({
 	selector: 'app-timetables',
@@ -11,16 +16,40 @@ import { DataService } from '../data.service';
 })
 
 
+
 export class TimetablesComponent implements OnInit {
 
 	searchtext = '';
 	allRoutes = [];
 	searchRoutes: Routes[] = [];
+	routeNumberArray = [];
 	route_id: string;
 	allTrips = [];
 
 	stopTimeList= [];
+
+	stopIdResult: string;
+	tripIdToRouteId: string;
+	stopNumberResult: StopTime[];
+
 	calender = [];
+
+	allShapes= [];
+
+
+
+	searchCount: number;
+
+	public model: any;
+
+  	formatter = (result: string) => result.toUpperCase();
+
+  	search = (text$: Observable<string>) =>
+    text$
+      .debounceTime(200)
+      .distinctUntilChanged()
+      .map(term => term === '' ? []
+        : this.routeNumberArray.filter(v => v.indexOf(term.toLowerCase()) > -1).slice(0, 10));
 
 
 	constructor(private _dataService: DataService) { }
@@ -29,10 +58,13 @@ export class TimetablesComponent implements OnInit {
 
 		this._dataService.getAllRoutes()
 		.subscribe(resShapesData => this.allRoutes = resShapesData);
+		console.log("All List: " + this.allRoutes.length);
+
+
 		this._dataService.getAllStopTime()
 		.subscribe(resShapesData => {this.stopTimeList = resShapesData}
 			, err => {console.log('Something went wrong!')});
-		console.log(this.allRoutes.length);
+		console.log("Stop List: " + this.stopTimeList.length);
 
 		this._dataService.getAllTrip()
 		.subscribe(resShapesData => this.allTrips = resShapesData);
@@ -40,7 +72,6 @@ export class TimetablesComponent implements OnInit {
 
     this._dataService.getAllCalender()
       .subscribe(resData => this.calender = resData);
-
 
 
 
@@ -52,17 +83,45 @@ export class TimetablesComponent implements OnInit {
 
 	}
 
-	searchFromInput(){
+	searchFromRouteNumber(){
 
 		this.searchRoutes = [];
+		this.routeNumberArray = [];
+		this.searchCount = 0;
 
 		for(let route of this.allRoutes){
 
 			if(route.route_id.search(this.searchtext) > -1){
 				console.log(route.route_id);
 				this.searchRoutes.push(route);
+				this.searchCount ++;
+				this.routeNumberArray.push(route.route_id);
 			}
 		}
+	}
+
+	searchFromStopNumber(){
+
+		this.stopNumberResult = [];
+
+
+		for(let stopList of this.stopTimeList){
+
+			if(stopList.stop_id.search(this.searchtext)> -1){
+
+				console.log(stopList.trip_id.slice(1, -2));
+
+				if(this.stopIdResult != stopList.trip_id.slice(1, -3)){
+					this.stopNumberResult.push(stopList);
+					this.stopIdResult == stopList.trip_id.slice(1, -3);
+				}
+
+
+			}
+		}
+		console.log("S Stop Num: " + this.stopNumberResult.length);
+		console.log("Stop List: " + this.stopTimeList.length);
+
 	}
 
 }

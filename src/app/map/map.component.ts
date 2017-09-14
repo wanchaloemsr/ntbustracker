@@ -39,7 +39,7 @@ export class MapComponent implements OnInit {
 	lat: number = -12.479048;
 	lng: number = 130.987067;
 	zoom: number = 11;
-	minZoom:number = 11;
+	minZoom:number = 10;
 	routeNumber: string = '10';
 
 	text:any;
@@ -78,25 +78,6 @@ export class MapComponent implements OnInit {
 		
 		
 	}
-
-	//Map Style
-
-
-	//markers property
-	markers: Marker [] = [
-	{
-		name: 'Here',
-		lat: -12.483321,
-		lng: 130.997988,
-		iconUrl:'./assets/icon/map-marker.png'
-	},
-	{
-		name: '2',
-		lat: -12.37546,
-		lng: 130.90056,
-		iconUrl:'./assets/icon/map-marker.png'
-	}
-	]
 
 	changeListener($event) : void {
 		this.text = readThis($event.target);

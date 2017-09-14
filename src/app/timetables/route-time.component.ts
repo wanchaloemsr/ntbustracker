@@ -16,6 +16,7 @@ export class RouteTimeComponent implements OnInit{
 	@Input() trip_id: string;
   @Input() trip_headsign: string;
   @Input() stopTimeList: StopTime[];
+  @Input() shape_id: string;
 
 
   public isCollapsed = true;
@@ -25,6 +26,10 @@ export class RouteTimeComponent implements OnInit{
   modalStopTimeListById: StopTime[];
 
   closeResult: string;
+
+  enable = false;
+
+  allShapes = [];
 
   a_trip_array = [];
   a_trip_id: string;
@@ -36,6 +41,12 @@ export class RouteTimeComponent implements OnInit{
     this.stopTimeListById = this.stopTimeList.filter(item => item.trip_id === this.trip_id);
     this.setATrip();
 
+
+  }
+
+  onChange(even){
+    console.log("Event " + even);
+    console.log(this.enable);
   }
 
   setATrip(){

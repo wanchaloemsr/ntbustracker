@@ -1,5 +1,6 @@
 <div class="container-fluid">
-	<agm-map [latitude]="lat" [longitude]="lng" [zoom]='zoom' [styles] = 'mapStyle' (zoomChange)="zoomChange($event)" [minZoom]="minZoom" (mapClick)="placeMarker($event)" [fullscreenControl]=true [mapTypeControl] = true [streetViewControl] = false>
+	<agm-map [latitude]="lat" [longitude]="lng" [zoom]='zoom' [styles] = 'mapStyle' 
+	(zoomChange)="zoomChange($event)" [minZoom]="minZoom" (mapClick)="placeMarker($event)" [fullscreenControl]=true [mapTypeControl] = true [streetViewControl] = false>
 
 		<!-- Draw Stop and interchanges -->
 		<div *ngIf="stopZoomLevel">

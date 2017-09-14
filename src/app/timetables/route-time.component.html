@@ -1,67 +1,72 @@
-<!--
-<ngb-accordion [closeOthers]="true">
-	<div *ngFor = "let trip of tripStopTime ; let i = index">
-		<ngb-panel *ngIf = "i == 0" title="Departure time: {{trip.departure_time}}" (click)="departTimeClick($event)">
-			<ng-template ngbPanelContent>
-			</ng-template>
-		</ngb-panel>
+<ng-template #content let-c="close" let-d="dismiss">
+	<div class="modal-header">
+		<h4 class="modal-title">Modal title</h4>
+		<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+			<span aria-hidden="true">&times;</span>
+		</button>
 	</div>
+	<div class="modal-body">
 
-</ngb-accordion>
+<!-- 		
+		<div class="row">
 
-<p>
-	<button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
-	[attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
-		Toggle
-	</button>
-</p>
-<div id="collapseExample" [ngbCollapse]="isCollapsed">
-	<div class="card">
-		<div class="card-body">
-			<ng-template #content let-c="close" let-d="dismiss">
-				<div class="modal-header">
-					<h4 class="modal-title">Modal title</h4>
-					<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>One fine body&hellip;</p>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
-				</div>
-			</ng-template>
-
-			<div *ngFor = "let trip of tripStopTime ; let i = index">
-				<button class="row top-buffer" *ngIf = "i == 0" class="btn btn-outline-primary" (click)="open(content)">{{i}}. Depart At: {{trip.departure_time}}</button>
+			<div class="col-md-3 ml-auto">
+				<ui-switch size="small" [(ngModel)]="enable" (change)="onChange($event)"></ui-switch> Map
 			</div>
+
 		</div>
-	</div>
+ -->
+<!-- 
+<div class="row" *ngIf = "enable == true">
+<div class="col-md-12">
+<app-maproute></app-maproute>
+</div>
+</div>
+
+<div class="row" *ngIf = "enable == false">
+<div class="col-md-12">
+<ul *ngFor ="let stopList of stopTimeListById" class="list-group">
+<li class="list-group-item">
+<p>Stop <span class="badge badge-pill badge-dark">{{stopList.stop_sequence}}</span> Estimate arrival time: {{stopList.arrival_time}}</p>
+<small>Stop Number: {{stopList.stop_id}}</small></li>
+
+</ul>
+</div>
+
 </div>
 
 -->
-
-				<ng-template #content let-c="close" let-d="dismiss">
-					<div class="modal-header">
-						<h4 class="modal-title">Modal title</h4>
-						<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<ul *ngFor ="let stopList of stopTimeListById" class="list-group">
-							<li class="list-group-item">
+<div class="row">
+	<div class="col-md-12">
+		<ngb-tabset [justify]="end">
+			<ngb-tab title="Timeline">
+				<ng-template ngbTabContent>
+					<ul *ngFor ="let stopList of stopTimeListById" class="list-group">
+						<li class="list-group-item">
 							<p>Stop <span class="badge badge-pill badge-dark">{{stopList.stop_sequence}}</span> Estimate arrival time: {{stopList.arrival_time}}</p>
-							<small>Stop Number: {{stopList.stop_id}}</small></li>
-
-						</ul>
-						
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
-					</div>
+							<small>Stop Number: {{stopList.stop_id}}</small>
+						</li>
+					</ul>
 				</ng-template>
-				<div class="btn-noborder" *ngFor = "let trip of stopTimeListById ; let i = index">
-					<li class="top-buffer list-group-item list-group-item-action" *ngIf = "i == 0"  (click)="open(content, trip.trip_id)"><span class="badge badge-dark">{{a_trip_id}}</span> departure time {{trip.departure_time}} to {{trip_headsign}}</li>
-				</div>
+			</ngb-tab>
+			<ngb-tab title="Map">
+				<ng-template ngbTabContent>
+					<app-maproute [shape_id] = "shape_id"></app-maproute>
+					<div *ngFor="let shape of allShapes">{{shape.shape_id}}</div>
+				</ng-template>
+			</ngb-tab>
+		</ngb-tabset>
+	</div>
+</div>
+
+
+
+</div>
+<div class="modal-footer">
+	<button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+</div>
+</ng-template>
+<div class="btn-noborder" *ngFor = "let trip of stopTimeListById ; let i = index">
+	<li class="top-buffer list-group-item list-group-item-action" *ngIf = "i == 0"  (click)="open(content, trip.trip_id)"><span class="badge badge-dark">{{a_trip_id}}</span> departure time {{trip.departure_time}} to {{trip_headsign}}</li>
+</div>
+

@@ -72,6 +72,17 @@ export class DataService{
 					.map((response: Response) => response.json());
 	}
 
+	getAllShapes(){
+		return this._http.get(this._shape_id_url)
+					.map((response: Response) => response.json());
+	}
+
+	getAShape(shape_id: string): Observable<ShapeID[]>{
+		return this._http.get(this._shape_id_url)
+					.map((response: Response) => response.json()
+					.filter(item => item.shape_id === shape_id));
+	}
+
 	getRouteByID(route_id: string): Observable<Routes[]>{
 		return this._http.get(this._routes_url)
 					.map((response: Response) => response.json()
@@ -114,6 +125,15 @@ export class Shape{
 }
 
 export class ShapeID{
+
+   shape_id: string;
+   shape_lat: number;
+   shape_lon: number;
+   zoom: number;
+
+}
+
+export class ShapeIDs{
 
    shape_id: string;
 
