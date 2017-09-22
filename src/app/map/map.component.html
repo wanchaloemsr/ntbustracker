@@ -1,10 +1,10 @@
-<div class="container-fluid">
+
 	<agm-map [latitude]="lat" [longitude]="lng" [zoom]='zoom' [styles] = 'mapStyle' 
 	(zoomChange)="zoomChange($event)" [minZoom]="minZoom" (mapClick)="placeMarker($event)" [fullscreenControl]=true [mapTypeControl] = true [streetViewControl] = false>
 
 		<!-- Draw Stop and interchanges -->
 		<div *ngIf="stopZoomLevel">
-			<agm-marker *ngFor= "let stop of allStops" [latitude]="stop.stop_lat" [longitude]="stop.stop_lon" [iconUrl]= 'stopIconUrl' [title] = "stop.stop_id" >
+			<agm-marker *ngFor= "let stop of allStops" [latitude]="stop.stop_lat" [longitude]="stop.stop_lon" [iconUrl]= 'stopIconUrl' [title] = "stop.stop_id">
 				<agm-snazzy-info-window [maxWidth]="300" [closeWhenOthersOpen]="true" [backgroundColor]="red">
 					<ng-template>
 						<h3>{{stop.stop_name}}</h3>
@@ -29,7 +29,6 @@
 			</agm-polyline-point>
 		</agm-polyline>
 	</agm-map>
-</div>
 
 
 

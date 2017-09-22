@@ -1,0 +1,21 @@
+.direction-img img{
+	width: 25px;
+	height: auto;
+}
+
+.direction-img{
+
+	margin-bottom: 4px;
+}
+
+.trip-row{
+	border-bottom: 1px solid #a6a6a6;
+	margin-top: 4px;
+}
+
+@media only screen and (max-width: 448px) {
+    .direction-img img{
+	width: 35px;
+	height: auto;
+}
+}

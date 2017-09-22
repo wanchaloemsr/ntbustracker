@@ -5,16 +5,20 @@ import { HomeComponent } from './home/home.component'
 import { SearchComponent } from './search/search.component'
 import { TimetablesComponent } from './timetables/timetables.component'
 import { MapComponent } from './map/map.component'
+import { MaprouteComponent } from './maproute/maproute.component'
+//import { RouteComponent } from './route/route.component'
+import { RouteComponent } from './timetables/route.component'
 
 
 const APP_ROUTES: Routes = [
 
-	{ path: '', redirectTo: '/home', pathMatch: 'full'},
+	{ path: '', redirectTo: '/timetables', pathMatch: 'full'},
 	{ path: 'home', component: HomeComponent},
 	{ path: 'favourites', component: FavouritesComponent},
 	{ path: 'search', component: SearchComponent},
 	{ path: 'timetables', component: TimetablesComponent},
-	{ path: 'map', component: MapComponent}
+	{ path: 'map', component: MapComponent},
+	{ path: 'route/:shape_id', component: MaprouteComponent}
 
 ];
 

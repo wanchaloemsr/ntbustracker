@@ -1,5 +1,6 @@
 
 <div class="container">
+	<hr>
 	<div class="row">
 		<div class="col">
 			<div class="form-group">
@@ -17,14 +18,30 @@
 			<input *ngIf = "searchFilter == 'Route Number'" id="search field" type="text" class="form-control" aria-label="Please Enter Route Number" placeholder="Route Number" [(ngModel)]="searchtext" (input)="searchFromRouteNumber()" />
 			
 
-			<input *ngIf = "searchFilter == 'Stop Number'" id="search field" type="text" class="form-control" aria-label="Please Enter Stop Number" placeholder="Stop Number" [(ngModel)]="searchtext" (input)="searchFromStopNumber()"/>
+			<input *ngIf = "searchFilter == 'Stop Number'" id="search field" type="text" class="form-control" aria-label="Please Enter Stop Number" placeholder="Stop Number" [(ngModel)]="searchtext" (ngModelChange) = "onChange($event)"/>
 
 			</div>
-
-
-			
 		</div>
+
 		<div class="col-md-8">
+<!-- 
+			<div *ngIf = "searchtext ==''; else searchResults ">
+				<div *ngFor="let route of allRoutes">
+
+					<a class="btn btn-light btn-block btn-outline-primary" [routerLink]="['/route', route.route_id]" [stopTimeList] = "stopTimeList" [allRoutes] = "allRoutes" [allTrips] = "allTrips" [calender] = "calender">Route: {{route.route_id}} - {{route.route_long_name}} {{route.route_desc}}</a>
+					
+				</div>
+			</div>
+			<ng-template #searchResults>
+				<label for="search">Search:</label>
+				<div *ngFor="let route of searchRoutes">
+
+					<a class="btn btn-light btn-block btn-outline-primary" [routerLink]="['/route', route.route_id]" [stopTimeList] = "stopTimeList" [allRoutes] = "allRoutes" [allTrips] = "allTrips" [calender] = "calender">Route: {{route.route_id}} - {{route.route_long_name}} {{route.route_desc}}</a>
+					
+				</div>
+			</ng-template>
+
+ -->
 			<ngb-accordion #acc="ngbAccordion" [closeOthers]="true">
 
 				<div *ngIf = "searchtext ==''; else searchResult ">
@@ -45,6 +62,9 @@
 
 				
 			</ngb-accordion>
+
+
+
 		</div>
 
 	</div>

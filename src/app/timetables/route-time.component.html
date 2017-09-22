@@ -7,66 +7,26 @@
 	</div>
 	<div class="modal-body">
 
-<!-- 		
 		<div class="row">
-
-			<div class="col-md-3 ml-auto">
-				<ui-switch size="small" [(ngModel)]="enable" (change)="onChange($event)"></ui-switch> Map
+			<div class="col-md-12">
+				<ul *ngFor ="let stopList of stopTimeListById" class="list-group">
+					<li class="list-group-item">
+						<p>Stop <span class="badge badge-pill badge-dark">{{stopList.stop_sequence}}</span> Estimate arrival time: {{stopList.arrival_time}}</p>
+						<small>Stop Number: {{stopList.stop_id}}</small>
+						<button class="btn btn-primary btn-sm" (click)= "navigateTo()" (click)="c('Close click')">Show Route</button>
+					</li>
+				</ul>
 			</div>
-
 		</div>
- -->
-<!-- 
-<div class="row" *ngIf = "enable == true">
-<div class="col-md-12">
-<app-maproute></app-maproute>
-</div>
-</div>
 
-<div class="row" *ngIf = "enable == false">
-<div class="col-md-12">
-<ul *ngFor ="let stopList of stopTimeListById" class="list-group">
-<li class="list-group-item">
-<p>Stop <span class="badge badge-pill badge-dark">{{stopList.stop_sequence}}</span> Estimate arrival time: {{stopList.arrival_time}}</p>
-<small>Stop Number: {{stopList.stop_id}}</small></li>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+	</div>
 
-</ul>
-</div>
-
-</div>
-
--->
-<div class="row">
-	<div class="col-md-12">
-		<ngb-tabset [justify]="end">
-			<ngb-tab title="Timeline">
-				<ng-template ngbTabContent>
-					<ul *ngFor ="let stopList of stopTimeListById" class="list-group">
-						<li class="list-group-item">
-							<p>Stop <span class="badge badge-pill badge-dark">{{stopList.stop_sequence}}</span> Estimate arrival time: {{stopList.arrival_time}}</p>
-							<small>Stop Number: {{stopList.stop_id}}</small>
-						</li>
-					</ul>
-				</ng-template>
-			</ngb-tab>
-			<ngb-tab title="Map">
-				<ng-template ngbTabContent>
-					<app-maproute [shape_id] = "shape_id"></app-maproute>
-					<div *ngFor="let shape of allShapes">{{shape.shape_id}}</div>
-				</ng-template>
-			</ngb-tab>
-		</ngb-tabset>
+</ng-template>
+<div *ngFor = "let trip of stopTimeListById ; let i = index">
+	<div class="top-buffer btn btn-block route-list" *ngIf = "i == 0"  (click)="open(content, trip.trip_id)"><h3>Route: <span class="badge badge-dark">{{a_trip_id}}</span> Depart At {{trip.departure_time}}</h3>
+		<small>{{trip_headsign}}</small>
 	</div>
 </div>
-
-
-
-</div>
-<div class="modal-footer">
-	<button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
-</div>
-</ng-template>
-<div class="btn-noborder" *ngFor = "let trip of stopTimeListById ; let i = index">
-	<li class="top-buffer list-group-item list-group-item-action" *ngIf = "i == 0"  (click)="open(content, trip.trip_id)"><span class="badge badge-dark">{{a_trip_id}}</span> departure time {{trip.departure_time}} to {{trip_headsign}}</li>
-</div>
-

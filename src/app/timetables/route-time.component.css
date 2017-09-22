@@ -1,0 +1,21 @@
+h3{
+	font-size: 1.3em;
+}
+
+.route-list{
+	white-space: normal;
+	margin-bottom: 5px;
+}
+
+
+@media only screen and (max-width: 980px) {
+    h3{
+    	font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 448px) {
+    h3{
+    	font-size: 1em;
+    }
+}

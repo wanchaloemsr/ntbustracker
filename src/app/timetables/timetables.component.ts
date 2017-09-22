@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 
 import { DataService } from '../data.service';
@@ -7,6 +7,7 @@ import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
+
 
 
 @Component({
@@ -31,6 +32,8 @@ export class TimetablesComponent implements OnInit {
 	stopIdResult: string;
 	tripIdToRouteId: string;
 	stopNumberResult: StopTime[];
+	stopNumberDiv = [];
+	timeOutRef; any;
 
 	calender = [];
 
@@ -52,7 +55,16 @@ export class TimetablesComponent implements OnInit {
         : this.routeNumberArray.filter(v => v.indexOf(term.toLowerCase()) > -1).slice(0, 10));
 
 
-	constructor(private _dataService: DataService) { }
+	constructor(private _dataService: DataService) {
+		this.getPosts();
+	}
+
+	private posts:Post[] = [];
+    private errorMessage:any = '';
+
+	getPosts() {
+        this._dataService.getLiveData();
+    }
 
 	ngOnInit() {
 
@@ -73,8 +85,6 @@ export class TimetablesComponent implements OnInit {
     this._dataService.getAllCalender()
       .subscribe(resData => this.calender = resData);
 
-
-
 	}
 
 	onSelect(route_id: string){
@@ -82,6 +92,8 @@ export class TimetablesComponent implements OnInit {
 		console.log(this.route_id);
 
 	}
+
+
 
 	searchFromRouteNumber(){
 
@@ -100,6 +112,23 @@ export class TimetablesComponent implements OnInit {
 		}
 	}
 
+	onChange(event){
+		if(this.timeOutRef){
+			clearTimeout(this.timeOutRef);
+		}
+
+		if (event.length > 0) {
+			// code...
+			this.timeOutRef = setTimeout(() => {
+				this.searchFromStopNumber();
+			},1000);
+		}
+			
+ 
+		
+
+	}
+
 	searchFromStopNumber(){
 
 		this.stopNumberResult = [];
@@ -107,22 +136,29 @@ export class TimetablesComponent implements OnInit {
 
 		for(let stopList of this.stopTimeList){
 
-			if(stopList.stop_id.search(this.searchtext)> -1){
+			if(stopList.stop_id.search(this.searchtext.toUpperCase())> -1){
 
-				console.log(stopList.trip_id.slice(1, -2));
+				this.stopNumberDiv = stopList.trip_id.split("_",1);
+				for(let div of this.stopNumberDiv){
 
-				if(this.stopIdResult != stopList.trip_id.slice(1, -3)){
+					console.log("Div: " + div.substr(1));
+					  
+					if(this.stopIdResult != div){
 					this.stopNumberResult.push(stopList);
-					this.stopIdResult == stopList.trip_id.slice(1, -3);
-				}
+					this.stopIdResult = div;
 
+					}
+				}
 
 			}
 		}
 		console.log("S Stop Num: " + this.stopNumberResult.length);
 		console.log("Stop List: " + this.stopTimeList.length);
 
+		clearTimeout(this.timeOutRef);
+
 	}
+
 
 }
 
@@ -174,4 +210,9 @@ export class StopTime{
 	drop_off_type: string;
 	shape_dist_traveled: string;
 
+}
+
+export interface Post {
+    title:string;
+    body:string
 }

@@ -22,7 +22,11 @@ import { SearchComponent } from './search/search.component';
 import { HomeComponent } from './home/home.component';
 import { MaprouteComponent } from './maproute/maproute.component';
 
-import { UiSwitchModule } from '../../node_modules/angular2-ui-switch';
+import {SelectModule} from 'ng2-select';
+
+import { DataService } from './data.service';
+
+//import { RouteComponent } from './route/route.component';
 
 /*
 const appRoutes: Routes = [
@@ -56,9 +60,9 @@ const appRoutes: Routes = [
     }),
     AgmSnazzyInfoWindowModule,
     NgbModule.forRoot(),
-    UiSwitchModule
+    SelectModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 

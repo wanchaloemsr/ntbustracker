@@ -1,19 +1,31 @@
-import  { Injectable} from '@angular/core';
+import  { Injectable, OnDestroy } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import '../../node_modules/rxjs/add/operator/map';
-import {Observable} from '../../node_modules/rxjs/Observable';
+import 'rxjs/add/operator/map';
+import {Observable} from 'rxjs/Observable';
+import 'rxjs/add/operator/toPromise';
+import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class DataService{
 
+	stopTimeList: StopTime[];
+
+	trip_id: string;
+	route_id: string;
+
+	stopTime = [];
 	shape = [];
 
+	allStops = [];
+	allRoutes = [];
+	allShapes: ShapeID[];
 
 	private _url:string = "../assets/data/google-transit/shapes-json.json";
 	private _shape_id_url:string = "../assets/data/google-transit/shapes-id.json";
 	private _stop_url:string = "../assets/data/google-transit/stops.json";
 	private _interchange_Url:string = "../assets/data/google-transit/interchanges.json";
 	private _key_shape_id_url:string = "../assets/data/google-transit/shape-keyed.json";
+	private _shape_id2_url:string = "../assets/data/google-transit/shapes-id2.json";
 	private _map_style_url: string = "../assets/data/config/map-style.json";
 
 	private _trip_url: string = "../assets/data/google-transit/trips.json";
@@ -22,6 +34,7 @@ export class DataService{
 	private _calender_url: string = "../assets/data/google-transit/calender.json";
 
 	constructor(private _http:Http){
+
 
 	}
 
@@ -41,9 +54,24 @@ export class DataService{
 					.map((response: Response) => response.json());
 	}
 
+	getShapeID2(shape_id: string): Observable<ShapeID[]> {
+		console.log(this._http.get(this._shape_id2_url)
+					.map((response: Response) => response.json()
+					.filter(item => item.shape_id === shape_id)));
+		return this._http.get(this._shape_id2_url)
+					.map((response: Response) => response.json()
+					.filter(item => item.shape_id === shape_id));
+	}
+
 	getStops(){
 		return this._http.get(this._stop_url)
 					.map((response: Response) => response.json());
+	}
+
+	getStopByID(stop_id:string): Observable<Stop[]>{
+		return this._http.get(this._stop_url)
+					.map((response: Response) => response.json()
+					.filter(item => item.stop_id === stop_id));
 	}
 
 	getMapStyle(){
@@ -78,7 +106,7 @@ export class DataService{
 	}
 
 	getAShape(shape_id: string): Observable<ShapeID[]>{
-		return this._http.get(this._shape_id_url)
+		return this._http.get(this._url)
 					.map((response: Response) => response.json()
 					.filter(item => item.shape_id === shape_id));
 	}
@@ -110,6 +138,29 @@ export class DataService{
 					.map((response: Response) => response.json()
 					.filter(item => item.service_id === service_id));
 	}
+
+
+	getLiveData(){
+		let headers = new Headers();
+		headers.append('Access-Control-Allow-Origin','http://localhost:4200');
+
+		let parserString = require('xml2js').parseString;
+		let xml = (fetch('http://pub.ntgov-rtpi.tims.net.au/webapp/bustrk/PublicBus', {
+			body : '<?xml version="1.0" encoding="utf-8" ?><request xmlns="urn:Bacchus"></request>',
+			method: 'post',
+			mode: 'no-cors',
+			headers: headers
+		}
+		));
+
+		console.log("Result "+xml);
+
+		parserString(xml, function(err, result){
+			console.log("Result "+result);
+		});
+
+	}
+
 
 }
 
@@ -192,4 +243,18 @@ export class Calender{
 	start_date: string;
 	end_date: string;
 
+}
+
+export interface Post {
+    title:string;
+    body:string
+}
+
+export class Stop{
+  stop_id: string;
+   stop_name: string;
+   stop_desc: string;
+   stop_lat: number;
+   stop_lon: number;
+   zone_id: number;
 }

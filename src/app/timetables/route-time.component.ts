@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 
 import { DataService } from '../data.service';
 
@@ -7,7 +8,7 @@ import { DataService } from '../data.service';
 @Component({
   selector: 'route-time',
   templateUrl: './route-time.component.html',
-  styles: ['.agm-map {height: 450px;}']
+  styleUrls: ['./route-time.component.css']
 })
 
 export class RouteTimeComponent implements OnInit{
@@ -29,19 +30,21 @@ export class RouteTimeComponent implements OnInit{
 
   enable = false;
 
-  allShapes = [];
-
   a_trip_array = [];
   a_trip_id: string;
 
-  constructor(private _dataService: DataService, private modalService: NgbModal) { }
+  constructor(private _dataService: DataService, private modalService: NgbModal, private _route: Router) { }
 
   ngOnInit(){
 
     this.stopTimeListById = this.stopTimeList.filter(item => item.trip_id === this.trip_id);
     this.setATrip();
+  }
 
-
+  navigateTo(){
+    this._dataService.stopTimeList = this.stopTimeList;
+    console.log("Size : "+ this._dataService.stopTimeList.length);
+    this._route.navigate(['route/' + this.shape_id]);
   }
 
   onChange(even){
@@ -50,13 +53,24 @@ export class RouteTimeComponent implements OnInit{
   }
 
   setATrip(){
-    this.a_trip_array = this.trip_id.split("_", 1);
-    for(let item of this.a_trip_array){
+    let a_trip_array = this.trip_id.split("_", 1);
+    for(let item of a_trip_array){
 
       this.a_trip_id = item;
 
     }
-    this.a_trip_id = this.a_trip_id.slice(1, 3);
+
+    if(this.a_trip_id.search('Man') == -1){
+
+      if(this.a_trip_id.search('Link') == -1){
+        this.a_trip_id = this.a_trip_id.slice(1, 3);
+      }
+       this.a_trip_id = this.a_trip_id.slice(0, 5);
+      }
+    else {
+      this.a_trip_id = this.a_trip_id.slice(1, 4);
+    }
+    
     console.log("Atrip : " + this.a_trip_id);
   }
 

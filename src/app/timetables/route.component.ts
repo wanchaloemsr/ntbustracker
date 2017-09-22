@@ -6,6 +6,7 @@ import { DataService } from '../data.service';
 @Component({
   selector: 'route',
   templateUrl: './route.component.html',
+  styleUrls: ['./route.component.css']
 })
 
 export class RouteComponent implements OnInit{
@@ -18,12 +19,13 @@ export class RouteComponent implements OnInit{
 
   closeResult: string;
   trips = [];
-  aRoute = [];
   aTrip = [];
   origin: string;
   destination: string;
 
   isTwoWaysRoute = false;
+
+  allStops = [];
 
 
   stop_time_by_FULLW_0 = [];
@@ -48,10 +50,20 @@ export class RouteComponent implements OnInit{
   ngOnInit(){
 
     this.trips = this.allTrips.filter(item => item.route_id === this.route_id);
+
+    this._dataService.getStops()
+      .subscribe(resData => this.allStops = resData);
     this.sortingTripDate();
     this.checkIfTwoway();
-    console.log("Is two ways? " + this.isTwoWaysRoute);
 
+  }
+
+  setData(trip_id: string){
+    this._dataService.stopTimeList = this.stopTimeList;
+    this._dataService.trip_id = trip_id;
+    this._dataService.allStops = this.allStops;
+    this._dataService.route_id = this.route_id;
+    this._dataService.allRoutes = this.allRoutes;
   }
 
   sortingTripDate(){
@@ -135,7 +147,7 @@ export class RouteComponent implements OnInit{
       || this.route_id === '9' || this.route_id === '10' || this.route_id === '447' 
       || this.route_id === '450' || this.route_id === '446' || this.route_id === '21' 
       || this.route_id === '22' || this.route_id === '25' || this.route_id === '28'
-      || this.route_id === '445'){
+      || this.route_id === '445' || this.route_id === 'OL2'){
 
       this.isTwoWaysRoute = true;
     this.setOriginAndDestination();
@@ -215,6 +227,11 @@ setOriginAndDestination(){
     case "450":
     this.origin = "Humpty Doo";
     this.destination = "Palmerston";
+    break;
+
+    case "OL2":
+    this.origin = "Darwin";
+    this.destination = "Palmerston - Casuarina";
     break;
 
   }

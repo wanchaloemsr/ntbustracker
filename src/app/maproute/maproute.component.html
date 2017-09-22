@@ -1,6 +1,38 @@
+<div class="header">
+	<div class="container">
+		<div class="row justify-content-center">
+  			<div class="col-12" align="center">
+  				<h2 class="display-5">Route <span class="badge badge-dark">{{a_trip_id}}</span> {{aRoute.route_long_name}} </h2>
+  			</div>
+  			<div class="col-12" align="center">
+  				{{aRoute.route_desc}}
+  			</div>
+		</div>
+		
+	</div>
+</div>
+	
+<div *ngFor= "let shape of mapShape">
+	<agm-map [latitude]="shape.shape_lat" [longitude]="shape.shape_lon" [zoom]='shape.zoom' [minZoom]="minZoom" [styles] = 'mapStyle' [fullscreenControl]=true [mapTypeControl] = true [streetViewControl] = false [style.height.px] = "screenHeight">
 
-<agm-map [latitude]="lat" [longitude]="lng" [zoom]='zoom' [minZoom]="minZoom" [styles] = 'mapStyle' [fullscreenControl]=true [mapTypeControl] = true [streetViewControl] = false [gestureHandling]="'greedy'">
+		<agm-polyline [title]="'Routes'" [zIndex]='zindex'>
+			<agm-polyline-point *ngFor= "let shape of aShape" [latitude]="shape.shape_pt_lat" [longitude]="shape.shape_pt_lon">
+				
+			</agm-polyline-point>
+		</agm-polyline>
+		
+		<div *ngFor= "let stop of stopListByID; let i = index">
+				<agm-marker [latitude]="stop.stop_lat" [longitude]="stop.stop_lon" [title] = "stop.stop_id" [iconUrl]= 'stopIcon' >
+					<agm-snazzy-info-window (beforeOpen)="stopIsClick(stop.stop_id)" [maxWidth]="400" [closeWhenOthersOpen]="true" [backgroundColor]="red">
+						<ng-template>
+							<h3>Stop Num <span class="badge badge-dark">{{aStopTime.stop_id}}</span> Sequence: {{aStopTime.stop_sequence}}</h3>
+							Estimate stop at: {{aStopTime.arrival_time}} <hr>
+							<small>{{stop.stop_desc}}</small>
+						</ng-template>
+					</agm-snazzy-info-window>
+				</agm-marker>
+		</div>
+		
+	</agm-map>
+</div>
 
-
-
-</agm-map>
