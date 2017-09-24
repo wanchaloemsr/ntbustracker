@@ -20,6 +20,10 @@ export class DataService{
 	allRoutes = [];
 	allShapes: ShapeID[];
 
+	liveBusData : any;
+
+	liveDataArray: LiveData[] = [];
+
 	private _url:string = "../assets/data/google-transit/shapes-json.json";
 	private _shape_id_url:string = "../assets/data/google-transit/shapes-id.json";
 	private _stop_url:string = "../assets/data/google-transit/stops.json";
@@ -142,49 +146,88 @@ export class DataService{
 
 	getLiveData(){
 
-const fetch = require("node-fetch");
-let parserString = require('xml2js').parseString;
+		const fetch = require("node-fetch");
+		let parserString = require('xml2js').parseString;
 
-let promise = (fetch('http://pub.ntgov-rtpi.tims.net.au/webapp/bustrk/PublicBus', {
-	body : '<?xml version="1.0" encoding="utf-8" ?><request xmlns="urn:Bacchus"></request>',
-	method: 'post',
-	mode: 'no-cors',
-	headers: {
-		'Access-Control-Allow-Origin': 'http://localhost:4200'
-	}
-}
-))
-.then((response) => {
-	// Get text/xml out of response body
-	return response.text();
-})
-.then((textResponse) => {
-	// Parse xml text to string and convert callback to promise
-	return new Promise((resolve, reject) => {
-		parserString(textResponse, function(err, result){
-			if(err) {
-				return reject(err);
+		let promise = (fetch('http://pub.ntgov-rtpi.tims.net.au/webapp/bustrk/PublicBus', {
+			body : '<?xml version="1.0" encoding="utf-8" ?><request xmlns="urn:Bacchus"></request>',
+			method: 'post',
+			mode: 'no-cors',
+			headers: {
+				'Access-Control-Allow-Origin': 'http://localhost:4200'
 			}
-			return resolve(result);
+		}
+		))
+		.then((response) => {
+			// Get text/xml out of response body
+			return response.text();
+		})
+		.then((textResponse) => {
+			// Parse xml text to string and convert callback to promise
+			return new Promise((resolve, reject) => {
+				parserString(textResponse, function(err, result){
+					if(err) {
+						return reject(err);
+					}
+					return resolve(result);
+				})
+
+			})
+		})
+		.then((busData) => {
+			// Get the data we want out of the XML data structure
+			const arrays = busData.dataroot_public_bus_loc.public_bus_locs.map((list) => list.public_bus)
+
+			return [].concat.apply([], arrays);
+		})
+		.then((busData) => {
+			//console.log(busData);
+			this.liveBusData = busData;
+			console.log("BusData: "+ busData.length);
+			if(busData.length>0){
+				this.setLiveData(busData);
+			}
 		})
 
-	})
-})
-.then((busData) => {
-	// Get the data we want out of the XML data structure
-	const arrays = busData.dataroot_public_bus_loc.public_bus_locs.map((list) => list.public_bus)
-	return [].concat.apply([], arrays);
-})
-.then((busData) => {
-	console.log(busData);
-})
-console.log("Promise " + promise);
+	}
 
+	setLiveData(liveData: any){
+		console.log(liveData);
 
+		let tmp = this.liveDataArray;
+
+		this.liveDataArray = [];
+
+		for(let data of liveData){
+
+				let code = data.code[0];
+				let datetime = data.datetime[0];
+				let direction = data.direction[0];
+				let end = data.end[0];
+				let endtime = data.end_time[0];
+				let latitude = Number(data.latitude[0]);
+				let longitude = Number(data.longitude[0]);
+				let otr = data.otr[0];
+				let rego = data.rego[0];
+				let route = data.route[0];
+				let start = data.start[0];
+				let starttime = data.start_time[0];
+				let status = data.status[0];
+				let aLiveData = new LiveData(data.code[0], data.datetime[0], data.direction[0], data.end[0], data.end_time[0], Number(data.latitude[0]), Number(data.longitude[0]),
+				 data.otr[0], data.rego[0], data.route[0], data.start[0], data.start_time[0], data.status[0]);
+
+				this.liveDataArray.push(aLiveData);
+
+			}
+
+				
+
+		console.log("Length: " + this.liveDataArray.length);
+	}
 
 }
 
-}
+
 export class Shape{
 
    shape_id: string;
@@ -277,4 +320,112 @@ export class Stop{
    stop_lat: number;
    stop_lon: number;
    zone_id: number;
+}
+
+export class LiveData{
+	code: string;
+	datetime: string;
+	direction: string;
+	end: string;
+	endtime: string;
+	latitude: number;
+	longitude: number;
+	otr: string;
+	rego: string;
+	route: string;
+	start: string;
+	starttime: string;
+	status: string;
+
+	constructor(code: string,
+	datetime: string,
+	direction: string,
+	end: string,
+	endtime: string,
+	latitude: number,
+	longitude: number,
+	otr: string,
+	rego: string,
+	route: string,
+	start: string,
+	starttime: string,
+	status: string){
+
+	this.code = code;
+	this.datetime = datetime;
+	this.direction = direction;
+	this.end = end;
+	this.endtime = endtime;
+	this.latitude = latitude;
+	this.longitude = longitude;
+	this.otr = otr;
+	this.rego = rego;
+	this.route = route;
+	this.start = start;
+	this.starttime = starttime;
+	this.status = status;
+
+	}
+
+	getCode(){
+		return this.code;
+	}
+
+	getDirection(){
+		return this.direction;
+	}
+
+	getEnd(){
+		return this.end;
+	}
+
+	getEndTime(){
+		return this.endtime;
+	}
+
+	getLatitude(){
+		return this.latitude;
+	}
+
+	getLongitude(){
+		return this.longitude;
+	}
+
+	getOtr(){
+		return this.otr;
+	}
+
+	getRego(){
+		return this.rego;
+	}
+
+	getRoute(){
+		return this.route;
+	}
+
+	getRouteNumber(){
+		let route_id: string;
+		let route = this.route.split(' ', 1);
+		for(let r of route){
+			if(r.search('Route') === -1){
+				return this.route;
+			}else{
+				return this.route.slice(5);
+			}
+		}
+	}
+
+	getStart(){
+		return this.start;
+	}
+
+	getStartTime(){
+		return this.starttime.slice(0,5);
+	}
+
+	getStatus(){
+		return this.status;
+	}
+
+
 }

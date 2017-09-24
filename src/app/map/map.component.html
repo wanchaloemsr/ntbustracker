@@ -1,5 +1,4 @@
-
-	<agm-map [latitude]="lat" [longitude]="lng" [zoom]='zoom' [styles] = 'mapStyle' 
+<agm-map [latitude]="lat" [longitude]="lng" [zoom]='zoom' [styles] = 'mapStyle' 
 	(zoomChange)="zoomChange($event)" [minZoom]="minZoom" (mapClick)="placeMarker($event)" [fullscreenControl]=true [mapTypeControl] = true [streetViewControl] = false>
 
 		<!-- Draw Stop and interchanges -->
@@ -19,6 +18,16 @@
 				<ng-template>
 					<h3>{{int.interchange_name}}</h3>
 					{{int.interchange_desc}}
+				</ng-template>
+			</agm-snazzy-info-window>
+		</agm-marker>
+
+		<agm-marker *ngFor= "let bus of liveDataArray" [latitude]="bus.getLatitude()" [longitude]="bus.getLongitude()"  [title] = "bus.getRoute()" [label]="bus.getRouteNumber()" [iconUrl]= 'busIconUrl' (markerClick) = 'setRoutePoliline(bus.getRouteNumber())'>
+			<agm-snazzy-info-window [maxWidth]="400" [closeWhenOthersOpen]="true" [backgroundColor]="red">
+				<ng-template>
+					<h3>{{bus.getRoute()}}</h3>
+					Start: {{bus.getStartTime()}}<hr>
+					<small>Status: {{bus.getStatus()}}</small>
 				</ng-template>
 			</agm-snazzy-info-window>
 		</agm-marker>
@@ -44,3 +53,19 @@
 		</div>
 	</div>
 </div>
+
+<footer id="footer">
+	<div class="container">
+	<div class="row">
+		<div class="col-4 icon">
+			<img src="./assets/icon/interchange-icon-md.png"/> Interchange
+		</div>
+		<div class="col-4 icon">
+			<img src="./assets/icon/bus-stop-lg.png"/> Stop
+		</div>
+		<div class="col-4 icon">
+			<img src="./assets/icon/bus.png"/> Bus
+		</div>
+	</div>
+</div>
+</footer>

@@ -53,6 +53,7 @@ export class RouteTimeComponent implements OnInit{
   }
 
   setATrip(){
+    console.log("Trip_id: " + this.trip_id);
     let a_trip_array = this.trip_id.split("_", 1);
     for(let item of a_trip_array){
 
@@ -63,12 +64,13 @@ export class RouteTimeComponent implements OnInit{
     if(this.a_trip_id.search('Man') == -1){
 
       if(this.a_trip_id.search('Link') == -1){
-        this.a_trip_id = this.a_trip_id.slice(1, 3);
+        this.a_trip_id = this.a_trip_id.slice(1);
+      }else{
+           this.a_trip_id = this.a_trip_id.slice(0);
       }
-       this.a_trip_id = this.a_trip_id.slice(0, 5);
-      }
+    }
     else {
-      this.a_trip_id = this.a_trip_id.slice(1, 4);
+      this.a_trip_id = this.a_trip_id.slice(1);
     }
     
     console.log("Atrip : " + this.a_trip_id);

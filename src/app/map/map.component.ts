@@ -32,6 +32,7 @@ export class MapComponent implements OnInit {
 	title: string = 'My first AGM project';
 
 	iconUrl: string = './assets/icon/map-marker.png';
+	busIconUrl: string = './assets/icon/bus.png';
 	stopIconUrl: string = './assets/icon/bus-stop-sign-none.png';
 	interchangeIconUrl: string = './assets/icon/interchange-icon-lg.png';
 
@@ -43,8 +44,13 @@ export class MapComponent implements OnInit {
 	routeNumber: string = '10';
 
 	text:any;
+	interval: any;
 
 	selectedShapeID: string;
+
+	shape2 = [];
+
+	liveDataArray: any[] = [];
 
 	onChange(newValue) {
 		console.log(newValue);
@@ -59,7 +65,14 @@ export class MapComponent implements OnInit {
 	latitudeArray: number[] = [];
 	longitudeArray: number[] = [];
 
-	constructor(private _dataService: DataService) { }
+	constructor(private _dataService: DataService) { 
+		_dataService.getLiveData();
+
+	}
+
+	open(){
+		console.log("Marker clicked");
+	}
 
 	ngOnInit() {
 		this._dataService.getShapeByID(this.selectedShapeID)
@@ -75,8 +88,21 @@ export class MapComponent implements OnInit {
 		this._dataService.getMapStyle()
 		.subscribe(resStopsData => this.mapStyle = resStopsData);
 
+		this.refreshData();
+    		this.interval = setInterval(() => { 
+       				 this.refreshData(); 
+    		}, 10000);
+
 		
 		
+	}
+
+	refreshData(){
+    this._dataService.getLiveData();
+    setTimeout(()=>{
+			this.liveDataArray = this._dataService.liveDataArray;
+			console.log("Map Data: "+ this.liveDataArray.length);
+		}, 1000);
 	}
 
 	changeListener($event) : void {
@@ -88,6 +114,16 @@ export class MapComponent implements OnInit {
 	placeMarker($event){
 		console.log($event.coords.lat);
 		console.log($event.coords.lng);
+	}
+
+	setRoutePoliline(route_id: string){
+
+		console.log(route_id);
+		this._dataService.getShapeID2(route_id)
+			.subscribe(resData => this.shape2 = resData);
+		this.lat = -12.444622814174567;
+
+
 	}
 
 

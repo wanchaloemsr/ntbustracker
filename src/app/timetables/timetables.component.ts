@@ -42,33 +42,21 @@ export class TimetablesComponent implements OnInit {
 
 	allShapes= [];
 
+	liveData: any;
 
 
 	searchCount: number;
 
 	public model: any;
 
-  	formatter = (result: string) => result.toUpperCase();
-
-  	search = (text$: Observable<string>) =>
-    text$
-      .debounceTime(200)
-      .distinctUntilChanged()
-      .map(term => term === '' ? []
-        : this.routeNumberArray.filter(v => v.indexOf(term.toLowerCase()) > -1).slice(0, 10));
 
 
 	constructor(private _dataService: DataService, private _cacheService: CacheService) {
-		this.getPosts();
 
 	}
 
 	private posts:Post[] = [];
     private errorMessage:any = '';
-
-	getPosts() {
-        this._dataService.getLiveData();
-    }
 
 	ngOnInit() {
 

@@ -185,13 +185,13 @@ setOriginAndDestination(){
     break;
 
     case "8":
-    this.origin = "Darwin";
-    this.destination = "Palmerston";
+    this.origin = "Palmerston";
+    this.destination = "Darwin";
     break;
 
     case "9":
-    this.origin = "Casuarina";
-    this.destination = "Palmerston";
+    this.origin = "Palmerston";
+    this.destination = "Casuarina";
     break;
 
     case "10":
