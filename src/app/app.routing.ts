@@ -18,7 +18,7 @@ const APP_ROUTES: Routes = [
 	{ path: 'search', component: SearchComponent},
 	{ path: 'timetables', component: TimetablesComponent},
 	{ path: 'map', component: MapComponent},
-	{ path: 'route/:shape_id', component: MaprouteComponent}
+	{ path: 'timetables/route/:shape_id', component: MaprouteComponent}
 
 ];
 

@@ -8,12 +8,15 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 
-
+import {CacheService, CacheStoragesEnum} from 'ng2-cache/ng2-cache';
+ 
+declare var BUILD_VERSION: string;
 
 @Component({
 	selector: 'app-timetables',
 	templateUrl: './timetables.component.html',
-	styleUrls: ['./timetables.component.css']
+	styleUrls: ['./timetables.component.css'],
+    providers: [ CacheService ]
 })
 
 
@@ -55,8 +58,9 @@ export class TimetablesComponent implements OnInit {
         : this.routeNumberArray.filter(v => v.indexOf(term.toLowerCase()) > -1).slice(0, 10));
 
 
-	constructor(private _dataService: DataService) {
+	constructor(private _dataService: DataService, private _cacheService: CacheService) {
 		this.getPosts();
+
 	}
 
 	private posts:Post[] = [];

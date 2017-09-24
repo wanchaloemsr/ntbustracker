@@ -2,11 +2,13 @@ import { Component, Input, OnInit } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 
 import { DataService } from '../data.service';
+import {CacheService, CacheStoragesEnum} from 'ng2-cache/ng2-cache';
 
 @Component({
   selector: 'route',
   templateUrl: './route.component.html',
-  styleUrls: ['./route.component.css']
+  styleUrls: ['./route.component.css'],
+   providers: [ CacheService ]
 })
 
 export class RouteComponent implements OnInit{
@@ -44,8 +46,16 @@ export class RouteComponent implements OnInit{
   stop_time_by_WESAN_1 = [];
   stop_time_by_WESU_1 = [];
 
+  a = ['AAAA', 'BBBB'];
 
-  constructor(private _dataService: DataService, private modalService: NgbModal) { }
+
+  constructor(private _dataService: DataService, private modalService: NgbModal, private _cacheService: CacheService) {
+
+
+    _cacheService.setGlobalPrefix('CacheService');
+    _cacheService.set('route_id', [this.a]);
+
+   }
 
   ngOnInit(){
 
@@ -55,7 +65,7 @@ export class RouteComponent implements OnInit{
       .subscribe(resData => this.allStops = resData);
     this.sortingTripDate();
     this.checkIfTwoway();
-
+    console.log("Test Cache: " + this._cacheService.get('route_id'));
   }
 
   setData(trip_id: string){

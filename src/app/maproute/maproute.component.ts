@@ -43,12 +43,13 @@ export class MaprouteComponent implements OnInit {
   shape_id: string;
   trip_id: string;
   route_id: string;
+  markerLabel:string;
 
   screenHeight: number;
 
   stopIconUrl: string = './assets/icon/bus-stop-sign-none.png';
 
-  stopIcon: string = './assets/icon/bus-stop-md.png';
+  stopIcon: string = './assets/icon/Untitled-1.png';
 
   constructor(private _dataService: DataService, route: ActivatedRoute, private _route: Router) { 
 
@@ -84,7 +85,7 @@ export class MaprouteComponent implements OnInit {
 
   ngOnInit() {
 
-    this.screenHeight = window.screen.availHeight - 81;
+    this.screenHeight = window.screen.height - 200;
 
 
 
@@ -133,6 +134,11 @@ export class MaprouteComponent implements OnInit {
     else {
       this.a_trip_id = this.a_trip_id.slice(1, 4);
     }
+
+  }
+
+  setLabel(stop_id:string){
+    return this.stopList.filter(item => item.stop_id === stop_id)[0].stop_sequence.toString();
 
   }
 

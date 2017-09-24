@@ -1,14 +1,14 @@
 <nav class="mynav fixed-top ">
     <div class="container">
-        <ul class="nav justify-content-center">
-                <li class="nav-item col-4 col-md-3 col-lg-2">
-                    <a class="nav-link" id="timetable" [routerLink]="['/timetables']"></a>
+        <ul class="nav justify-content-center"  >
+                <li class="nav-item col-4 col-md-3 col-lg-2" >
+                    <a class="nav-link" id="timetable" [routerLinkActive]="['active-link']" [routerLink]="['/timetables']"></a>
                 </li>
                 <li class="nav-item col-4 col-md-3 col-lg-2">
-                    <a class=" nav-link" id="map" [routerLink]="['/map']"></a>
+                    <a class=" nav-link" id="map" [routerLinkActive]="['active-link']" [routerLink]="['/map']"></a>
                 </li>
                 <li class="nav-item col-4 col-md-3 col-lg-2">
-                    <a class=" nav-link" id="favourite" [routerLink]="['/favourites']"></a>
+                    <a class=" nav-link" id="favourite" [routerLinkActive]="['active-link']" [routerLink]="['/favourites']"></a>
                 </li>
                 
             </ul>

@@ -141,30 +141,50 @@ export class DataService{
 
 
 	getLiveData(){
-		let headers = new Headers();
-		headers.append('Access-Control-Allow-Origin','http://localhost:4200');
 
-		let parserString = require('xml2js').parseString;
-		let xml = (fetch('http://pub.ntgov-rtpi.tims.net.au/webapp/bustrk/PublicBus', {
-			body : '<?xml version="1.0" encoding="utf-8" ?><request xmlns="urn:Bacchus"></request>',
-			method: 'post',
-			mode: 'no-cors',
-			headers: headers
-		}
-		));
+const fetch = require("node-fetch");
+let parserString = require('xml2js').parseString;
 
-		console.log("Result "+xml);
-
-		parserString(xml, function(err, result){
-			console.log("Result "+result);
-		});
-
+let promise = (fetch('http://pub.ntgov-rtpi.tims.net.au/webapp/bustrk/PublicBus', {
+	body : '<?xml version="1.0" encoding="utf-8" ?><request xmlns="urn:Bacchus"></request>',
+	method: 'post',
+	mode: 'no-cors',
+	headers: {
+		'Access-Control-Allow-Origin': 'http://localhost:4200'
 	}
+}
+))
+.then((response) => {
+	// Get text/xml out of response body
+	return response.text();
+})
+.then((textResponse) => {
+	// Parse xml text to string and convert callback to promise
+	return new Promise((resolve, reject) => {
+		parserString(textResponse, function(err, result){
+			if(err) {
+				return reject(err);
+			}
+			return resolve(result);
+		})
+
+	})
+})
+.then((busData) => {
+	// Get the data we want out of the XML data structure
+	const arrays = busData.dataroot_public_bus_loc.public_bus_locs.map((list) => list.public_bus)
+	return [].concat.apply([], arrays);
+})
+.then((busData) => {
+	console.log(busData);
+})
+console.log("Promise " + promise);
+
 
 
 }
 
-
+}
 export class Shape{
 
    shape_id: string;
