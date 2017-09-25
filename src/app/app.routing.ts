@@ -12,8 +12,7 @@ import { RouteComponent } from './timetables/route.component'
 
 const APP_ROUTES: Routes = [
 
-	{ path: '', redirectTo: '/timetables', pathMatch: 'full'},
-	{ path: 'home', component: HomeComponent},
+	{ path: '', redirectTo: 'timetables', pathMatch: 'full'},
 	{ path: 'favourites', component: FavouritesComponent},
 	{ path: 'search', component: SearchComponent},
 	{ path: 'timetables', component: TimetablesComponent},

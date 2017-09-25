@@ -32,6 +32,18 @@
 					</agm-snazzy-info-window>
 				</agm-marker>
 		</div>
+		
+
+		<agm-marker *ngFor= "let bus of liveRoute" [latitude]="bus.getLatitude()" [longitude]="bus.getLongitude()"  [title] = "bus.getRoute()" [label]="bus.getRouteNumber()" [iconUrl]= 'busIconUrl'>
+			<agm-snazzy-info-window [maxWidth]="400" [closeWhenOthersOpen]="true" [backgroundColor]="red">
+				<ng-template>
+					<h3>{{bus.getRoute()}}</h3>
+					Start: {{bus.getStartTime()}}<hr>
+					<small>Status: {{bus.getStatus()}}</small>
+				</ng-template>
+			</agm-snazzy-info-window>
+		</agm-marker>
+
 	</agm-map>
 </div>
 

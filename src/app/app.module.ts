@@ -14,6 +14,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { FavouritesComponent } from './favourites/favourites.component';
 import { HeaderComponent } from './header.component';
+import { FooterComponent } from './footer.component';
 import { MapComponent } from './map/map.component';
 import { TimetablesComponent } from './timetables/timetables.component';
 import { RouteComponent } from './timetables/route.component';
@@ -41,6 +42,7 @@ const appRoutes: Routes = [
     AppComponent,
     FavouritesComponent,
     HeaderComponent,
+    FooterComponent,
     MapComponent,
     TimetablesComponent,
     SearchComponent,

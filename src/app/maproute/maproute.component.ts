@@ -45,9 +45,14 @@ export class MaprouteComponent implements OnInit {
   route_id: string;
   markerLabel:string;
 
+  liveRoute: any[] = [];
+  interval: any;
+
   screenHeight: number;
 
   stopIconUrl: string = './assets/icon/bus-stop-sign-none.png';
+
+  busIconUrl: string = './assets/icon/bus.png';
 
   stopIcon: string = './assets/icon/Untitled-1.png';
 
@@ -87,8 +92,21 @@ export class MaprouteComponent implements OnInit {
 
     this.screenHeight = window.screen.height - 200;
 
+        this.refreshData();
+        this.interval = setInterval(() => { 
+                this.refreshData(); 
+        }, 10000);
 
 
+
+  }
+
+  refreshData(){
+    setTimeout(()=>{
+      this.liveRoute = this._dataService.getLiveDataByRoute(this.route_id);
+    }, 1000);
+
+    console.log("SIXXXXXXXXXXX: "+ this.liveRoute.length);
   }
 
   setData(){

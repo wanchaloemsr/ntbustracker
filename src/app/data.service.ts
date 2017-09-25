@@ -23,6 +23,7 @@ export class DataService{
 	liveBusData : any;
 
 	liveDataArray: LiveData[] = [];
+	liveRoute : LiveData[] = [];
 
 	private _url:string = "../assets/data/google-transit/shapes-json.json";
 	private _shape_id_url:string = "../assets/data/google-transit/shapes-id.json";
@@ -194,27 +195,12 @@ export class DataService{
 	setLiveData(liveData: any){
 		console.log(liveData);
 
-		let tmp = this.liveDataArray;
-
 		this.liveDataArray = [];
 
 		for(let data of liveData){
 
-				let code = data.code[0];
-				let datetime = data.datetime[0];
-				let direction = data.direction[0];
-				let end = data.end[0];
-				let endtime = data.end_time[0];
-				let latitude = Number(data.latitude[0]);
-				let longitude = Number(data.longitude[0]);
-				let otr = data.otr[0];
-				let rego = data.rego[0];
-				let route = data.route[0];
-				let start = data.start[0];
-				let starttime = data.start_time[0];
-				let status = data.status[0];
 				let aLiveData = new LiveData(data.code[0], data.datetime[0], data.direction[0], data.end[0], data.end_time[0], Number(data.latitude[0]), Number(data.longitude[0]),
-				 data.otr[0], data.rego[0], data.route[0], data.start[0], data.start_time[0], data.status[0]);
+				 Number(data.otr[0]), data.rego[0], data.route[0], data.start[0], data.start_time[0], data.status[0]);
 
 				this.liveDataArray.push(aLiveData);
 
@@ -223,6 +209,30 @@ export class DataService{
 				
 
 		console.log("Length: " + this.liveDataArray.length);
+	}
+
+	getLiveDataByRoute( route_id:string){
+		this.getLiveData();
+		this.liveRoute = [];
+
+		console.log("Live data: " + this.liveDataArray.length);
+
+		for(let data of this.liveDataArray){
+			console.log("Route slice: " + data.route.indexOf(' ')+1);
+			if(data.route.substr(data.route.indexOf(' ')+1) === route_id){
+				
+				let aLiveData = new LiveData(data.code, data.datetime, data.direction, data.end, data.end_time, Number(data.latitude), Number(data.longitude),
+				 Number(data.otr), data.rego, data.route, data.start, data.start_time, data.status);
+
+				this.liveRoute.push(aLiveData);
+
+			}
+
+		}
+
+		return this.liveRoute;
+
+		
 	}
 
 }
@@ -327,43 +337,45 @@ export class LiveData{
 	datetime: string;
 	direction: string;
 	end: string;
-	endtime: string;
+	end_time: string;
 	latitude: number;
 	longitude: number;
-	otr: string;
+	otr: number;
 	rego: string;
 	route: string;
 	start: string;
-	starttime: string;
+	start_time: string;
 	status: string;
 
 	constructor(code: string,
 	datetime: string,
 	direction: string,
 	end: string,
-	endtime: string,
+	end_time: string,
 	latitude: number,
 	longitude: number,
-	otr: string,
+	otr: number,
 	rego: string,
 	route: string,
 	start: string,
-	starttime: string,
+	start_time: string,
 	status: string){
 
 	this.code = code;
 	this.datetime = datetime;
 	this.direction = direction;
 	this.end = end;
-	this.endtime = endtime;
+	this.end_time = end_time;
 	this.latitude = latitude;
 	this.longitude = longitude;
 	this.otr = otr;
 	this.rego = rego;
 	this.route = route;
 	this.start = start;
-	this.starttime = starttime;
+	this.start_time = start_time;
 	this.status = status;
+
+	console.log("OTR: " + typeof(otr));
 
 	}
 
@@ -380,7 +392,7 @@ export class LiveData{
 	}
 
 	getEndTime(){
-		return this.endtime;
+		return this.end_time;
 	}
 
 	getLatitude(){
@@ -410,6 +422,7 @@ export class LiveData{
 			if(r.search('Route') === -1){
 				return this.route;
 			}else{
+				console.log("SSSSSSSSSS: "+this.route.slice(5));
 				return this.route.slice(5);
 			}
 		}
@@ -420,11 +433,24 @@ export class LiveData{
 	}
 
 	getStartTime(){
-		return this.starttime.slice(0,5);
+		return this.start_time.slice(0,5);
 	}
 
 	getStatus(){
-		return this.status;
+
+		if(this.status.length>0){
+			return this.status;
+		}else{
+			if (this.otr > -1 && this.otr < 1) {
+				return 'On time';
+				// code...
+			}else if (this.otr <=-1){
+				return this.otr.toString().substr(1, this.otr.toString().indexOf(".")) + " minute(s) early.";
+			}else{
+				return this.otr.toString().substr(0, this.otr.toString().indexOf(".")) + " minute(s) late.";
+			}
+		}
+		
 	}
 
 
