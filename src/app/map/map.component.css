@@ -1,17 +1,8 @@
-agm-map {
-  height: 450px;
+.icon-guide{
+	background: #F5F5F2;
+	padding: 5px 0 ;
 }
 
-.icon{
-  display: flex;
-  align-items: center;
-  justify-content: center
-}
-
-#footer {
-    bottom: 0;
-    width: 100%;
-    padding: 5px 0;
-    background: #F5F5F2;
-    position: absolute;
+.icon-content{
+	text-align: center;
 }

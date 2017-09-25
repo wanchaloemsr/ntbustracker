@@ -32,7 +32,7 @@ export class MapComponent implements OnInit {
 	title: string = 'My first AGM project';
 
 	iconUrl: string = './assets/icon/map-marker.png';
-	busIconUrl: string = './assets/icon/bus.png';
+	busIconUrl: string = './assets/icon/bus-md.png';
 	stopIconUrl: string = './assets/icon/bus-stop-sign-none.png';
 	interchangeIconUrl: string = './assets/icon/interchange-icon-lg.png';
 
@@ -47,6 +47,9 @@ export class MapComponent implements OnInit {
 	interval: any;
 
 	selectedShapeID: string;
+
+
+  	screenHeight: number;
 
 	shape2 = [];
 
@@ -93,6 +96,8 @@ export class MapComponent implements OnInit {
        				 this.refreshData(); 
     		}, 10000);
 
+    	this.screenHeight = window.screen.height - 130;
+
 		
 		
 	}
@@ -138,11 +143,13 @@ export class MapComponent implements OnInit {
 		}else if (event >= 15){
 			this.stopIconUrl = './assets/icon/bus-stop-md.png';
 			this.interchangeIconUrl = './assets/icon/interchange-icon-md.png';
+			this.busIconUrl = './assets/icon/bus-lg.png';
 			this.stopZoomLevel = true;
 
 		}else if (event >= 13){
 			this.stopIconUrl = './assets/icon/bus-stop-sm.png';
 			this.interchangeIconUrl = './assets/icon/interchange-icon-md.png';
+			this.busIconUrl = './assets/icon/bus-md.png';
 			this.stopZoomLevel = true;
 		}else{
 			this.stopZoomLevel = false;

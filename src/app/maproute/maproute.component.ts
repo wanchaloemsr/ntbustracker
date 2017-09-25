@@ -52,7 +52,7 @@ export class MaprouteComponent implements OnInit {
 
   stopIconUrl: string = './assets/icon/bus-stop-sign-none.png';
 
-  busIconUrl: string = './assets/icon/bus.png';
+  busIconUrl: string = './assets/icon/bus-md.png';
 
   stopIcon: string = './assets/icon/Untitled-1.png';
 

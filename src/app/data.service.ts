@@ -184,7 +184,6 @@ export class DataService{
 		.then((busData) => {
 			//console.log(busData);
 			this.liveBusData = busData;
-			console.log("BusData: "+ busData.length);
 			if(busData.length>0){
 				this.setLiveData(busData);
 			}
@@ -193,7 +192,6 @@ export class DataService{
 	}
 
 	setLiveData(liveData: any){
-		console.log(liveData);
 
 		this.liveDataArray = [];
 
@@ -205,20 +203,13 @@ export class DataService{
 				this.liveDataArray.push(aLiveData);
 
 			}
-
-				
-
-		console.log("Length: " + this.liveDataArray.length);
 	}
 
 	getLiveDataByRoute( route_id:string){
 		this.getLiveData();
 		this.liveRoute = [];
 
-		console.log("Live data: " + this.liveDataArray.length);
-
 		for(let data of this.liveDataArray){
-			console.log("Route slice: " + data.route.indexOf(' ')+1);
 			if(data.route.substr(data.route.indexOf(' ')+1) === route_id){
 				
 				let aLiveData = new LiveData(data.code, data.datetime, data.direction, data.end, data.end_time, Number(data.latitude), Number(data.longitude),
@@ -375,8 +366,6 @@ export class LiveData{
 	this.start_time = start_time;
 	this.status = status;
 
-	console.log("OTR: " + typeof(otr));
-
 	}
 
 	getCode(){
@@ -422,7 +411,6 @@ export class LiveData{
 			if(r.search('Route') === -1){
 				return this.route;
 			}else{
-				console.log("SSSSSSSSSS: "+this.route.slice(5));
 				return this.route.slice(5);
 			}
 		}

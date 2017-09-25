@@ -1,5 +1,23 @@
+<div class="icon-guide">
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-4 icon-content">
+				<img src="./assets/icon/interchange-icon-md.png"/> Interchange
+			</div>
+			<div class="col-4 icon-content">
+				<img src="./assets/icon/bus-stop-lg.png"/> Stop
+			</div>
+			<div class="col-4 icon-content">
+				<img src="./assets/icon/bus-md.png"/> Bus
+			</div>
+		</div>
+	</div>
+
+</div>
+
 <agm-map [latitude]="lat" [longitude]="lng" [zoom]='zoom' [styles] = 'mapStyle' 
-	(zoomChange)="zoomChange($event)" [minZoom]="minZoom" (mapClick)="placeMarker($event)" [fullscreenControl]=true [mapTypeControl] = true [streetViewControl] = false>
+	(zoomChange)="zoomChange($event)" [minZoom]="minZoom" (mapClick)="placeMarker($event)" [fullscreenControl]=true [mapTypeControl] = true [streetViewControl] = false [style.height.px] = "screenHeight">
 
 		<!-- Draw Stop and interchanges -->
 		<div *ngIf="stopZoomLevel">
@@ -53,19 +71,3 @@
 		</div>
 	</div>
 </div>
-
-<footer id="footer">
-	<div class="container">
-	<div class="row">
-		<div class="col-4 icon">
-			<img src="./assets/icon/interchange-icon-md.png"/> Interchange
-		</div>
-		<div class="col-4 icon">
-			<img src="./assets/icon/bus-stop-lg.png"/> Stop
-		</div>
-		<div class="col-4 icon">
-			<img src="./assets/icon/bus.png"/> Bus
-		</div>
-	</div>
-</div>
-</footer>
