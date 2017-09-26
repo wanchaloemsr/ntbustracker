@@ -6,3 +6,16 @@
 .container{
 	margin-top: 10px
 }
+
+  /deep/ .card-header {
+  border: 1px solid #DDDDDD;
+  margin-bottom: 0.2rem;
+}
+
+  /deep/ .card-header  a{
+  	color: black;
+}
+
+  /deep/ .card {
+  border: none;
+}

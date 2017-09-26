@@ -1,8 +1,53 @@
+h3{
+	font-size: 1.5em;
+}
+
+.map{
+	top: 118px;
+	width: 100%;
+	position: fixed;
+}
+
+
 .icon-guide{
+	top: 60px;
+	width: 100%;
 	background: #F5F5F2;
 	padding: 5px 0 ;
 }
 
 .icon-content{
 	text-align: center;
+}
+
+.current-location{
+	text-indent: -20000px;      
+    position: fixed;
+    bottom: 70px; 
+    left: 10px;
+	background-image: url('../../assets/icon/navigation-1.png');
+	background-repeat: no-repeat;
+	background-position: center; 
+	height: 70px;
+   	width: 70px;
+
+}
+
+.current-location:active{
+	background-image: url('../../assets/icon/navigation-hover.png');
+
+}
+
+.current-location:after{
+	background-image: url('../../assets/icon/navigation-1.png');
+
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .current-location:hover{
+	background-image: url('../../assets/icon/navigation-hover.png');
+
+}
+
 }

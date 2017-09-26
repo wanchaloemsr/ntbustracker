@@ -29,8 +29,6 @@ export class MapComponent implements OnInit {
 
 	shapeID: any;
 
-	title: string = 'My first AGM project';
-
 	iconUrl: string = './assets/icon/map-marker.png';
 	busIconUrl: string = './assets/icon/bus-md.png';
 	stopIconUrl: string = './assets/icon/bus-stop-sign-none.png';
@@ -39,6 +37,7 @@ export class MapComponent implements OnInit {
 
 	lat: number = -12.479048;
 	lng: number = 130.987067;
+
 	zoom: number = 11;
 	minZoom:number = 10;
 	routeNumber: string = '10';
@@ -69,7 +68,11 @@ export class MapComponent implements OnInit {
 	longitudeArray: number[] = [];
 
 	constructor(private _dataService: DataService) { 
-		_dataService.getLiveData();
+
+		this.refreshData();
+    		this.interval = setInterval(() => { 
+       				 this.refreshData(); 
+    		}, 10000);
 
 	}
 
@@ -91,21 +94,16 @@ export class MapComponent implements OnInit {
 		this._dataService.getMapStyle()
 		.subscribe(resStopsData => this.mapStyle = resStopsData);
 
-		this.refreshData();
-    		this.interval = setInterval(() => { 
-       				 this.refreshData(); 
-    		}, 10000);
 
-    	this.screenHeight = window.screen.height - 130;
+    	this.screenHeight = window.screen.height - 150;
 
 		
 		
 	}
 
 	refreshData(){
-    this._dataService.getLiveData();
     setTimeout(()=>{
-			this.liveDataArray = this._dataService.liveDataArray;
+			this.liveDataArray = this._dataService.getPublicBus();
 			console.log("Map Data: "+ this.liveDataArray.length);
 		}, 1000);
 	}
@@ -127,7 +125,24 @@ export class MapComponent implements OnInit {
 		this._dataService.getShapeID2(route_id)
 			.subscribe(resData => this.shape2 = resData);
 		this.lat = -12.444622814174567;
+	}
 
+	setMyLocation(){
+		this.getLocation();
+	}
+
+	getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(this.showPosition);
+    } else { 
+        console.log("Geolocation is not supported by this browser.");
+    	}
+	}
+
+	showPosition(position) {
+
+		let lat = position.coords.latitude;
+		let lng = position.coords.longitude;
 
 	}
 

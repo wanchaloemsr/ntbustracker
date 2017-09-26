@@ -1,73 +1,76 @@
+
 <div class="icon-guide">
-	
 	<div class="container">
-		<div class="row">
-			<div class="col-4 icon-content">
-				<img src="./assets/icon/interchange-icon-md.png"/> Interchange
+		<div class="row justify-content-center">
+			<div class="col-4 col-md-3 col-lg-2 icon-content">
+				<img src="./assets/icon/interchange-icon-md.png"/>
 			</div>
-			<div class="col-4 icon-content">
-				<img src="./assets/icon/bus-stop-lg.png"/> Stop
+			<div class="col-4 col-md-3 col-lg-2 icon-content">
+				<img src="./assets/icon/bus-stop-lg.png"/>
 			</div>
-			<div class="col-4 icon-content">
-				<img src="./assets/icon/bus-md.png"/> Bus
+			<div class="col-4 col-md-3 col-lg-2 icon-content">
+				<img src="./assets/icon/bus-md.png"/>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-4 col-md-3 col-lg-2 icon-content">Interchange
+			</div>
+			<div class="col-4 col-md-3 col-lg-2 icon-content">Stop
+			</div>
+			<div class="col-4 col-md-3 col-lg-2 icon-content">Bus
 			</div>
 		</div>
 	</div>
-
 </div>
 
-<agm-map [latitude]="lat" [longitude]="lng" [zoom]='zoom' [styles] = 'mapStyle' 
+
+<div class="map">
+	<agm-map [latitude]="lat" [longitude]="lng" [zoom]='zoom' [styles] = 'mapStyle' 
 	(zoomChange)="zoomChange($event)" [minZoom]="minZoom" (mapClick)="placeMarker($event)" [fullscreenControl]=true [mapTypeControl] = true [streetViewControl] = false [style.height.px] = "screenHeight">
 
-		<!-- Draw Stop and interchanges -->
-		<div *ngIf="stopZoomLevel">
-			<agm-marker *ngFor= "let stop of allStops" [latitude]="stop.stop_lat" [longitude]="stop.stop_lon" [iconUrl]= 'stopIconUrl' [title] = "stop.stop_id">
-				<agm-snazzy-info-window [maxWidth]="300" [closeWhenOthersOpen]="true" [backgroundColor]="red">
-					<ng-template>
-						<h3>{{stop.stop_name}}</h3>
-						{{stop.stop_desc}}
-					</ng-template>
-				</agm-snazzy-info-window>
-			</agm-marker>
-		</div>
-
-		<agm-marker *ngFor= "let int of interchangeList" [latitude]="int.interchange_lat" [longitude]="int.interchange_lon" [iconUrl]= 'interchangeIconUrl' [title] = "int.interchange_desc" [zIndex]='zindex'>
-			<agm-snazzy-info-window [maxWidth]="400" [closeWhenOthersOpen]="true" [backgroundColor]="red">
+	<!-- Draw Stop and interchanges -->
+	<div *ngIf="stopZoomLevel">
+		<agm-marker *ngFor= "let stop of allStops" [latitude]="stop.stop_lat" [longitude]="stop.stop_lon" [iconUrl]= 'stopIconUrl' [title] = "stop.stop_id">
+			<agm-snazzy-info-window [maxWidth]="300" [closeWhenOthersOpen]="true" [backgroundColor]="red">
 				<ng-template>
-					<h3>{{int.interchange_name}}</h3>
-					{{int.interchange_desc}}
+					<h3>{{stop.stop_name}}</h3>
+					{{stop.stop_desc}}
 				</ng-template>
 			</agm-snazzy-info-window>
 		</agm-marker>
+	</div>
 
-		<agm-marker *ngFor= "let bus of liveDataArray" [latitude]="bus.getLatitude()" [longitude]="bus.getLongitude()"  [title] = "bus.getRoute()" [label]="bus.getRouteNumber()" [iconUrl]= 'busIconUrl' (markerClick) = 'setRoutePoliline(bus.getRouteNumber())'>
-			<agm-snazzy-info-window [maxWidth]="400" [closeWhenOthersOpen]="true" [backgroundColor]="red">
-				<ng-template>
-					<h3>{{bus.getRoute()}}</h3>
-					Start: {{bus.getStartTime()}}<hr>
-					<small>Status: {{bus.getStatus()}}</small>
-				</ng-template>
-			</agm-snazzy-info-window>
-		</agm-marker>
+	<agm-marker *ngFor= "let int of interchangeList" [latitude]="int.interchange_lat" [longitude]="int.interchange_lon" [iconUrl]= 'interchangeIconUrl' [title] = "int.interchange_desc" [zIndex]='zindex'>
+		<agm-snazzy-info-window [maxWidth]="500" [closeWhenOthersOpen]="true" [backgroundColor]="red">
+			<ng-template>
+				<h3>{{int.interchange_name}}</h3>
+				{{int.interchange_desc}}
+			</ng-template>
+		</agm-snazzy-info-window>
+	</agm-marker>
 
-		<agm-polyline [title]="'Routes'" [zIndex]='zindex'>
-			<agm-polyline-point *ngFor= "let shape of aShape" [latitude]="shape.shape_pt_lat" [longitude]="shape.shape_pt_lon">
-				
-			</agm-polyline-point>
-		</agm-polyline>
-	</agm-map>
+	<agm-marker *ngFor= "let bus of liveDataArray" [latitude]="bus.getLatitude()" [longitude]="bus.getLongitude()"  [title] = "bus.getRoute()" [label]="bus.getRouteNumber()" [iconUrl]= 'busIconUrl' (markerClick) = 'setRoutePoliline(bus.getRouteNumber())'>
+		<agm-snazzy-info-window [maxWidth]="'500'" [closeWhenOthersOpen]="true" [backgroundColor]="red">
+			<ng-template>
+				<h3>{{bus.getRoute()}}</h3>
+				Origin: {{bus.getStart()}}
+				<small>: {{bus.getStartTime()}}</small><br>
+				Des: {{bus.getEnd()}}
+				<small>: {{bus.getEndTime()}}</small>
+				<hr>
+				<small>Status: {{bus.getStatus()}}</small>
+			</ng-template>
+		</agm-snazzy-info-window>
+	</agm-marker>
 
+	<agm-polyline [title]="'Routes'" [zIndex]='zindex'>
+		<agm-polyline-point *ngFor= "let shape of aShape" [latitude]="shape.shape_pt_lat" [longitude]="shape.shape_pt_lon">
 
+		</agm-polyline-point>
+	</agm-polyline>
+</agm-map>
+</div>
 
 <div class="container">
-	<div class="row">
-		<div class="col">
-			<div class="form-group">
-				<label for="exampleSelect1">Shape IDs</label>
-				<select class="form-control" [ngModel] = "selectedShapeID" (ngModelChange)="onChange($event)" placeholder="Password">
-					<option *ngFor="let shapeID of shapeIDs">{{shapeID.shape_id}}</option>
-				</select>
-			</div>
-		</div>
-	</div>
+	<div class="current-location">My Location</div>
 </div>

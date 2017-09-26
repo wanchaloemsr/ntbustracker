@@ -11,7 +11,7 @@
 			<div class="col-md-12">
 				<ul *ngFor ="let stopList of stopTimeListById" class="list-group">
 					<li class="list-group-item">
-						<p>Stop <span class="badge badge-pill badge-dark">{{stopList.stop_sequence}}</span> Estimate arrival time: {{stopList.arrival_time}}</p>
+						<p>Stop <span class="badge badge-pill badge-default">{{stopList.stop_sequence}}</span> Estimate arrival time: {{stopList.arrival_time}}</p>
 						<small>Stop Number: {{stopList.stop_id}}</small>
 						<button class="btn btn-primary btn-sm" (click)= "navigateTo()" (click)="c('Close click')">Show Route</button>
 					</li>
@@ -26,7 +26,7 @@
 
 </ng-template>
 <div *ngFor = "let trip of stopTimeListById ; let i = index">
-	<div class="top-buffer btn btn-block route-list" *ngIf = "i == 0"  (click)="open(content, trip.trip_id)"><h3>Route: <span class="badge badge-dark">{{a_trip_id}}</span> Depart At {{trip.departure_time}}</h3>
+	<div class="top-buffer btn btn-block route-list" *ngIf = "i == 0"  (click)="open(content, trip.trip_id)"><h3>Route: <span class="badge badge-default">{{a_trip_id}}</span> Depart At {{trip.departure_time}}</h3>
 		<small>{{trip_headsign}}</small>
 	</div>
 </div>

@@ -1,73 +1,8 @@
-.mynav{
-	margin-top: 59px;
-	background-color: #dde4eb;
+nav{
+	margin-top: -3.7rem;
 }
 
-#timetable{
-	background-image: url('../assets/nav/timetable-b.png');
-
-}
-
-#timetable:hover{
-	background-image: url('../assets/nav/timetable.png');
-}
-
-#map{
-	background-image: url('../assets/nav/map-b.png');
-
-}
-
-#map:hover{
-	background-image: url('../assets/nav/map.png');
-}
-
-#favourite{
-	background-image: url('../assets/nav/fav-b.png');
-
-}
-
-#favourite:hover{
-	background-image: url('../assets/nav/fav.png');
-}
-
-#timetable, #map, #favourite{
-	background-repeat: no-repeat;
-	background-position: center; 
-	height: 70px;
-   	width: 100px;
-   	padding: 5px 10px;
-}
-
-
-.mynav a{
-	color: #343A40;
-	text-align: center;
-	height: 100%;
-	width: 0 auto;
-}
-
-.mynav a:hover{
-	background-color: #343A40;
-	color: #c5c5c5;
-}
-
-
-/* Adding background when nav is active  */
-.active-link {
-	background-color: #343A40;
-	color: #c5c5c5;
-
-}
-
-#timetable.active-link{
-	background-image: url('../assets/nav/timetable.png');
-}
-
-#map.active-link{
-	background-image: url('../assets/nav/map.png');
-}
-
-#favourite.active-link{
-	background-image: url('../assets/nav/fav.png');
-
+.side-nav{
+	height: 0px;
+	width: 100;
 }

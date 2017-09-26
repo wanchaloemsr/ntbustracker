@@ -43,7 +43,6 @@ export class RouteTimeComponent implements OnInit{
 
   navigateTo(){
     this._dataService.stopTimeList = this.stopTimeList;
-    console.log("Size : "+ this._dataService.stopTimeList.length);
     this._route.navigate(['route/' + this.shape_id]);
   }
 
@@ -53,7 +52,6 @@ export class RouteTimeComponent implements OnInit{
   }
 
   setATrip(){
-    console.log("Trip_id: " + this.trip_id);
     let a_trip_array = this.trip_id.split("_", 1);
     for(let item of a_trip_array){
 
@@ -72,8 +70,6 @@ export class RouteTimeComponent implements OnInit{
     else {
       this.a_trip_id = this.a_trip_id.slice(1);
     }
-    
-    console.log("Atrip : " + this.a_trip_id);
   }
 
   open(content, trip_id) {
@@ -97,13 +93,6 @@ export class RouteTimeComponent implements OnInit{
     } else {
       return  `with: ${reason}`;
     }
-  }
-
-
-
-  departTimeClick(){
-    console.log('is click');
-
   }
 
 }

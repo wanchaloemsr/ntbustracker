@@ -25,6 +25,8 @@ export class DataService{
 	liveDataArray: LiveData[] = [];
 	liveRoute : LiveData[] = [];
 
+	private interval: any;
+
 	private _url:string = "../assets/data/google-transit/shapes-json.json";
 	private _shape_id_url:string = "../assets/data/google-transit/shapes-id.json";
 	private _stop_url:string = "../assets/data/google-transit/stops.json";
@@ -39,6 +41,11 @@ export class DataService{
 	private _calender_url: string = "../assets/data/google-transit/calender.json";
 
 	constructor(private _http:Http){
+
+		this.getLiveData();
+        this.interval = setInterval(() => { 
+                this.getLiveData();
+        }, 10000);
 
 
 	}
@@ -144,6 +151,10 @@ export class DataService{
 					.filter(item => item.service_id === service_id));
 	}
 
+	getPublicBus(){
+		return this.liveDataArray;
+	}
+
 
 	getLiveData(){
 
@@ -155,7 +166,8 @@ export class DataService{
 			method: 'post',
 			mode: 'no-cors',
 			headers: {
-				'Access-Control-Allow-Origin': 'http://localhost:4200'
+				'Access-Control-Allow-Origin': 'http://localhost:4200',
+				'Allow-Control-Allow-Origin': 'http://localhost:4200'
 			}
 		}
 		))
@@ -206,7 +218,6 @@ export class DataService{
 	}
 
 	getLiveDataByRoute( route_id:string){
-		this.getLiveData();
 		this.liveRoute = [];
 
 		for(let data of this.liveDataArray){
@@ -381,7 +392,7 @@ export class LiveData{
 	}
 
 	getEndTime(){
-		return this.end_time;
+		return this.end_time.slice(0,5);
 	}
 
 	getLatitude(){

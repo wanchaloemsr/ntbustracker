@@ -8,18 +8,21 @@
 	margin-bottom: 4px;
 }
 
-.route  /deep/ .card-body {
-  padding: 0;
-}
-
 h3{
-	font-size: 0.5 em;
+	margin-top: 0.5rem;
+	font-size: 1.4rem;
 }
 
-.trip-row{
-	border-bottom: 1px solid #a6a6a6;
-	margin-top: 4px;
+.trip{
+	border-bottom: 1px solid #DDDDDD;
+	margin-top: 0.3rem;
 }
+
+.col{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 
 @media only screen and (max-width: 448px) {
     .direction-img img{

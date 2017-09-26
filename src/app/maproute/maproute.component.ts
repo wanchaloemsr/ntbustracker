@@ -69,6 +69,13 @@ export class MaprouteComponent implements OnInit {
     console.log("W: "+ window.screen.width);
 
 
+    this.liveRoute = this._dataService.getLiveDataByRoute(this.route_id);
+    this.interval = setInterval(() => { 
+            this.refreshData(); 
+    }, 10000);
+
+
+
     if(this.checkTripID()){
 
       this._dataService.getMapStyle()
@@ -92,21 +99,12 @@ export class MaprouteComponent implements OnInit {
 
     this.screenHeight = window.screen.height - 200;
 
-        this.refreshData();
-        this.interval = setInterval(() => { 
-                this.refreshData(); 
-        }, 10000);
-
-
-
   }
 
   refreshData(){
     setTimeout(()=>{
       this.liveRoute = this._dataService.getLiveDataByRoute(this.route_id);
     }, 1000);
-
-    console.log("SIXXXXXXXXXXX: "+ this.liveRoute.length);
   }
 
   setData(){
