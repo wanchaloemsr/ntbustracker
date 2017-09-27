@@ -8,6 +8,26 @@
 	margin-bottom: 4px;
 }
 
+.no-fav-btn button{
+	width: 5rem;
+	height: 5rem;
+	background-image: url('../../assets/icon/no-favorite.png');
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.fav-btn button{
+	width: 5rem;
+	height: 5rem;
+	background-image: url('../../assets/icon/favourite.png');
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+
+.my-favourite-btn{
+	text-indent: -9999px;
+}
+
 h3{
 	margin-top: 0.5rem;
 	font-size: 1.4rem;

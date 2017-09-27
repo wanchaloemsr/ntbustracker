@@ -50,6 +50,8 @@ export class MaprouteComponent implements OnInit {
 
   screenHeight: number;
 
+  isOpen = false;
+
   stopIconUrl: string = './assets/icon/bus-stop-sign-none.png';
 
   busIconUrl: string = './assets/icon/bus-md.png';
@@ -100,6 +102,7 @@ export class MaprouteComponent implements OnInit {
     this.screenHeight = window.screen.height - 200;
 
   }
+
 
   refreshData(){
     setTimeout(()=>{

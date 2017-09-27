@@ -4,18 +4,27 @@
 }
 
 .container{
-	margin-top: 10px
+	margin-top: 10px;
+  padding-bottom: 5rem;
 }
 
   /deep/ .card-header {
   border: 1px solid #DDDDDD;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.1rem;
 }
 
   /deep/ .card-header  a{
-  	color: black;
+  	color: #797D7F;
+}
+
+  /deep/ .card-body {
+    padding: 0.5rem;
 }
 
   /deep/ .card {
   border: none;
+}
+
+  /deep/ .card-header  a:hover{
+  	color: #424949;
 }

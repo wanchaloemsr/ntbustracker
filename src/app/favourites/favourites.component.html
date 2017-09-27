@@ -1,3 +1,16 @@
-<p>
-  favourites works!
-</p>
+<div class="favourite">
+	<div class="container favourite-header">
+		<h2>Favourite Lists</h2>
+		<small *ngIf = "fav_trip_list.length === 0">No bus</small>
+	</div>
+</div>
+
+<div class="container">
+	
+	<div *ngFor="let trip of fav_trip_list">
+		<app-favourites-time [trip_id]="trip.getTripId()"></app-favourites-time>
+	</div>
+</div>
+
+
+	

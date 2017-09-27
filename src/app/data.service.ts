@@ -1,9 +1,18 @@
-import  { Injectable, OnDestroy } from '@angular/core';
+import { Injectable, OnDestroy, Component } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/catch';
+import {CacheService, CacheStorageAbstract, CacheLocalStorage} from 'ng2-cache/ng2-cache';
+import { StopTime as DataStopTime} from './datatype';
+
+
+@Component({
+    providers: [ CacheService, 
+    	{provide: CacheStorageAbstract, useClass:CacheLocalStorage}
+    ]
+})
 
 @Injectable()
 export class DataService{
@@ -16,9 +25,15 @@ export class DataService{
 	stopTime = [];
 	shape = [];
 
+	private trip_id_cache: any [] = [];
+	private build_version: string = "ntbusv1";
+
 	allStops = [];
 	allRoutes = [];
-	allShapes: ShapeID[];
+	allTrips: Trip[] = [];
+	allStopTime: DataStopTime[];
+	allStopTimes: StopTime[];
+	private allShapes: ShapeID[];
 
 	liveBusData : any;
 
@@ -40,14 +55,65 @@ export class DataService{
 	private _stopTime_url: string = "../assets/data/google-transit/stop-time.json";
 	private _calender_url: string = "../assets/data/google-transit/calender.json";
 
-	constructor(private _http:Http){
+	constructor(private _http:Http, private _cacheService: CacheService){
 
+		this.allStopTime = [];
+		this.getAllStopTime().subscribe(resData => this.allStopTimes = resData);
+		setTimeout(()=>{
+			console.log("Fav Stop time Length: "+ this.allStopTimes.length);
+		}, 5000);
 		this.getLiveData();
         this.interval = setInterval(() => { 
                 this.getLiveData();
         }, 10000);
+		
+		this.trip_id_cache = this.retrieveTripIdCache();
+		console.log("LL: "+ this.trip_id_cache.length);
+		this.printCache();
 
+	}
 
+	private printCache(){
+		if(this.trip_id_cache !== null){
+			for(let cache of this.trip_id_cache){
+	        	console.log("Cache :" + cache);
+	        }
+		}
+			
+	}
+
+	public setTripIdCache(trip_id_cache: string[]){
+		this._cacheService.set('favourite_bus', trip_id_cache);
+	}
+
+	private retrieveTripIdCache(){
+		if (this._cacheService.get('favourite_bus') === null){
+			return [];
+		}else{
+			return this._cacheService.get('favourite_bus');
+		}
+	}
+
+	setAllStopTime(){
+		this._http.get(this._stopTime_url)
+					.map((response: Response) => response.json())
+					.subscribe(resData => this.setAllStopTimeData(resData));
+	}
+
+	setAllStopTimeData(stopData: any[]){
+		for(let stopTime of stopData){
+			let aStopData = new DataStopTime(stopTime.trip_id, stopTime.arrival_time,
+				stopTime.departure_time, stopTime.stop_id, stopTime.stop_sequence
+				, stopTime.stop_headsign, stopTime.pickup_type, stopTime.dropoff_type, 
+				stopTime.shape_dist_traveled);
+			this.allStopTime.push(aStopData);
+		}
+
+		console.log("Data Stop time Length: "+ this.allStopTime.length);
+	}
+
+	public getTripIdCache(){
+		return this.retrieveTripIdCache();
 	}
 
 	getShapes(){
@@ -107,7 +173,7 @@ export class DataService{
 					.map((response: Response) => response.json());
 	}
 
-	getAllRoutes(): Observable<Trip[]>{
+	getAllRoutes():Observable<Routes[]>{
 		return this._http.get(this._routes_url)
 					.map((response: Response) => response.json());
 	}
@@ -206,15 +272,19 @@ export class DataService{
 	setLiveData(liveData: any){
 
 		this.liveDataArray = [];
-
-		for(let data of liveData){
+		if (liveData.lenght > 1){
+			for(let data of liveData){
 
 				let aLiveData = new LiveData(data.code[0], data.datetime[0], data.direction[0], data.end[0], data.end_time[0], Number(data.latitude[0]), Number(data.longitude[0]),
-				 Number(data.otr[0]), data.rego[0], data.route[0], data.start[0], data.start_time[0], data.status[0]);
+				Number(data.otr[0]), data.rego[0], data.route[0], data.start[0], data.start_time[0], data.status[0]);
 
 				this.liveDataArray.push(aLiveData);
 
 			}
+		}else{
+			console.log("No bus is on service");
+		}
+			
 	}
 
 	getLiveDataByRoute( route_id:string){

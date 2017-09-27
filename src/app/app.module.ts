@@ -13,6 +13,7 @@ import { routing } from './app.routing';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { FavouritesComponent } from './favourites/favourites.component';
+import { FavouritesTimeComponent } from './favourites/favourites-time.component';
 import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
 import { MapComponent } from './map/map.component';
@@ -26,6 +27,9 @@ import { MaprouteComponent } from './maproute/maproute.component';
 import {SelectModule} from 'ng2-select';
 
 import { DataService } from './data.service';
+
+
+import {CacheService, CacheStorageAbstract, CacheLocalStorage} from 'ng2-cache/ng2-cache';
 
 //import { RouteComponent } from './route/route.component';
 
@@ -41,6 +45,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     FavouritesComponent,
+    FavouritesTimeComponent,
     HeaderComponent,
     FooterComponent,
     MapComponent,
@@ -64,7 +69,8 @@ const appRoutes: Routes = [
     NgbModule.forRoot(),
     SelectModule
   ],
-  providers: [DataService],
+  providers: [DataService, CacheService, 
+      {provide: CacheStorageAbstract, useClass:CacheLocalStorage}],
   bootstrap: [AppComponent]
 })
 

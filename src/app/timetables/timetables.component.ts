@@ -53,6 +53,25 @@ export class TimetablesComponent implements OnInit {
 
 	constructor(private _dataService: DataService, private _cacheService: CacheService) {
 
+		_dataService.getAllRoutes()
+		.subscribe(resShapesData => this.allRoutes = resShapesData);
+		//console.log("All List: " + this.allRoutes.length);
+		//_dataService.getAllRoutes();
+		console.log("All route: "+ this.allRoutes.length);
+
+		_dataService.getAllStopTime()
+		.subscribe(resShapesData => {this.stopTimeList = resShapesData}
+			, err => {console.log('Something went wrong!')});
+		console.log("Stop List: " + this.stopTimeList.length);
+
+		_dataService.getAllTrip()
+		.subscribe(resShapesData => this.allTrips = resShapesData);
+        console.log("All Trip: "+ this.allTrips.length);
+
+
+    	_dataService.getAllCalender()
+      	.subscribe(resData => this.calender = resData);
+
 	}
 
 	private posts:Post[] = [];
@@ -60,22 +79,7 @@ export class TimetablesComponent implements OnInit {
 
 	ngOnInit() {
 
-		this._dataService.getAllRoutes()
-		.subscribe(resShapesData => this.allRoutes = resShapesData);
-		console.log("All List: " + this.allRoutes.length);
 
-
-		this._dataService.getAllStopTime()
-		.subscribe(resShapesData => {this.stopTimeList = resShapesData}
-			, err => {console.log('Something went wrong!')});
-		console.log("Stop List: " + this.stopTimeList.length);
-
-		this._dataService.getAllTrip()
-		.subscribe(resShapesData => this.allTrips = resShapesData);
-
-
-    this._dataService.getAllCalender()
-      .subscribe(resData => this.calender = resData);
 
 	}
 

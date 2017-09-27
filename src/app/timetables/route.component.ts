@@ -8,7 +8,7 @@ import {CacheService, CacheStoragesEnum} from 'ng2-cache/ng2-cache';
   selector: 'route',
   templateUrl: './route.component.html',
   styleUrls: ['./route.component.css'],
-   providers: [ CacheService ]
+  providers: [ CacheService ]
 })
 
 export class RouteComponent implements OnInit{
@@ -26,9 +26,9 @@ export class RouteComponent implements OnInit{
   destination: string;
 
   isTwoWaysRoute = false;
+  isFavourite: true;
 
   allStops = [];
-
 
   stop_time_by_FULLW_0 = [];
   stop_time_by_FULLWT_0 = [];
@@ -46,16 +46,13 @@ export class RouteComponent implements OnInit{
   stop_time_by_WESAN_1 = [];
   stop_time_by_WESU_1 = [];
 
-  a = ['AAAA', 'BBBB'];
+  private trip_id_cache: string[] = [];
 
+  constructor(private _dataService: DataService, private modalService: NgbModal) {
 
-  constructor(private _dataService: DataService, private modalService: NgbModal, private _cacheService: CacheService) {
-
-
-    _cacheService.setGlobalPrefix('CacheService');
-    _cacheService.set('route_id', [this.a]);
-
-   }
+    this.trip_id_cache = this._dataService.getTripIdCache();
+    console.log("************************************");
+  }
 
   ngOnInit(){
 
@@ -65,7 +62,7 @@ export class RouteComponent implements OnInit{
       .subscribe(resData => this.allStops = resData);
     this.sortingTripDate();
     this.checkIfTwoway();
-    console.log("Test Cache: " + this._cacheService.get('route_id'));
+    console.log(this.route_id);
   }
 
   setData(trip_id: string){
@@ -74,6 +71,32 @@ export class RouteComponent implements OnInit{
     this._dataService.allStops = this.allStops;
     this._dataService.route_id = this.route_id;
     this._dataService.allRoutes = this.allRoutes;
+  }
+
+  setFavourite(trip_id: string){
+
+    console.log("Trip: "  + trip_id);
+    console.log("index: " + this.trip_id_cache.indexOf(trip_id));
+    if(this.trip_id_cache.indexOf(trip_id) == -1){
+      this.trip_id_cache.push(trip_id);
+    }else{
+      this.trip_id_cache.splice(this.trip_id_cache.indexOf(trip_id), 1);
+    }
+
+    this._dataService.setTripIdCache(this.trip_id_cache);
+    this.trip_id_cache = this._dataService.getTripIdCache();
+    console.log("!!!!!!!!!!!!!!!!!!!");
+    console.log(this.trip_id_cache.length);
+    console.log(this._dataService.getTripIdCache().length);
+
+  }
+
+  setFav(trip_id: string){
+      if(this.trip_id_cache.indexOf(trip_id)> -1){
+        return 'fav-btn';
+      }else{
+        return 'no-fav-btn';
+      }
   }
 
   sortingTripDate(){
@@ -154,7 +177,8 @@ export class RouteComponent implements OnInit{
   checkIfTwoway(){
 
     if(this.route_id === '4' || this.route_id === '5' || this.route_id === '8' 
-      || this.route_id === '9' || this.route_id === '10' || this.route_id === '447' 
+      || this.route_id === '9' || this.route_id === '10' || this.route_id === '17'
+       || this.route_id === '19' || this.route_id === '447' 
       || this.route_id === '450' || this.route_id === '446' || this.route_id === '21' 
       || this.route_id === '22' || this.route_id === '25' || this.route_id === '28'
       || this.route_id === '445' || this.route_id === 'OL2'){
@@ -197,6 +221,16 @@ setOriginAndDestination(){
     case "10":
     this.origin = "Casuarina";
     this.destination = "Darwin";
+    break;
+
+    case "17":
+    this.origin = "Palmerston";
+    this.destination = "Mindil Beach";
+    break;
+
+    case "19":
+    this.origin = "Casuarina";
+    this.destination = "Mindil Beach";
     break;
 
     case "21":

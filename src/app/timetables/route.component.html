@@ -1,6 +1,6 @@
 <div class="col">
 	<div *ngIf = "isTwoWaysRoute; else oneway">	
-	<h3>From {{origin}} to {{destination}}</h3>
+	<h3 *ngIf="route_id !== '17'&& route_id !== '19' && route_id !== 'OL2'">From {{origin}} to {{destination}}</h3>
 		<div class="route">
 			<ngb-accordion>
 					<ngb-panel *ngIf = "stop_time_by_FULLW_1.length > 0">
@@ -11,17 +11,17 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLW_1; let i = index">
 									
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 
@@ -32,17 +32,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWT_1; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -52,17 +52,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWTM_1; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -72,17 +72,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWF_1; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -92,17 +92,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESA_1; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -112,17 +112,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESAN_1; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -132,17 +132,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESU_1; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -152,7 +152,7 @@
 		</div>
 			
 		<hr>
-		<h3>From {{destination}} to {{origin}}</h3>
+		<h3 *ngIf="route_id !== '17'&& route_id !== '19' && route_id !== 'OL2'">From {{destination}} to {{origin}}</h3>
 			<ngb-accordion>
 				
 					<ngb-panel *ngIf = "stop_time_by_FULLW_0.length > 0" >
@@ -162,17 +162,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLW_0; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -182,17 +182,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWT_0; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -202,17 +202,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWTM_0; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -222,17 +222,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWF_0; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -242,17 +242,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESA_0; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -262,17 +262,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESAN_0; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -282,17 +282,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESU_0; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -311,17 +311,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLW_1; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -331,17 +331,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWT_1; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -351,17 +351,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWTM_1; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -371,17 +371,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWF_1; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -391,17 +391,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESA_1; let i = index">
 									<div class="row ">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -411,17 +411,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESAN_1; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
@@ -431,17 +431,17 @@
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESU_1; let i = index">
 									<div class="row">
-										<div class="col-8 col-sm-8">
+										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+											</div>
 										</div>
-										<div class="col-4 col-sm-2">
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
+										<div class="col-2 col-sm-3 col-lg-2">
+											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
 											</div>
-											<div class="direction-img">
-												<button class="btn btn-dark btn-sm" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/no-favorite.png" class="rounded mx-auto d-block" alt="Add to Favourite"/></button>
-											</div>
-											
 										</div>
 									</div>
 								</div>
