@@ -58,15 +58,15 @@ export class Trip {
 
 export class StopTime{
 
-  trip_id: string;
-  arrival_time: string;
-  departure_time: string;
-  stop_id: string;
-  stop_sequence: number;
-  stop_headsign: string;
-  pickup_type: string;
-  drop_off_type: string;
-  shape_dist_traveled: string;
+  private trip_id: string;
+  private arrival_time: string;
+  private departure_time: string;
+  private stop_id: string;
+  private stop_sequence: number;
+  private stop_headsign: string;
+  private pickup_type: string;
+  private drop_off_type: string;
+  private shape_dist_traveled: string;
 
   constructor(
   	trip_id: string,
@@ -81,6 +81,7 @@ export class StopTime{
   	){
 
   	this.trip_id = trip_id;
+    this.arrival_time = arrival_time;
   	this.stop_sequence = stop_sequence;
   	this.stop_id = stop_id;
   	this.stop_headsign = stop_headsign;

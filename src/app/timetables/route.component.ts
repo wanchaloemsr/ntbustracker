@@ -51,7 +51,6 @@ export class RouteComponent implements OnInit{
   constructor(private _dataService: DataService, private modalService: NgbModal) {
 
     this.trip_id_cache = this._dataService.getTripIdCache();
-    console.log("************************************");
   }
 
   ngOnInit(){
@@ -62,7 +61,6 @@ export class RouteComponent implements OnInit{
       .subscribe(resData => this.allStops = resData);
     this.sortingTripDate();
     this.checkIfTwoway();
-    console.log(this.route_id);
   }
 
   setData(trip_id: string){
@@ -75,19 +73,14 @@ export class RouteComponent implements OnInit{
 
   setFavourite(trip_id: string){
 
-    console.log("Trip: "  + trip_id);
-    console.log("index: " + this.trip_id_cache.indexOf(trip_id));
     if(this.trip_id_cache.indexOf(trip_id) == -1){
       this.trip_id_cache.push(trip_id);
     }else{
       this.trip_id_cache.splice(this.trip_id_cache.indexOf(trip_id), 1);
     }
-
+    this.trip_id_cache.sort((a,b) => 0 - (a > b ? -1 : 1));
     this._dataService.setTripIdCache(this.trip_id_cache);
     this.trip_id_cache = this._dataService.getTripIdCache();
-    console.log("!!!!!!!!!!!!!!!!!!!");
-    console.log(this.trip_id_cache.length);
-    console.log(this._dataService.getTripIdCache().length);
 
   }
 

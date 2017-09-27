@@ -5,8 +5,8 @@ import { Component, OnInit, Injectable } from '@angular/core';
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
+
+
 export class FooterComponent{
-
-
 
 }

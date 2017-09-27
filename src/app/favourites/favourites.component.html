@@ -1,14 +1,30 @@
 <div class="favourite">
 	<div class="container favourite-header">
 		<h2>Favourite Lists</h2>
-		<small *ngIf = "fav_trip_list.length === 0">No bus</small>
+		<small *ngIf = "fav_trip_list.length === 0">No bus save to favourite.</small>
 	</div>
 </div>
 
 <div class="container">
 	
-	<div *ngFor="let trip of fav_trip_list">
-		<app-favourites-time [trip_id]="trip.getTripId()"></app-favourites-time>
+	<div *ngFor="let trip of fav_trip_list" class="favourite-list">
+		<div class="row">
+			<div class="col-2 col-centered route-sign">
+				<h3><span class="badge badge-dark">{{trip.route_id}}</span></h3>
+			</div>
+			<div class="col-7 col-md-8">
+				<div class="row favourite-route">
+					<app-favourites-route [route_id]="trip.getRouteId()"></app-favourites-route>
+				</div>
+				<div class="row">
+					<app-favourites-time [trip_id]="trip.getTripId()"></app-favourites-time>
+				</div>
+			</div>
+			<div class="col-3 col-md-2 maproute-btn">
+				<button class="btn btn-dark" (click)="setData(trip.route_id, trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]">Map</button>
+			</div>
+		</div>
+		<hr>
 	</div>
 </div>
 

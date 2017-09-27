@@ -36,7 +36,7 @@ export class TimetablesComponent implements OnInit {
 	tripIdToRouteId: string;
 	stopNumberResult: StopTime[];
 	stopNumberDiv = [];
-	timeOutRef; any;
+	timeOutRef: any;
 
 	calender = [];
 
@@ -55,18 +55,13 @@ export class TimetablesComponent implements OnInit {
 
 		_dataService.getAllRoutes()
 		.subscribe(resShapesData => this.allRoutes = resShapesData);
-		//console.log("All List: " + this.allRoutes.length);
-		//_dataService.getAllRoutes();
-		console.log("All route: "+ this.allRoutes.length);
 
 		_dataService.getAllStopTime()
 		.subscribe(resShapesData => {this.stopTimeList = resShapesData}
 			, err => {console.log('Something went wrong!')});
-		console.log("Stop List: " + this.stopTimeList.length);
 
 		_dataService.getAllTrip()
 		.subscribe(resShapesData => this.allTrips = resShapesData);
-        console.log("All Trip: "+ this.allTrips.length);
 
 
     	_dataService.getAllCalender()
@@ -74,21 +69,14 @@ export class TimetablesComponent implements OnInit {
 
 	}
 
-	private posts:Post[] = [];
-    private errorMessage:any = '';
-
 	ngOnInit() {
-
-
 
 	}
 
 	onSelect(route_id: string){
 		this.route_id = route_id;
-		console.log(this.route_id);
 
 	}
-
 
 
 	searchFromRouteNumber(){
@@ -100,7 +88,6 @@ export class TimetablesComponent implements OnInit {
 		for(let route of this.allRoutes){
 
 			if(route.route_id.search(this.searchtext) > -1){
-				console.log(route.route_id);
 				this.searchRoutes.push(route);
 				this.searchCount ++;
 				this.routeNumberArray.push(route.route_id);
@@ -136,8 +123,6 @@ export class TimetablesComponent implements OnInit {
 
 				this.stopNumberDiv = stopList.trip_id.split("_",1);
 				for(let div of this.stopNumberDiv){
-
-					console.log("Div: " + div.substr(1));
 					  
 					if(this.stopIdResult != div){
 					this.stopNumberResult.push(stopList);
@@ -148,8 +133,6 @@ export class TimetablesComponent implements OnInit {
 
 			}
 		}
-		console.log("S Stop Num: " + this.stopNumberResult.length);
-		console.log("Stop List: " + this.stopTimeList.length);
 
 		clearTimeout(this.timeOutRef);
 

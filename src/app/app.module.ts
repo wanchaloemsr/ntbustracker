@@ -13,7 +13,9 @@ import { routing } from './app.routing';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { FavouritesComponent } from './favourites/favourites.component';
+import { FavouritesRouteComponent } from './favourites/favourites-route.component';
 import { FavouritesTimeComponent } from './favourites/favourites-time.component';
+import { ServiceStopComponent } from './favourites/stop-service/service.component';
 import { HeaderComponent } from './header.component';
 import { FooterComponent } from './footer.component';
 import { MapComponent } from './map/map.component';
@@ -46,6 +48,8 @@ const appRoutes: Routes = [
     AppComponent,
     FavouritesComponent,
     FavouritesTimeComponent,
+    FavouritesRouteComponent,
+    ServiceStopComponent,
     HeaderComponent,
     FooterComponent,
     MapComponent,

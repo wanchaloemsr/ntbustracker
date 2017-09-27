@@ -59,27 +59,13 @@ export class DataService{
 
 		this.allStopTime = [];
 		this.getAllStopTime().subscribe(resData => this.allStopTimes = resData);
-		setTimeout(()=>{
-			console.log("Fav Stop time Length: "+ this.allStopTimes.length);
-		}, 5000);
 		this.getLiveData();
         this.interval = setInterval(() => { 
                 this.getLiveData();
         }, 10000);
 		
 		this.trip_id_cache = this.retrieveTripIdCache();
-		console.log("LL: "+ this.trip_id_cache.length);
-		this.printCache();
 
-	}
-
-	private printCache(){
-		if(this.trip_id_cache !== null){
-			for(let cache of this.trip_id_cache){
-	        	console.log("Cache :" + cache);
-	        }
-		}
-			
 	}
 
 	public setTripIdCache(trip_id_cache: string[]){
@@ -92,24 +78,6 @@ export class DataService{
 		}else{
 			return this._cacheService.get('favourite_bus');
 		}
-	}
-
-	setAllStopTime(){
-		this._http.get(this._stopTime_url)
-					.map((response: Response) => response.json())
-					.subscribe(resData => this.setAllStopTimeData(resData));
-	}
-
-	setAllStopTimeData(stopData: any[]){
-		for(let stopTime of stopData){
-			let aStopData = new DataStopTime(stopTime.trip_id, stopTime.arrival_time,
-				stopTime.departure_time, stopTime.stop_id, stopTime.stop_sequence
-				, stopTime.stop_headsign, stopTime.pickup_type, stopTime.dropoff_type, 
-				stopTime.shape_dist_traveled);
-			this.allStopTime.push(aStopData);
-		}
-
-		console.log("Data Stop time Length: "+ this.allStopTime.length);
 	}
 
 	public getTripIdCache(){

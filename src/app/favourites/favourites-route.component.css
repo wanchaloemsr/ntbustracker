@@ -1,0 +1,30 @@
+.fav-route-heading{
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+@media (min-width: 992px) { 
+
+	.fav-route-heading, .fav-route-desc{
+		display:inline-block;
+	}
+
+ }
+
+
+@media only screen and (max-width: 768px) {
+
+	.fav-route-heading{
+		font-weight: bold;
+		font-size: 1.2rem;
+	}
+
+	
+
+	.fav-route-desc{
+		font-weight: bold;
+	}
+	
+}
+
+

@@ -13,11 +13,19 @@ export class FavouritesComponent implements OnInit {
   private fav_trip_list: Trip[];
   private allTrips = [];
 
+  stopTimeList = [];
+  allStops =[];
+  allRoutes = [];
+
   constructor(_dataService: DataService) {
     this.trip_id_cache = [];
     this.fav_trip_list = [];
     this._dataService = _dataService;
     this._dataService.getAllTrip().subscribe(resData => this.getFavouriteList(resData));
+    this._dataService.getAllStopTime().subscribe(resData => this.stopTimeList = resData);
+    this._dataService.getStops().subscribe(resData => this.allStops = resData);
+    this._dataService.getAllRoutes().subscribe(resData => this.allRoutes = resData);
+
 
 
   }
@@ -28,6 +36,15 @@ export class FavouritesComponent implements OnInit {
 
   }
 
+   setData(route_id:string, trip_id: string){
+    this._dataService.stopTimeList = this.stopTimeList;
+    this._dataService.trip_id = trip_id;
+    this._dataService.allStops = this.allStops;
+    this._dataService.route_id = route_id;
+    this._dataService.allRoutes = this.allRoutes;
+  }
+
+
   getFavouriteList(allTrips : any[]){
 
     if(this.trip_id_cache.length > 0){
@@ -37,21 +54,12 @@ export class FavouritesComponent implements OnInit {
 
           let trip = new Trip(list.route_id, list.service_id, list.trip_id, 
             list.trip_headsign, list.direction_id, list.block_id, list.shape_id);
-          console.log("Trip OD: " +  trip.getShapeId());
           this.fav_trip_list.push(trip);
         }
       }
     }
 
-    console.log("Trip list: " + this.fav_trip_list.length);
 
-    this.printFav();
-  }
-
-  printFav(){
-    for(let trip of this.fav_trip_list){
-      console.log(trip.getRouteId());
-    }
   }
 
 }

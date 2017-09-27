@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../data.service';
+import {ActivatedRoute, Router} from '@angular/router';
 import { StopTime as FavouriteStopTime,} from '../datatype';
 
 
@@ -11,16 +12,14 @@ import { StopTime as FavouriteStopTime,} from '../datatype';
 
 export class FavouritesTimeComponent implements OnInit {
 
-	//@Input() aTrip: Trip;
 	@Input() trip_id: string;
 
 	allStopTime: FavouriteStopTime[];
 
 	allStopTimes: StopTimes[];
+	aTripStopTime: FavouriteStopTime[];
 
-	constructor(_dataService: DataService){
-
-		//console.log(this.aTrip);
+	constructor(_dataService: DataService, private _route: Router){
 
 		this.allStopTimes = _dataService.allStopTimes;
 
@@ -28,11 +27,34 @@ export class FavouritesTimeComponent implements OnInit {
 	}
 
 	ngOnInit(){
-
-		this.allStopTimes.filter(item => item.trip_id === this.trip_id);
-
+		this.setData();
 	}
 
+	setData(){
+		this.aTripStopTime = [];
+		if(this.allStopTimes !== undefined){
+
+			for(let stopTime of this.allStopTimes.filter(item=> item.trip_id === this.trip_id)){
+				let aStop = new FavouriteStopTime(  
+					stopTime.trip_id,
+					stopTime.arrival_time,
+					stopTime.departure_time,
+					stopTime.stop_id,
+					stopTime.stop_sequence,
+					stopTime.stop_headsign,
+					stopTime.pickup_type,
+					stopTime.drop_off_type,
+					stopTime.shape_dist_traveled);
+
+				this.aTripStopTime.push(aStop);
+
+			}
+
+		}else{
+			this._route.navigate(['/timetables']);
+		}
+
+	}
 
 }
 
