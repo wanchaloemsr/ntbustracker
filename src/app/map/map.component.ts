@@ -95,7 +95,7 @@ export class MapComponent implements OnInit {
 		.subscribe(resStopsData => this.mapStyle = resStopsData);
 
 
-    	this.screenHeight = window.screen.height - 150;
+    	//this.screenHeight = window.screen.height - 150;
 
 		
 		

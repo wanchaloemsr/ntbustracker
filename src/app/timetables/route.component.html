@@ -12,7 +12,7 @@
 									
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -33,7 +33,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWT_1; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -53,7 +53,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWTM_1; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -68,12 +68,12 @@
 								</div>
 						</ng-template>
 					</ngb-panel>
-					<ngb-panel *ngIf = "stop_time_by_FULLWF_1.length > 0" title="Friday">
+					<ngb-panel *ngIf = "stop_time_by_FULLWF_1.length > 0" title="Friday Night">
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWF_1; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -93,7 +93,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESA_1; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -113,7 +113,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESAN_1; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -133,7 +133,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESU_1; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -163,7 +163,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLW_0; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -183,7 +183,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWT_0; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -203,7 +203,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWTM_0; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -218,12 +218,12 @@
 								</div>
 						</ng-template>
 					</ngb-panel>
-					<ngb-panel *ngIf = "stop_time_by_FULLWF_0.length > 0" title="Friday">
+					<ngb-panel *ngIf = "stop_time_by_FULLWF_0.length > 0" title="Friday Night">
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWF_0; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -243,7 +243,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESA_0; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -263,7 +263,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESAN_0; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -283,7 +283,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESU_0; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -312,7 +312,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLW_1; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -332,7 +332,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWT_1; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -352,7 +352,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWTM_1; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -367,12 +367,12 @@
 								</div>
 						</ng-template>
 					</ngb-panel>
-					<ngb-panel *ngIf = "stop_time_by_FULLWF_1.length > 0" title="Friday">
+					<ngb-panel *ngIf = "stop_time_by_FULLWF_1.length > 0" title="Friday Night">
 						<ng-template ngbPanelContent>
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLWF_1; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -392,7 +392,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESA_1; let i = index">
 									<div class="row ">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -412,7 +412,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESAN_1; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
@@ -432,7 +432,7 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_WESU_1; let i = index">
 									<div class="row">
 										<div class="col-8 col-sm-9 col-lg-10">
-											<route-time [trip_id] = "trip.trip_id" [trip_headsign] = "trip.trip_headsign" [stopTimeList] = "stopTimeList" [shape_id] = "trip.shape_id"></route-time>
+											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
 											<div class="direction-img">
 												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>

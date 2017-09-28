@@ -1,3 +1,5 @@
+<!-- 
+
 <footer class="footer navbar-fixed-bottom">
 	<div class="container">
         <ul class="nav justify-content-center"  >
@@ -11,6 +13,33 @@
                     <a class=" nav-link" id="favourite" [routerLinkActive]="['active-link']" [routerLink]="['/favourites']">Favourites</a>
                 </li>
                 
+            </ul>
+    </div>
+</footer>
+ -->
+
+
+
+<footer class="footer navbar-fixed-bottom">
+    <div class="container">
+        <ul class="nav justify-content-center"  >
+                <li class="nav-item col-4 col-md-3 col-lg-2 nav-link" >
+                    <div class="timetable" [routerLinkActive]="['active-link']" >
+                        <a [routerLink]="['/timetables']">Timetable</a>
+                    </div>
+                    
+                </li>
+                <li class="nav-item col-4 col-md-3 col-lg-2 nav-link" >
+                    <div class="map" [routerLinkActive]="['active-link']">
+                        <a [routerLink]="['/map']">Map</a>
+                    </div>
+                        
+                </li>
+                <li class="nav-item col-4 col-md-3 col-lg-2 nav-link">
+                    <div class="favourite" [routerLinkActive]="['active-link']" >
+                        <a [routerLink]="['/favourites']">Favourites</a>
+                    </div>
+                </li>
             </ul>
     </div>
 </footer>

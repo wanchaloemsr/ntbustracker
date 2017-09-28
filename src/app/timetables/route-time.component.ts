@@ -13,15 +13,8 @@ import { DataService } from '../data.service';
 
 export class RouteTimeComponent implements OnInit{
 
-
-	@Input() trip_id: string;
-  @Input() trip_headsign: string;
   @Input() stopTimeList: StopTime[];
-  @Input() shape_id: string;
-
-
-  public isCollapsed = true;
-  tripStopTime = [];
+  @Input() aTrip: Trip;
 
   stopTimeListById: StopTime[];
   modalStopTimeListById: StopTime[];
@@ -36,39 +29,31 @@ export class RouteTimeComponent implements OnInit{
   constructor(private _dataService: DataService, private modalService: NgbModal, private _route: Router) { }
 
   ngOnInit(){
-
-    this.stopTimeListById = this.stopTimeList.filter(item => item.trip_id === this.trip_id);
-    this.setATrip();
+    //Use this if modal is enable
+    this.stopTimeListById = this.stopTimeList.filter(item => item.trip_id === this.aTrip.trip_id);
+    this.setARouteId();
+    console.log(this.aTrip.trip_id);
   }
 
   navigateTo(){
     this._dataService.stopTimeList = this.stopTimeList;
-    this._route.navigate(['route/' + this.shape_id]);
+    this._route.navigate(['route/' + this.aTrip.shape_id]);
   }
 
-  onChange(even){
-    console.log("Event " + even);
-    console.log(this.enable);
+
+  setARouteId(){
+    if(this.aTrip.trip_id.search("Link") > -1){
+      this.a_trip_id = this.aTrip.trip_id.split('_', 1)[0];
+    }else {
+      this.a_trip_id = this.aTrip.trip_id.split('_', 1)[0].slice(1);
+    }
   }
 
-  setATrip(){
-    let a_trip_array = this.trip_id.split("_", 1);
-    for(let item of a_trip_array){
-
-      this.a_trip_id = item;
-
-    }
-
-    if(this.a_trip_id.search('Man') == -1){
-
-      if(this.a_trip_id.search('Link') == -1){
-        this.a_trip_id = this.a_trip_id.slice(1);
-      }else{
-           this.a_trip_id = this.a_trip_id.slice(0);
-      }
-    }
-    else {
-      this.a_trip_id = this.a_trip_id.slice(1);
+  checkTextLength(){
+    if(this.a_trip_id.length == 2){
+      return 'twoalpha';
+    }else if(this.a_trip_id.length ==3){
+      return 'threealpha';
     }
   }
 

@@ -8,6 +8,12 @@ h3{
 	position: fixed;
 }
 
+agm-map{
+
+	width: 100vw;
+	height: 80vh;
+}
+
 
 .icon-guide{
 	top: 60px;
@@ -49,5 +55,37 @@ h3{
 	background-image: url('../../assets/icon/navigation-hover.png');
 
 }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .icon-content img{
+		height: 20px;
+		width: 20px;
+	}
+
+	.icon-content {
+		font-size: 0.8rem;
+		font-weight: bold;
+	}
+	.map{
+		top: 108px;
+	}
+
+}
+
+@media only screen and (max-height:  576px) {
+
+	agm-map{
+	height: 70vh;
+	}
+
+}
+
+@media only screen and (max-height:  350px) {
+
+	agm-map{
+	height: 50vh;
+	}
 
 }
