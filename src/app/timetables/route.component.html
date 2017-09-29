@@ -11,16 +11,17 @@
 								<div class="trip" *ngFor = "let trip of stop_time_by_FULLW_1; let i = index">
 									
 									<div class="row">
-										<div class="col-8 col-sm-9 col-lg-10">
+										<div class="col-9 col-sm-9 col-lg-9">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
-										<div class="col-2 col-sm-3 col-lg-2">
-											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+										<div class="col-3 col-sm-3 col-lg-3 route-btn">
+											<div class="row" (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="row direction-img">
+												<button class="btn btn-light btn-sm route-map-btn" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -35,13 +36,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -55,13 +57,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -75,13 +78,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -95,13 +99,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -115,13 +120,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -135,13 +141,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -165,13 +172,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -185,13 +193,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -205,13 +214,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -225,13 +235,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -245,13 +256,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -265,13 +277,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -285,13 +298,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -314,13 +328,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -334,13 +349,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -354,13 +370,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -374,13 +391,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -414,13 +432,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>
@@ -434,13 +453,14 @@
 										<div class="col-8 col-sm-9 col-lg-10">
 											<route-time [stopTimeList] = "stopTimeList" [aTrip]="trip"></route-time>
 
-											<div class="direction-img">
-												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
-											</div>
+											
 										</div>
 										<div class="col-2 col-sm-3 col-lg-2">
 											<div (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
 												<button class="btn btn-light btn-sm my-favourite-btn">Add to favourite</button>
+											</div>
+											<div class="direction-img">
+												<button class="btn btn-light btn-sm" (click)="setData(trip.trip_id)" [routerLink]="['/timetables/route', trip.shape_id]"><img src="./assets/icon/gps-route.png" class="rounded mx-auto d-block" alt="Show Route"/></button>
 											</div>
 										</div>
 									</div>

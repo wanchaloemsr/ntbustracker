@@ -240,7 +240,7 @@ export class DataService{
 	setLiveData(liveData: any){
 
 		this.liveDataArray = [];
-		if (liveData.lenght > 1){
+		console.log(liveData.length);
 			for(let data of liveData){
 
 				let aLiveData = new LiveData(data.code[0], data.datetime[0], data.direction[0], data.end[0], data.end_time[0], Number(data.latitude[0]), Number(data.longitude[0]),
@@ -249,9 +249,6 @@ export class DataService{
 				this.liveDataArray.push(aLiveData);
 
 			}
-		}else{
-			console.log("No bus is on service");
-		}
 			
 	}
 
