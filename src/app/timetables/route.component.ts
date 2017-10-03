@@ -24,6 +24,7 @@ export class RouteComponent implements OnInit{
   aTrip = [];
   origin: string;
   destination: string;
+  save_txt: string;
 
   isTwoWaysRoute = false;
   isFavourite: true;
@@ -86,8 +87,10 @@ export class RouteComponent implements OnInit{
 
   setFav(trip_id: string){
       if(this.trip_id_cache.indexOf(trip_id)> -1){
+        this.save_txt = 'Saved!';
         return 'fav-btn';
       }else{
+        this.save_txt = 'Save Me';
         return 'no-fav-btn';
       }
   }

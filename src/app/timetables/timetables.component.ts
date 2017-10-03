@@ -19,8 +19,6 @@ declare var BUILD_VERSION: string;
     providers: [ CacheService ]
 })
 
-
-
 export class TimetablesComponent implements OnInit {
 
 	searchtext = '';
@@ -106,10 +104,6 @@ export class TimetablesComponent implements OnInit {
 				this.searchFromStopNumber();
 			},1000);
 		}
-			
- 
-		
-
 	}
 
 	searchFromStopNumber(){
@@ -133,12 +127,8 @@ export class TimetablesComponent implements OnInit {
 
 			}
 		}
-
 		clearTimeout(this.timeOutRef);
-
 	}
-
-
 }
 
 export class Routes{

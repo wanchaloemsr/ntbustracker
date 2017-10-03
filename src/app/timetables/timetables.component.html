@@ -23,24 +23,7 @@
 		</div>
 
 		<div class="col-md-8">
-<!-- 
-			<div *ngIf = "searchtext ==''; else searchResults ">
-				<div *ngFor="let route of allRoutes">
 
-					<a class="btn btn-light btn-block btn-outline-primary" [routerLink]="['/route', route.route_id]" [stopTimeList] = "stopTimeList" [allRoutes] = "allRoutes" [allTrips] = "allTrips" [calender] = "calender">Route: {{route.route_id}} - {{route.route_long_name}} {{route.route_desc}}</a>
-					
-				</div>
-			</div>
-			<ng-template #searchResults>
-				<label for="search">Search:</label>
-				<div *ngFor="let route of searchRoutes">
-
-					<a class="btn btn-light btn-block btn-outline-primary" [routerLink]="['/route', route.route_id]" [stopTimeList] = "stopTimeList" [allRoutes] = "allRoutes" [allTrips] = "allTrips" [calender] = "calender">Route: {{route.route_id}} - {{route.route_long_name}} {{route.route_desc}}</a>
-					
-				</div>
-			</ng-template>
-
- -->
 			<ngb-accordion #acc="ngbAccordion" [closeOthers]="true">
 
 				<div *ngIf = "searchtext ==''; else searchResult ">
@@ -58,11 +41,7 @@
 						</ng-template>
 					</ngb-panel>
 				</ng-template>
-
-				
 			</ngb-accordion>
-
-
 
 		</div>
 

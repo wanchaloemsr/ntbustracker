@@ -49,7 +49,7 @@
 		</agm-snazzy-info-window>
 	</agm-marker>
 
-	<agm-marker *ngFor= "let bus of liveDataArray" [latitude]="bus.getLatitude()" [longitude]="bus.getLongitude()"  [title] = "bus.getRoute()" [label]="bus.getRouteNumber()" [iconUrl]= 'busIconUrl' (markerClick) = 'setRoutePoliline(bus.getRouteNumber())'>
+	<agm-marker *ngFor= "let bus of liveDataArray" [latitude]="bus.getLatitude()" [longitude]="bus.getLongitude()"  [title] = "bus.getRoute()" [label]="bus.getRouteNumber()" [iconUrl]= 'busIconUrl' >
 		<agm-snazzy-info-window [maxWidth]="'500'" [closeWhenOthersOpen]="true" [backgroundColor]="red">
 			<ng-template>
 				<h3>{{bus.getRoute()}}</h3>

@@ -119,13 +119,6 @@ export class MapComponent implements OnInit {
 		console.log($event.coords.lng);
 	}
 
-	setRoutePoliline(route_id: string){
-
-		console.log(route_id);
-		this._dataService.getShapeID2(route_id)
-			.subscribe(resData => this.shape2 = resData);
-		this.lat = -12.444622814174567;
-	}
 
 	setMyLocation(){
 		this.getLocation();

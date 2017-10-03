@@ -32,7 +32,6 @@ export class RouteTimeComponent implements OnInit{
     //Use this if modal is enable
     this.stopTimeListById = this.stopTimeList.filter(item => item.trip_id === this.aTrip.trip_id);
     this.setARouteId();
-    console.log(this.aTrip.trip_id);
   }
 
   navigateTo(){
@@ -54,6 +53,10 @@ export class RouteTimeComponent implements OnInit{
       return 'twoalpha';
     }else if(this.a_trip_id.length ==3){
       return 'threealpha';
+    }else if(this.a_trip_id.length > 3){
+      return 'morealpha';
+    }else{
+      return 'onealpha';
     }
   }
 

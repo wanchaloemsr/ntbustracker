@@ -97,11 +97,11 @@ export class StopTime{
   }
 
   getArrivalTime(){
-  	return this.arrival_time;
+  	return this.arrival_time.slice(0, this.arrival_time.indexOf(':', 4));
   }
 
   getDepartureTime(){
-  	return this.departure_time;
+  	return this.departure_time.slice(0, this.departure_time.indexOf(':', 4));
   }
 
   getStopId(){

@@ -22,6 +22,11 @@ h3{
 	border-bottom: 1px solid #b7b7b7;
 }
 
+.route-time .row span{
+	color: #E65A00;
+	text-decoration: underline;
+}
+
 .trip-id{
 	width: 5rem;
 	height: 5rem;
@@ -34,20 +39,37 @@ h3{
 	border-radius: 5px;
 }
 
-.twoalpha{
+.twoalpha .trip-id{
 	font-size: 1.5rem;
 }
 
-.threealpha{
+.threealpha .trip-id{
+	font-size: 1.5rem;
+}
+
+.morealpha .trip-id{
 	font-size: 1.3rem;
 }
 
+.trip-row{
+	padding: 0.5rem 0;
+}
+
+
+.trip-row:hover{
+	background-color: #F7F7F7;
+	cursor: pointer;
+}
 
 @media only screen and (max-width: 992px) {
 	.trip-id{
 		width: 4rem;
 		height: 4rem;
 		line-height: 4rem;
+	}
+
+	.morealpha .trip-id{
+		font-size: 1rem;
 	}
 
 	h3{
@@ -60,6 +82,14 @@ h3{
 		width: 3rem;
 		height: 3rem;
 		line-height: 3rem;
+	}
+
+	.threealpha .trip-id{
+		font-size: 1rem;
+	}
+
+	.morealpha .trip-id{
+		font-size: 0.8rem;
 	}
 
 	h3{

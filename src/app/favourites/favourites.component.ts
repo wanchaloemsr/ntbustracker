@@ -46,7 +46,7 @@ export class FavouritesComponent implements OnInit {
 
 
   getFavouriteList(allTrips : any[]){
-
+    this.allTrips = allTrips;
     if(this.trip_id_cache.length > 0){
       this.fav_trip_list = [];
       for(let trip of this.trip_id_cache){
@@ -57,9 +57,16 @@ export class FavouritesComponent implements OnInit {
           this.fav_trip_list.push(trip);
         }
       }
+    }else{
+      this.fav_trip_list = [];
     }
+  }
 
-
+  removeFavourite(trip_id: string){
+    this.trip_id_cache.splice(this.trip_id_cache.indexOf(trip_id), 1);
+    this._dataService.setTripIdCache(this.trip_id_cache);
+    this.trip_id_cache = this._dataService.getTripIdCache();
+    this.getFavouriteList(this.allTrips);
   }
 
 }

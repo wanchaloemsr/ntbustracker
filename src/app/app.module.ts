@@ -23,7 +23,6 @@ import { TimetablesComponent } from './timetables/timetables.component';
 import { RouteComponent } from './timetables/route.component';
 import { RouteTimeComponent } from './timetables/route-time.component';
 import { SearchComponent } from './search/search.component';
-import { HomeComponent } from './home/home.component';
 import { MaprouteComponent } from './maproute/maproute.component';
 
 import {SelectModule} from 'ng2-select';
@@ -55,7 +54,6 @@ const appRoutes: Routes = [
     MapComponent,
     TimetablesComponent,
     SearchComponent,
-    HomeComponent,
     RouteComponent,
     RouteTimeComponent,
     MaprouteComponent

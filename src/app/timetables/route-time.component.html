@@ -1,51 +1,4 @@
-<!--
-
-<ng-template #content let-c="close" let-d="dismiss">
-	<div class="modal-header">
-		<h4 class="modal-title">Modal title</h4>
-		<button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-			<span aria-hidden="true">&times;</span>
-		</button>
-	</div>
-	<div class="modal-body">
-
-		<div class="row">
-			<div class="col-md-12">
-				<ul *ngFor ="let stopList of stopTimeListById" class="list-group">
-					<li class="list-group-item">
-						<p>Stop <span class="badge badge-pill badge-default">{{stopList.stop_sequence}}</span> Estimate arrival time: {{stopList.arrival_time}}</p>
-						<small>Stop Number: {{stopList.stop_id}}</small>
-
-						<button class="btn btn-primary btn-sm" (click)= "navigateTo()" (click)="c('Close click')">Show Route</button>
-						 
-					</li>
-				</ul>
-			</div>
-		</div>
-
-	</div>
-	<div class="modal-footer">
-		<button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
-	</div>
-
-</ng-template>
-
- Add #########################
-
-	(click)="open(content, trip.trip_id)" 
-
-	to activate modal 
-
-
-<div *ngFor = "let trip of stopTimeListById ; let i = index">
-	<div class="top-buffer btn btn-block route-list" *ngIf = "i == 0"  (click)="open(content, trip.trip_id)"><h3>Route: <span class="badge badge-default">{{a_trip_id}}</span> Depart At {{trip.departure_time}}</h3>
-		<small>{{trip_headsign}}</small>
-	</div>
-</div>
-
--->
-
-<div class="row">
+<div class="row  trip-row">
 	<div class="col-3 col-lg-3 col-xl-2 route-time" [ngClass]="checkTextLength()">
 		<div class="trip-id">
 			{{a_trip_id}}
@@ -57,7 +10,7 @@
 			<h3>{{aTrip.trip_headsign}}</h3>
 		</div>
 		<div class="row">
-			{{stopTimeListById[0].departure_time}}
+			{{stopTimeListById[0].departure_time.slice(0, stopTimeListById[0].departure_time.indexOf(':', 4))}} - <span> Show Route</span>
 		</div>
 	</div>
 </div>

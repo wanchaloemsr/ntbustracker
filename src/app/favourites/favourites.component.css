@@ -1,10 +1,26 @@
+h2{
+	font-size: 1.7rem;
+}
+
+h3{
+	height: 5rem;
+	width: 5rem;
+	font-size: 4.5rem;
+	text-align: center;
+	align-content: center;
+}
+h3 span.badge{
+	height: 5rem;
+	width: 5rem;
+}
+
 .favourite{
 	background: #F5F5F2;
-	padding-bottom: 1rem;
+	padding-bottom: 0.5rem;
 }
 
 .favourite-header{
-	padding-top: 1rem;
+	padding-top: 0.5rem;
 	text-align: center;
 
 }
@@ -23,27 +39,30 @@
 	border-bottom: 1px solid;
 }
 
-.maproute-btn{
+.remove-btn{
 	display: flex;
-  align-items: center;
-  justify-content: center;
+  	align-items: center;
+  	justify-content: center;
 }
 
-.maproute-btn button{
-
-	padding: 1rem 1rem;
-}
-
-h3{
-	height: 5rem;
+.remove-btn button{
+	height: 3rem;
 	width: 5rem;
-	font-size: 4.5rem;
-	text-align: center;
-	align-content: center;
+	background-image: url('../../assets/icon/tag-delete-w.png');
+	background-size: 1.5rem;
+	background-repeat: no-repeat;
+	background-position: 25px 3px; 
 }
-h3 span.badge{
-	height: 5rem;
-	width: 5rem;
+
+.remove-btn button span{
+	display: block;
+    position: absolute;
+    bottom: 25px;
+}
+
+.show-route:hover{
+	background-color: #F5F5F2;
+	cursor: pointer;
 }
 
 
@@ -61,6 +80,11 @@ h3 span.badge{
 		width: 4rem;
 	}
 
+	.remove-btn button span{
+		display: block;
+	    position: absolute;
+	    bottom: 16px;
+	}
 	
 }
 
@@ -75,6 +99,18 @@ h3 span.badge{
 	h3 span.badge{
 		height: 3rem;
 		width: 3rem;
+	}
+
+	.remove-btn button{
+		height: 2.5rem;
+		width: 4rem;
+		background-size: 1.2rem;
+		background-position: 20px 2px; 
+	}
+
+	.remove-btn button span{
+		font-size: 0.7rem;
+	    bottom: 20px;
 	}
 
 	

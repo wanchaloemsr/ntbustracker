@@ -20,8 +20,11 @@
 	height: 5rem;
 	margin: 0 auto;
 	background-image: url('../../assets/icon/no-favorite.png');
+	background-size: 3.5rem;
 	background-repeat: no-repeat;
-	background-position: center; 
+	background-position: top; 
+    display: block;
+    position: relative;
 }
 
 .no-fav-btn button{
@@ -32,8 +35,18 @@
 	background-image: url('../../assets/icon/favourite.png');
 }
 
-.my-favourite-btn{
-	text-indent: -9999px;
+.no-fav-btn button span, .fav-btn button span {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+}
+
+.no-fav-btn button span{
+    left: 15px;
+}
+
+.fav-btn button span {
+    left: 20px;
 }
 
 .route-map-btn{
@@ -60,9 +73,48 @@ h3{
 }
 
 
+@media only screen and (max-width: 992px) {
+	.no-fav-btn button, .fav-btn button{
+		width: 4rem;
+		height: 4rem;
+		background-size: 2.8rem;
+	}
+
+	.no-fav-btn button span{
+    	left: 8px;
+	}
+
+	.fav-btn button span {
+    	left: 13px;
+	}
+
+}
+
+@media only screen and (max-width: 576px) {
+
+	.no-fav-btn button, .fav-btn button{
+		font-size: 0.7rem;
+		width: 3rem;
+		height: 3rem;
+		background-size: 2.2rem;
+	}
+
+	.no-fav-btn button span{
+
+    	left: 2px;
+	}
+
+	.fav-btn button span {
+    	left: 7px;
+	}
+
+}
+
+
 @media only screen and (max-width: 448px) {
     .direction-img img{
 	width: 35px;
 	height: auto;
+	}
 }
-}
+

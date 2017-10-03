@@ -242,11 +242,13 @@ export class DataService{
 		this.liveDataArray = [];
 		console.log(liveData.length);
 			for(let data of liveData){
+				if(data !== undefined){
 
-				let aLiveData = new LiveData(data.code[0], data.datetime[0], data.direction[0], data.end[0], data.end_time[0], Number(data.latitude[0]), Number(data.longitude[0]),
-				Number(data.otr[0]), data.rego[0], data.route[0], data.start[0], data.start_time[0], data.status[0]);
+					let aLiveData = new LiveData(data.code[0], data.datetime[0], data.direction[0], data.end[0], data.end_time[0], Number(data.latitude[0]), Number(data.longitude[0]),
+					Number(data.otr[0]), data.rego[0], data.route[0], data.start[0], data.start_time[0], data.status[0]);
 
-				this.liveDataArray.push(aLiveData);
+					this.liveDataArray.push(aLiveData);
+				}
 
 			}
 			

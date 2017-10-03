@@ -7,7 +7,7 @@ import { Component, OnInit, Injectable } from '@angular/core';
 })
 export class HeaderComponent{
 
-
+	public isCollapsed = true;
 
 
 }

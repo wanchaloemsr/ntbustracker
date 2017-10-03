@@ -16,13 +16,14 @@
 
 	.fav-route-heading{
 		font-weight: bold;
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 
 	
 
 	.fav-route-desc{
 		font-weight: bold;
+		font-size: 0.8rem;
 	}
 	
 }
