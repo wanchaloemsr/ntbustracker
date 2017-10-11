@@ -4,20 +4,23 @@
    "interchange_name": "Casuarina Interchange",
    "interchange_desc": "This interchange is located on Bradshore Tcc on the western side of Casuarina Shoping Square",
    "interchange_lat": -12.37345,
-   "interchange_lon": 130.88048
+   "interchange_lon": 130.88048,
+   "routes": ["1","1h","2","3","4","5","9","10","11","12","21","22","24","25","OL1", "OL2"]
  },
  {
    "interchange_id": "Interchange02",
    "interchange_name": "Palmerson Interchange",
    "interchange_desc": "This interchange is located at Roystonia Ave",
    "interchange_lat": -12.478887,
-   "interchange_lon": 130.986779
+   "interchange_lon": 130.986779,
+   "routes": ["8","9","28","70","71","72","73","74","76","77","440","445","446","447","450","OL1","OL2"]
  },
  {
    "interchange_id": "Interchange03",
    "interchange_name": "Darwin Interchange",
    "interchange_desc": "This interchange is located at Harry Chan Ave",
    "interchange_lat": -12.464805,
-   "interchange_lon": 130.844389
+   "interchange_lon": 130.844389,
+   "routes": ["4","5","6","7","8","10","14","21","22","25","28","OL1","OL2"]
  }
 ]

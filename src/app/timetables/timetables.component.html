@@ -5,26 +5,22 @@
 			<div class="form-group">
 				<hr>
 				<label for="typeahead-format">Search for a bus</label>
-			<select class="form-control form-control" [(ngModel)] = "searchFilter" >
-				<option>Route Number</option>
-				<option>Stop Number</option>
-				<option>Origin</option>
-				<option>Destination</option>
-				<option>Street Name</option>
-			</select>
-			<hr>
+				<select class="form-control form-control" [(ngModel)] = "searchFilter" >
+					<option>Route Number</option>
+					<option>Location</option>
+				</select>
+				<hr>
 
-			<input *ngIf = "searchFilter == 'Route Number'" id="search field" type="text" class="form-control" aria-label="Please Enter Route Number" placeholder="Route Number" [(ngModel)]="searchtext" (input)="searchFromRouteNumber()" />
-			
+				<input *ngIf = "searchFilter == 'Route Number'" id="search field" type="text" class="form-control" aria-label="Please Enter Route Number" placeholder="Route Number" [(ngModel)]="searchtext" (input)="searchFromRouteNumber()" />
 
-			<input *ngIf = "searchFilter == 'Stop Number'" id="search field" type="text" class="form-control" aria-label="Please Enter Stop Number" placeholder="Stop Number" [(ngModel)]="searchtext" (ngModelChange) = "onChange($event)"/>
-
+				<input *ngIf = "searchFilter == 'Location'" id="search field" type="text" class="form-control" aria-label="Please Enter Location" placeholder="Location" [(ngModel)]="searchtext"/>
 			</div>
 		</div>
 
 		<div class="col-md-8">
 
 			<ngb-accordion #acc="ngbAccordion" [closeOthers]="true">
+
 
 				<div *ngIf = "searchtext ==''; else searchResult ">
 					<ngb-panel *ngFor="let route of allRoutes" title="Route: {{route.route_id}} - {{route.route_long_name}} {{route.route_desc}}">
@@ -41,7 +37,19 @@
 						</ng-template>
 					</ngb-panel>
 				</ng-template>
+				
+				<div *ngIf = "searchFilter =='Location'">
+					<ngb-panel *ngFor="let route of allRoutes | filterLocation: searchtext" title="Route: {{route.route_id}} - {{route.route_long_name}} {{route.route_desc}}">
+						<ng-template ngbPanelContent>
+							<route [route_id] = "route.route_id" [stopTimeList] = "stopTimeList" [allRoutes] = "allRoutes" [allTrips] = "allTrips" [calender] = "calender"></route>
+						</ng-template>
+					</ngb-panel>
+				</div>
+
 			</ngb-accordion>
+
+
+
 
 		</div>
 

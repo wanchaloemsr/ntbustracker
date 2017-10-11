@@ -31,9 +31,12 @@
 	<!-- Draw Stop and interchanges -->
 	<div *ngIf="stopZoomLevel">
 		<agm-marker *ngFor= "let stop of allStops" [latitude]="stop.stop_lat" [longitude]="stop.stop_lon" [iconUrl]= 'stopIconUrl' [title] = "stop.stop_id">
-			<agm-snazzy-info-window [maxWidth]="300" [closeWhenOthersOpen]="true" [backgroundColor]="red">
+			<agm-snazzy-info-window [maxWidth]="300" [padding]="'10px'" [borderRadius]="'10px 10px'" [backgroundColor]="'#7affb0'" [closeWhenOthersOpen]="true" [backgroundColor]="red">
 				<ng-template>
-					<h3>{{stop.stop_name}}</h3>
+					<div class="stop-header">
+						<h3>{{stop.stop_name}}</h3>
+					</div>
+					
 					{{stop.stop_desc}}
 				</ng-template>
 			</agm-snazzy-info-window>
@@ -41,16 +44,24 @@
 	</div>
 
 	<agm-marker *ngFor= "let int of interchangeList" [latitude]="int.interchange_lat" [longitude]="int.interchange_lon" [iconUrl]= 'interchangeIconUrl' [title] = "int.interchange_desc" [zIndex]='zindex'>
-		<agm-snazzy-info-window [maxWidth]="500" [closeWhenOthersOpen]="true" [backgroundColor]="red">
+		<agm-snazzy-info-window [maxWidth]="500" [closeWhenOthersOpen]="true" [padding]="'10px'" [borderRadius]="'10px 10px'" [backgroundColor]="'#004DB1'" [fontColor]="'white'">
 			<ng-template>
-				<h3>{{int.interchange_name}}</h3>
+				<div class="interchange-header">
+					<h3>{{int.interchange_name}}</h3>
+				</div>
 				{{int.interchange_desc}}
+				<div class="avai-sign">
+					<h4>Available Routes:</h4>
+				</div>
+				<div class="route-lists" *ngFor="let route of int.routes">
+					<span class="badge badge-light">{{route}}</span>
+				</div>
 			</ng-template>
 		</agm-snazzy-info-window>
 	</agm-marker>
 
 	<agm-marker *ngFor= "let bus of liveDataArray" [latitude]="bus.getLatitude()" [longitude]="bus.getLongitude()"  [title] = "bus.getRoute()" [label]="bus.getRouteNumber()" [iconUrl]= 'busIconUrl' >
-		<agm-snazzy-info-window [maxWidth]="'500'" [closeWhenOthersOpen]="true" [backgroundColor]="red">
+		<agm-snazzy-info-window [maxWidth]="'500'" [closeWhenOthersOpen]="true" [backgroundColor]="red" (beforeOpen)="open()" [padding]="'10px'" [borderRadius]="'10px 10px'" [backgroundColor]="'#ffeb6b'">
 			<ng-template>
 				<h3>{{bus.getRoute()}}</h3>
 				Origin: {{bus.getStart()}}
@@ -62,12 +73,6 @@
 			</ng-template>
 		</agm-snazzy-info-window>
 	</agm-marker>
-
-	<agm-polyline [title]="'Routes'" [zIndex]='zindex'>
-		<agm-polyline-point *ngFor= "let shape of aShape" [latitude]="shape.shape_pt_lat" [longitude]="shape.shape_pt_lon">
-
-		</agm-polyline-point>
-	</agm-polyline>
 </agm-map>
 </div>
 

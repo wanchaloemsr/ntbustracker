@@ -22,24 +22,15 @@ import { MapComponent } from './map/map.component';
 import { TimetablesComponent } from './timetables/timetables.component';
 import { RouteComponent } from './timetables/route.component';
 import { RouteTimeComponent } from './timetables/route-time.component';
-import { SearchComponent } from './search/search.component';
 import { MaprouteComponent } from './maproute/maproute.component';
 
 import {SelectModule} from 'ng2-select';
 
 import { DataService } from './data.service';
 
-
 import {CacheService, CacheStorageAbstract, CacheLocalStorage} from 'ng2-cache/ng2-cache';
-
-//import { RouteComponent } from './route/route.component';
-
-/*
-const appRoutes: Routes = [
-  { path: 'favourites', component: FavouritesComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
-];
-*/
+import { FilterLocationPipe } from './filter-location.pipe';
+import { UsefullinkComponent } from './usefullink/usefullink.component';
 
 
 @NgModule({
@@ -53,10 +44,11 @@ const appRoutes: Routes = [
     FooterComponent,
     MapComponent,
     TimetablesComponent,
-    SearchComponent,
     RouteComponent,
     RouteTimeComponent,
-    MaprouteComponent
+    MaprouteComponent,
+    FilterLocationPipe,
+    UsefullinkComponent
 
   ],
   imports: [

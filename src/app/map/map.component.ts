@@ -1,7 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { AgmPolyline, AgmMarker, PolylineManager } from '@agm/core';
 
-//json file require
 import { DataService } from '../data.service';
 
 
@@ -34,19 +33,16 @@ export class MapComponent implements OnInit {
 	stopIconUrl: string = './assets/icon/bus-stop-sign-none.png';
 	interchangeIconUrl: string = './assets/icon/interchange-icon-lg.png';
 
-
 	lat: number = -12.479048;
 	lng: number = 130.987067;
 
 	zoom: number = 11;
-	minZoom:number = 10;
-	routeNumber: string = '10';
+	minZoom:number = 8;
 
 	text:any;
 	interval: any;
 
 	selectedShapeID: string;
-
 
   	screenHeight: number;
 
@@ -62,8 +58,6 @@ export class MapComponent implements OnInit {
 		console.log(this.zindex);
 	}	
 
-
-
 	latitudeArray: number[] = [];
 	longitudeArray: number[] = [];
 
@@ -73,7 +67,6 @@ export class MapComponent implements OnInit {
     		this.interval = setInterval(() => { 
        				 this.refreshData(); 
     		}, 10000);
-
 	}
 
 	open(){
@@ -94,11 +87,6 @@ export class MapComponent implements OnInit {
 		this._dataService.getMapStyle()
 		.subscribe(resStopsData => this.mapStyle = resStopsData);
 
-
-    	//this.screenHeight = window.screen.height - 150;
-
-		
-		
 	}
 
 	refreshData(){
@@ -108,17 +96,10 @@ export class MapComponent implements OnInit {
 		}, 1000);
 	}
 
-	changeListener($event) : void {
-		this.text = readThis($event.target);
-		console.log(this.text);
-	}
-
-
 	placeMarker($event){
 		console.log($event.coords.lat);
 		console.log($event.coords.lng);
 	}
-
 
 	setMyLocation(){
 		this.getLocation();
@@ -138,7 +119,6 @@ export class MapComponent implements OnInit {
 		let lng = position.coords.longitude;
 
 	}
-
 
 	//listen to map zoom level and change stop signs size
 	zoomChange(event){
@@ -165,64 +145,6 @@ export class MapComponent implements OnInit {
 		}
 
 	}
-
-}
-
-function remove_duplicates(arr) {
-	let obj = {};
-	for (let i = 0; i < arr.length; i++) {
-		obj[arr[i]] = true;
-	}
-	arr = [];
-	for (let key in obj) {
-		arr.push(key);
-	}
-	return arr;
-}
-
-
-//Show specific route function
-function displayARoute(): void {
-
-}
-
-
-//file reader
-function readThis(inputValue: any) : any {
-	console.log(inputValue)
-	var file:File = inputValue.files[0]; 
-	var myReader:FileReader = new FileReader();
-
-	myReader.onloadend = function(e){
-		// you can perform an action with readed data here
-		console.log(myReader.result);
-	}
-	//myReader.readAsBinaryString(file);
-
-	myReader.readAsText(file);
-	return myReader.result;
-
-}
-
-interface Marker{
-	name?: string;
-	lat: number;
-	lng: number;
-	iconUrl: string;
-}
-
-function getShapesByID(shapesID: string, shapes: any){
-
-	var routeShape = [];
-
-	for (var i = shapes.length - 1; i >= 0; i--) {
-		if(shapes[i].shapes_id == 'i1_shp'){
-			console.log(shapes[i].shapes_id);
-			routeShape[i] == shapes[i];
-		}
-	}
-
-	return routeShape;
 
 }
 

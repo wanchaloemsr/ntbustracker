@@ -1,11 +1,34 @@
 h3{
 	font-size: 1.5em;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+h4{
+	font-size:  1em;
+	font-weight: bold;
+	padding: 0;
+	margin-top: 0.5em;
+	margin-bottom: 0;
+}
+
+.interchange-header h3{
+	border-bottom: 1px solid white;
+}
+
+.stop-header h3{
+	border-bottom: 1px solid black;
 }
 
 .map{
 	top: 118px;
 	width: 100%;
 	position: fixed;
+}
+
+.route-lists{
+	display: inline-block;
+	padding: 3px;
 }
 
 agm-map{

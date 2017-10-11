@@ -1,0 +1,47 @@
+.usefullink{
+	background: #F5F5F2;
+	padding-bottom: 0.5rem;
+}
+
+.usefullink-header{
+	padding-top: 0.5rem;
+	text-align: center;
+
+}
+
+.link{
+	margin-top: 8px;
+	padding: 0.8em 0;
+	cursor: pointer;
+	border-bottom: 1px solid #9b9999;
+}
+
+.col-12{
+	
+}
+
+h3{
+	font-size: 1.4em;
+	padding: 0;
+}
+
+.container a{
+	color: black;
+}
+
+.container a:hover{
+	color: #666666;
+}
+
+@media only screen and (max-width: 576px) {
+
+	h3{
+		font-size: 1em;
+	}
+
+	.link{
+		padding: 0.4em 0;
+	}
+
+	
+}
