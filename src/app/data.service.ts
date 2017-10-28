@@ -8,13 +8,8 @@ import {CacheService, CacheStorageAbstract, CacheLocalStorage} from 'ng2-cache/n
 import { StopTime as DataStopTime} from './datatype';
 
 
-@Component({
-    providers: [ CacheService, 
-    	{provide: CacheStorageAbstract, useClass:CacheLocalStorage}
-    ]
-})
-
 @Injectable()
+
 export class DataService{
 
 	stopTimeList: StopTime[];
@@ -195,7 +190,7 @@ export class DataService{
 		const fetch = require("node-fetch");
 		let parserString = require('xml2js').parseString;
 
-		let promise = (fetch('http://pub.ntgov-rtpi.tims.net.au/webapp/bustrk/PublicBus', {
+		let promise = (fetch('http//pub.ntgov-rtpi.tims.net.au/webapp/bustrk/PublicBus', {
 			body : '<?xml version="1.0" encoding="utf-8" ?><request xmlns="urn:Bacchus"></request>',
 			method: 'post',
 			mode: 'no-cors',

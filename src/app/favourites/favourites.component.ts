@@ -10,8 +10,9 @@ export class FavouritesComponent implements OnInit {
 
   private trip_id_cache: string[];
   private _dataService: DataService;
-  private fav_trip_list: Trip[];
+  public fav_trip_list: Trip[];
   private allTrips = [];
+  
 
   stopTimeList = [];
   allStops =[];

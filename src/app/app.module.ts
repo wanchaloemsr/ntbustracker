@@ -63,9 +63,14 @@ import { UsefullinkComponent } from './usefullink/usefullink.component';
     NgbModule.forRoot(),
     SelectModule
   ],
-  providers: [DataService, CacheService, 
-      {provide: CacheStorageAbstract, useClass:CacheLocalStorage}],
+
+  providers: [
+  DataService, 
+  CacheService, 
+  {provide: CacheStorageAbstract, useClass:CacheLocalStorage}
+  ],
   bootstrap: [AppComponent]
+  
 })
 
 export class AppModule { }

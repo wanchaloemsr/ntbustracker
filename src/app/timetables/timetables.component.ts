@@ -27,6 +27,7 @@ export class TimetablesComponent implements OnInit {
 	routeNumberArray = [];
 	route_id: string;
 	allTrips = [];
+	searchFilter = '';
 
 	stopTimeList= [];
 
