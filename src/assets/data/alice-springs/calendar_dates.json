@@ -1,0 +1,72 @@
+[
+ {
+   "service_id": "FULLW",
+   "date": "20161226",
+   "exception_type": 2
+ },
+ {
+   "service_id": "FULLW",
+   "date": "20161227",
+   "exception_type": 2
+ },
+ {
+   "service_id": "FULLW",
+   "date": "20170102",
+   "exception_type": 2
+ },
+ {
+   "service_id": "FULLW",
+   "date": "20170126",
+   "exception_type": 2
+ },
+ {
+   "service_id": "FULLW",
+   "date": "20170414",
+   "exception_type": 2
+ },
+ {
+   "service_id": "WESA",
+   "date": "20170415",
+   "exception_type": 2
+ },
+ {
+   "service_id": "FULLW",
+   "date": "20170417",
+   "exception_type": 2
+ },
+ {
+   "service_id": "FULLW",
+   "date": "20170425",
+   "exception_type": 2
+ },
+ {
+   "service_id": "FULLW",
+   "date": "20170501",
+   "exception_type": 2
+ },
+ {
+   "service_id": "FULLW",
+   "date": "20170612",
+   "exception_type": 2
+ },
+ {
+   "service_id": "FULLW",
+   "date": "20170707",
+   "exception_type": 2
+ },
+ {
+   "service_id": "FULLW",
+   "date": "20170807",
+   "exception_type": 2
+ },
+ {
+   "service_id": "FULLW",
+   "date": "20171225",
+   "exception_type": 2
+ },
+ {
+   "service_id": "FULLW",
+   "date": "20171226",
+   "exception_type": 2
+ }
+]

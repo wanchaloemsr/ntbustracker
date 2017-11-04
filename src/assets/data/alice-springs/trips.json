@@ -1,0 +1,569 @@
+[
+ {
+   "route_id": 1415,
+   "service_id": "FULLW",
+   "trip_id": 1848,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1415
+ },
+ {
+   "route_id": 1415,
+   "service_id": "FULLW",
+   "trip_id": 1896,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1415
+ },
+ {
+   "route_id": 1463,
+   "service_id": "FULLW",
+   "trip_id": 1944,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1463
+ },
+ {
+   "route_id": 1463,
+   "service_id": "FULLW",
+   "trip_id": 1994,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1463
+ },
+ {
+   "route_id": 1463,
+   "service_id": "FULLW",
+   "trip_id": 2044,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1463
+ },
+ {
+   "route_id": 1463,
+   "service_id": "FULLW",
+   "trip_id": 2094,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1463
+ },
+ {
+   "route_id": 1415,
+   "service_id": "FULLW",
+   "trip_id": 2144,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1415
+ },
+ {
+   "route_id": 1415,
+   "service_id": "FULLW",
+   "trip_id": 2192,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1415
+ },
+ {
+   "route_id": 1415,
+   "service_id": "FULLW",
+   "trip_id": 2240,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1415
+ },
+ {
+   "route_id": 1514,
+   "service_id": "FULLW",
+   "trip_id": 2289,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1514
+ },
+ {
+   "route_id": 1514,
+   "service_id": "FULLW",
+   "trip_id": 2327,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1514
+ },
+ {
+   "route_id": 1514,
+   "service_id": "FULLW",
+   "trip_id": 2365,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1514
+ },
+ {
+   "route_id": 1514,
+   "service_id": "FULLW",
+   "trip_id": 2403,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1514
+ },
+ {
+   "route_id": 1514,
+   "service_id": "FULLW",
+   "trip_id": 2441,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1514
+ },
+ {
+   "route_id": 1514,
+   "service_id": "FULLW",
+   "trip_id": 2479,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1514
+ },
+ {
+   "route_id": 1514,
+   "service_id": "FULLW",
+   "trip_id": 2517,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1514
+ },
+ {
+   "route_id": 1514,
+   "service_id": "FULLW",
+   "trip_id": 2555,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1514
+ },
+ {
+   "route_id": 1514,
+   "service_id": "FULLW",
+   "trip_id": 2593,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1514
+ },
+ {
+   "route_id": 1553,
+   "service_id": "FULLW",
+   "trip_id": 2632,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1553
+ },
+ {
+   "route_id": 1553,
+   "service_id": "FULLW",
+   "trip_id": 2678,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1553
+ },
+ {
+   "route_id": 1600,
+   "service_id": "FULLW",
+   "trip_id": 2724,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1600
+ },
+ {
+   "route_id": 1600,
+   "service_id": "FULLW",
+   "trip_id": 2772,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1600
+ },
+ {
+   "route_id": 1600,
+   "service_id": "FULLW",
+   "trip_id": 2820,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1600
+ },
+ {
+   "route_id": 1600,
+   "service_id": "FULLW",
+   "trip_id": 2868,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1600
+ },
+ {
+   "route_id": 1600,
+   "service_id": "FULLW",
+   "trip_id": 2916,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1600
+ },
+ {
+   "route_id": 1553,
+   "service_id": "FULLW",
+   "trip_id": 2964,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1553
+ },
+ {
+   "route_id": 1553,
+   "service_id": "FULLW",
+   "trip_id": 3001,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1553
+ },
+ {
+   "route_id": 1553,
+   "service_id": "FULLW",
+   "trip_id": 3038,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1553
+ },
+ {
+   "route_id": 1649,
+   "service_id": "FULLW",
+   "trip_id": 3078,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1649
+ },
+ {
+   "route_id": 1649,
+   "service_id": "FULLW",
+   "trip_id": 3134,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1649
+ },
+ {
+   "route_id": 1706,
+   "service_id": "FULLW",
+   "trip_id": 3190,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1706
+ },
+ {
+   "route_id": 1706,
+   "service_id": "FULLW",
+   "trip_id": 3248,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1706
+ },
+ {
+   "route_id": 1706,
+   "service_id": "FULLW",
+   "trip_id": 3306,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1706
+ },
+ {
+   "route_id": 1706,
+   "service_id": "FULLW",
+   "trip_id": 3364,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1706
+ },
+ {
+   "route_id": 1649,
+   "service_id": "FULLW",
+   "trip_id": 3413,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1649
+ },
+ {
+   "route_id": 1649,
+   "service_id": "FULLW",
+   "trip_id": 3460,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1649
+ },
+ {
+   "route_id": 1649,
+   "service_id": "FULLW",
+   "trip_id": 3509,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1649
+ },
+ {
+   "route_id": 1825,
+   "service_id": "FULLW",
+   "trip_id": 3566,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1825
+ },
+ {
+   "route_id": 1825,
+   "service_id": "FULLW",
+   "trip_id": 3588,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1825
+ },
+ {
+   "route_id": 1825,
+   "service_id": "FULLW",
+   "trip_id": 3610,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1825
+ },
+ {
+   "route_id": 1825,
+   "service_id": "FULLW",
+   "trip_id": 3632,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1825
+ },
+ {
+   "route_id": 1825,
+   "service_id": "FULLW",
+   "trip_id": 3654,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1825
+ },
+ {
+   "route_id": 1825,
+   "service_id": "FULLW",
+   "trip_id": 3675,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1825
+ },
+ {
+   "route_id": 1463,
+   "service_id": "WESA",
+   "trip_id": 1847,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1463
+ },
+ {
+   "route_id": 1463,
+   "service_id": "WESA",
+   "trip_id": 1897,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1463
+ },
+ {
+   "route_id": 1463,
+   "service_id": "WESA",
+   "trip_id": 1947,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1463
+ },
+ {
+   "route_id": 1463,
+   "service_id": "WESA",
+   "trip_id": 1997,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1463
+ },
+ {
+   "route_id": 1514,
+   "service_id": "WESA",
+   "trip_id": 2048,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1514
+ },
+ {
+   "route_id": 1514,
+   "service_id": "WESA",
+   "trip_id": 2086,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1514
+ },
+ {
+   "route_id": 1514,
+   "service_id": "WESA",
+   "trip_id": 2124,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1514
+ },
+ {
+   "route_id": 1514,
+   "service_id": "WESA",
+   "trip_id": 2162,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1514
+ },
+ {
+   "route_id": 1600,
+   "service_id": "WESA",
+   "trip_id": 2201,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1600
+ },
+ {
+   "route_id": 1600,
+   "service_id": "WESA",
+   "trip_id": 2249,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1600
+ },
+ {
+   "route_id": 1600,
+   "service_id": "WESA",
+   "trip_id": 2297,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1600
+ },
+ {
+   "route_id": 1600,
+   "service_id": "WESA",
+   "trip_id": 2345,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1600
+ },
+ {
+   "route_id": 1706,
+   "service_id": "WESA",
+   "trip_id": 2394,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1706
+ },
+ {
+   "route_id": 1706,
+   "service_id": "WESA",
+   "trip_id": 2452,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1706
+ },
+ {
+   "route_id": 1706,
+   "service_id": "WESA",
+   "trip_id": 2510,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1706
+ },
+ {
+   "route_id": 1706,
+   "service_id": "WESA",
+   "trip_id": 2568,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1706
+ },
+ {
+   "route_id": 1825,
+   "service_id": "WESA",
+   "trip_id": 2627,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1825
+ },
+ {
+   "route_id": 1825,
+   "service_id": "WESA",
+   "trip_id": 2649,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1825
+ },
+ {
+   "route_id": 1825,
+   "service_id": "WESA",
+   "trip_id": 2671,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1825
+ },
+ {
+   "route_id": 1825,
+   "service_id": "WESA",
+   "trip_id": 2693,
+   "trip_headsign": "",
+   "direction_id": 1,
+   "block_id": "",
+   "shape_id": 1825
+ }
+]

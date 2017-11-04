@@ -1,0 +1,706 @@
+[
+ {
+   "stop_id": 80,
+   "stop_name": "Len Kittle Drive ",
+   "stop_desc": "",
+   "stop_lat": -23.742858,
+   "stop_lon": 133.867419,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 82,
+   "stop_name": "Power Street",
+   "stop_desc": "",
+   "stop_lat": -23.669039,
+   "stop_lon": 133.868417,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 83,
+   "stop_name": "Power Street",
+   "stop_desc": "",
+   "stop_lat": -23.671065,
+   "stop_lon": 133.867043,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 84,
+   "stop_name": "Stuart Highway",
+   "stop_desc": "",
+   "stop_lat": -23.686855,
+   "stop_lon": 133.87424,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 85,
+   "stop_name": "Larapinta Drive",
+   "stop_desc": "",
+   "stop_lat": -23.701456,
+   "stop_lon": 133.871662,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 86,
+   "stop_name": "Bath Street",
+   "stop_desc": "",
+   "stop_lat": -23.70108,
+   "stop_lon": 133.878755,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 87,
+   "stop_name": "Alice Springs Interchange",
+   "stop_desc": "",
+   "stop_lat": -23.698731,
+   "stop_lon": 133.878503,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 88,
+   "stop_name": "Post Office",
+   "stop_desc": "",
+   "stop_lat": -23.698598,
+   "stop_lon": 133.881675,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 89,
+   "stop_name": "Stuart Highway",
+   "stop_desc": "",
+   "stop_lat": -23.689719,
+   "stop_lon": 133.875419,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 90,
+   "stop_name": "Tielkens Street",
+   "stop_desc": "",
+   "stop_lat": -23.685079,
+   "stop_lon": 133.873162,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 91,
+   "stop_name": "Priest Street",
+   "stop_desc": "",
+   "stop_lat": -23.683995,
+   "stop_lon": 133.870717,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 92,
+   "stop_name": "Priest Streetr 2",
+   "stop_desc": "",
+   "stop_lat": -23.681528,
+   "stop_lon": 133.870415,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 93,
+   "stop_name": "Madigan Street",
+   "stop_desc": "",
+   "stop_lat": -23.679399,
+   "stop_lon": 133.873484,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 94,
+   "stop_name": "Aldidja Street",
+   "stop_desc": "",
+   "stop_lat": -23.678492,
+   "stop_lon": 133.873098,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 95,
+   "stop_name": "Angguna Avenue",
+   "stop_desc": "",
+   "stop_lat": -23.677667,
+   "stop_lon": 133.86821,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 96,
+   "stop_name": "Dixon Road",
+   "stop_desc": "",
+   "stop_lat": -23.675919,
+   "stop_lon": 133.866374,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 98,
+   "stop_name": "Simounds Street",
+   "stop_desc": "",
+   "stop_lat": -23.674782,
+   "stop_lon": 133.86321,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 99,
+   "stop_name": "Head Street",
+   "stop_desc": "",
+   "stop_lat": -23.678406,
+   "stop_lon": 133.865926,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 100,
+   "stop_name": "Head Street",
+   "stop_desc": "",
+   "stop_lat": -23.680841,
+   "stop_lon": 133.868641,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 104,
+   "stop_name": "Stuart Highway",
+   "stop_desc": "",
+   "stop_lat": -23.690081,
+   "stop_lon": 133.876148,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 105,
+   "stop_name": "Gap Road",
+   "stop_desc": "",
+   "stop_lat": -23.708039,
+   "stop_lon": 133.878238,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 106,
+   "stop_name": "Gap Road",
+   "stop_desc": "",
+   "stop_lat": -23.709774,
+   "stop_lon": 133.877297,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 107,
+   "stop_name": "Gap Road",
+   "stop_desc": "",
+   "stop_lat": -23.713616,
+   "stop_lon": 133.874675,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 108,
+   "stop_name": "Gap Road",
+   "stop_desc": "",
+   "stop_lat": -23.717359,
+   "stop_lon": 133.871806,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 109,
+   "stop_name": "Bradshaw Drive",
+   "stop_desc": "",
+   "stop_lat": -23.719123,
+   "stop_lon": 133.864696,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 110,
+   "stop_name": "Palm Court",
+   "stop_desc": "",
+   "stop_lat": -23.729688,
+   "stop_lon": 133.866454,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 111,
+   "stop_name": "Palm Court",
+   "stop_desc": "",
+   "stop_lat": -23.73335,
+   "stop_lon": 133.86795,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 112,
+   "stop_name": "Old Timers",
+   "stop_desc": "",
+   "stop_lat": -23.741976,
+   "stop_lon": 133.868708,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 116,
+   "stop_name": "Gap road",
+   "stop_desc": "",
+   "stop_lat": -23.717359,
+   "stop_lon": 133.871678,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 118,
+   "stop_name": "Gap Road",
+   "stop_desc": "",
+   "stop_lat": -23.713407,
+   "stop_lon": 133.874704,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 119,
+   "stop_name": "Gap Road",
+   "stop_desc": "",
+   "stop_lat": -23.709892,
+   "stop_lon": 133.87706,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 120,
+   "stop_name": "Alice Springs Hospital",
+   "stop_desc": "",
+   "stop_lat": -23.707803,
+   "stop_lon": 133.87812,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 121,
+   "stop_name": "Pedler Avenue",
+   "stop_desc": "",
+   "stop_lat": -23.70593,
+   "stop_lon": 133.871308,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 122,
+   "stop_name": "Milner Road",
+   "stop_desc": "",
+   "stop_lat": -23.706381,
+   "stop_lon": 133.867575,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 123,
+   "stop_name": "Milner Road",
+   "stop_desc": "",
+   "stop_lat": -23.707687,
+   "stop_lon": 133.867568,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 124,
+   "stop_name": "Bloomfield Street",
+   "stop_desc": "",
+   "stop_lat": -23.712119,
+   "stop_lon": 133.869913,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 125,
+   "stop_name": "Memorial Avenue",
+   "stop_desc": "",
+   "stop_lat": -23.712362,
+   "stop_lon": 133.866465,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 126,
+   "stop_name": "Flynn Drive",
+   "stop_desc": "",
+   "stop_lat": -23.710389,
+   "stop_lon": 133.863574,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 127,
+   "stop_name": "Flynn Drive",
+   "stop_desc": "",
+   "stop_lat": -23.710858,
+   "stop_lon": 133.860195,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 128,
+   "stop_name": "Flynn Drive",
+   "stop_desc": "",
+   "stop_lat": -23.708412,
+   "stop_lon": 133.858456,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 130,
+   "stop_name": "Larapinta Drive",
+   "stop_desc": "",
+   "stop_lat": -23.700577,
+   "stop_lon": 133.846863,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 136,
+   "stop_name": "Lyndavale Drive",
+   "stop_desc": "",
+   "stop_lat": -23.695449,
+   "stop_lon": 133.832568,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 137,
+   "stop_name": "Lyndavale Drive",
+   "stop_desc": "",
+   "stop_lat": -23.693794,
+   "stop_lon": 133.83481,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 138,
+   "stop_name": "Lyndavale Drive",
+   "stop_desc": "",
+   "stop_lat": -23.693435,
+   "stop_lon": 133.837716,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 139,
+   "stop_name": "Lyndavale Drive",
+   "stop_desc": "",
+   "stop_lat": -23.69411,
+   "stop_lon": 133.840879,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 140,
+   "stop_name": "Lyndavale Drive",
+   "stop_desc": "",
+   "stop_lat": -23.696478,
+   "stop_lon": 133.84052,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 141,
+   "stop_name": "Larapinta Drive",
+   "stop_desc": "",
+   "stop_lat": -23.700477,
+   "stop_lon": 133.846912,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 142,
+   "stop_name": "Larapinta Drive",
+   "stop_desc": "",
+   "stop_lat": -23.702974,
+   "stop_lon": 133.850434,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 143,
+   "stop_name": "Larapinta Drive",
+   "stop_desc": "",
+   "stop_lat": -23.704719,
+   "stop_lon": 133.853758,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 149,
+   "stop_name": "Bloomfield Street",
+   "stop_desc": "",
+   "stop_lat": -23.712065,
+   "stop_lon": 133.869676,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 153,
+   "stop_name": "Lindsay Street",
+   "stop_desc": "",
+   "stop_lat": -23.696141,
+   "stop_lon": 133.889816,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 154,
+   "stop_name": "Chewings Street",
+   "stop_desc": "",
+   "stop_lat": -23.692966,
+   "stop_lon": 133.889572,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 155,
+   "stop_name": "Winnecke Avenue",
+   "stop_desc": "",
+   "stop_lat": -23.692245,
+   "stop_lon": 133.891984,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 156,
+   "stop_name": "Undoolya Road",
+   "stop_desc": "",
+   "stop_lat": -23.695823,
+   "stop_lon": 133.894594,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 157,
+   "stop_name": "Kurrajong Drive",
+   "stop_desc": "",
+   "stop_lat": -23.692697,
+   "stop_lon": 133.897394,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 158,
+   "stop_name": "Bougainvilia Avenue",
+   "stop_desc": "",
+   "stop_lat": -23.688101,
+   "stop_lon": 133.899895,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 159,
+   "stop_name": "Bougainvilia Avenue",
+   "stop_desc": "",
+   "stop_lat": -23.686352,
+   "stop_lon": 133.903201,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 160,
+   "stop_name": "Kurrajong Drive",
+   "stop_desc": "",
+   "stop_lat": -23.689274,
+   "stop_lon": 133.903218,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 161,
+   "stop_name": "Spearwood Road",
+   "stop_desc": "",
+   "stop_lat": -23.695363,
+   "stop_lon": 133.902365,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 162,
+   "stop_name": "Spearwood Road",
+   "stop_desc": "",
+   "stop_lat": -23.698692,
+   "stop_lon": 133.902334,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 163,
+   "stop_name": "Spearwood Road",
+   "stop_desc": "",
+   "stop_lat": -23.700819,
+   "stop_lon": 133.900349,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 180,
+   "stop_name": "Alice Springs Terminus",
+   "stop_desc": "",
+   "stop_lat": -23.698803,
+   "stop_lon": 133.878533,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 187,
+   "stop_name": "Basso Road",
+   "stop_desc": "",
+   "stop_lat": -23.668593,
+   "stop_lon": 133.869155,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 190,
+   "stop_name": "Traeger Park Primary School",
+   "stop_desc": "",
+   "stop_lat": -23.70778,
+   "stop_lon": 133.875952,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 196,
+   "stop_name": "Bougainvilia Avenue",
+   "stop_desc": "",
+   "stop_lat": -23.68979,
+   "stop_lon": 133.899062,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 197,
+   "stop_name": "Sadadeen Road",
+   "stop_desc": "",
+   "stop_lat": -23.7049,
+   "stop_lon": 133.892261,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 200,
+   "stop_name": "Trucking Hall of Fame",
+   "stop_desc": "",
+   "stop_lat": -23.776129,
+   "stop_lon": 133.868311,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 201,
+   "stop_name": "Wills Terrace",
+   "stop_desc": "",
+   "stop_lat": -23.696012,
+   "stop_lon": 133.881777,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 202,
+   "stop_name": "Stuart Highway",
+   "stop_desc": "",
+   "stop_lat": -23.693875,
+   "stop_lon": 133.879585,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 203,
+   "stop_name": "Memorial Drive",
+   "stop_desc": "",
+   "stop_lat": -23.700653,
+   "stop_lon": 133.864784,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 204,
+   "stop_name": "Smith Street",
+   "stop_desc": "",
+   "stop_lat": -23.690376,
+   "stop_lon": 133.863953,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 205,
+   "stop_name": "Yirrara College",
+   "stop_desc": "",
+   "stop_lat": -23.765832,
+   "stop_lon": 133.873689,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 206,
+   "stop_name": "Len Kittle Drive",
+   "stop_desc": "",
+   "stop_lat": -23.735356,
+   "stop_lon": 133.862732,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 208,
+   "stop_name": "Dalgety Road",
+   "stop_desc": "",
+   "stop_lat": -23.668173,
+   "stop_lon": 133.865549,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 209,
+   "stop_name": "Ulpaya Road",
+   "stop_desc": "",
+   "stop_lat": -23.690988,
+   "stop_lon": 133.88079,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 210,
+   "stop_name": "Percy Court",
+   "stop_desc": "",
+   "stop_lat": -23.749551,
+   "stop_lon": 133.872815,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 211,
+   "stop_name": "Underdown Street",
+   "stop_desc": "",
+   "stop_lat": -23.707209,
+   "stop_lon": 133.861379,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 212,
+   "stop_name": "Desert Springs",
+   "stop_desc": "",
+   "stop_lat": -23.713634,
+   "stop_lon": 133.879572,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 213,
+   "stop_name": "Sadadeen Road",
+   "stop_desc": "",
+   "stop_lat": -23.70452,
+   "stop_lon": 133.896339,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 214,
+   "stop_name": "Racecourse Stuart Highway",
+   "stop_desc": "",
+   "stop_lat": -23.754469,
+   "stop_lon": 133.872382,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 215,
+   "stop_name": "Op Heath Road",
+   "stop_desc": "",
+   "stop_lat": -23.756474,
+   "stop_lon": 133.872052,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 216,
+   "stop_name": "Commonage Road",
+   "stop_desc": "",
+   "stop_lat": -23.732427,
+   "stop_lon": 133.861848,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 217,
+   "stop_name": "Adamson Avenue",
+   "stop_desc": "",
+   "stop_lat": -23.707513,
+   "stop_lon": 133.858937,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 218,
+   "stop_name": "Museum of Central Australia",
+   "stop_desc": "",
+   "stop_lat": -23.700621,
+   "stop_lon": 133.862518,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 219,
+   "stop_name": "Larrapinta Drive",
+   "stop_desc": "",
+   "stop_lat": -23.703133,
+   "stop_lon": 133.857962,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 220,
+   "stop_name": "Barrett Drive",
+   "stop_desc": "",
+   "stop_lat": -23.70855,
+   "stop_lon": 133.88158,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 221,
+   "stop_name": "Convention Centre",
+   "stop_desc": "",
+   "stop_lat": -23.719943,
+   "stop_lon": 133.877073,
+   "zone_id": 1
+ },
+ {
+   "stop_id": 222,
+   "stop_name": "Lovegrove Drive",
+   "stop_desc": "",
+   "stop_lat": -23.696271,
+   "stop_lon": 133.860183,
+   "zone_id": 1
+ }
+]

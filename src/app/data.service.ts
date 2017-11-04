@@ -37,14 +37,12 @@ export class DataService{
 
 	private interval: any;
 
-	private _url:string = "../assets/data/google-transit/shapes-json.json";
+	private _shape_url:string = "../assets/data/google-transit/shapes-json.json";
 	private _shape_id_url:string = "../assets/data/google-transit/shapes-id.json";
 	private _stop_url:string = "../assets/data/google-transit/stops.json";
 	private _interchange_Url:string = "../assets/data/google-transit/interchanges.json";
-	private _key_shape_id_url:string = "../assets/data/google-transit/shape-keyed.json";
 	private _shape_id2_url:string = "../assets/data/google-transit/shapes-id2.json";
 	private _map_style_url: string = "../assets/data/config/map-style.json";
-
 	private _trip_url: string = "../assets/data/google-transit/trips.json";
 	private _routes_url: string = "../assets/data/google-transit/routes.json";
 	private _stopTime_url: string = "../assets/data/google-transit/stop-time.json";
@@ -80,12 +78,12 @@ export class DataService{
 	}
 
 	getShapes(){
-		return this._http.get(this._url)
+		return this._http.get(this._shape_url)
 					.map((response: Response) => response.json());
 	}
 
 	getShapeByID(shape_id: string): Observable<Shape[]> {
-		return this._http.get(this._url)
+		return this._http.get(this._shape_url)
 					.map((response: Response) => response.json()
 					.filter(item => item.shape_id === shape_id));
 	}
@@ -147,7 +145,7 @@ export class DataService{
 	}
 
 	getAShape(shape_id: string): Observable<ShapeID[]>{
-		return this._http.get(this._url)
+		return this._http.get(this._shape_url)
 					.map((response: Response) => response.json()
 					.filter(item => item.shape_id === shape_id));
 	}

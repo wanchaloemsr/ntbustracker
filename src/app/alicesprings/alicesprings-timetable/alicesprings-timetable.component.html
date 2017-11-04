@@ -1,0 +1,45 @@
+
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<div class="form-group">
+				<hr>
+				<label for="typeahead-format">Search for a bus</label>
+				<select class="form-control form-control" [(ngModel)] = "searchFilter" >
+					<option>Route Number</option>
+					<option>Location</option>
+				</select>
+				<hr>
+
+				<input *ngIf = "searchFilter == 'Route Number'" id="search field" type="text" class="form-control" aria-label="Please Enter Route Number" placeholder="Route Number" />
+
+				<input *ngIf = "searchFilter == 'Location'" id="search field" type="text" class="form-control" aria-label="Please Enter Location" placeholder="Location" />
+			</div>
+		</div>
+
+		<div class="col-md-8 desktop">
+
+			<ngb-accordion #acc="ngbAccordion" [closeOthers]="true">
+				<ngb-panel *ngFor="let route of routes" title="Route  {{route.getRouteShortName()}}: {{route.getRouteLongName()}}">
+					<ng-template ngbPanelContent>
+						<alicesprings-route [aRoute] = "route" [routes] = "routes" [trips] = "trips"></alicesprings-route>
+					</ng-template>
+				</ngb-panel>
+			</ngb-accordion>
+
+		</div>
+
+		<div class="col-md-8 mobile">
+			
+			<div class="list-group">
+
+				<button *ngFor="let route of routes" type="button" class="list-group-item list-group-item-action">
+					Route {{route.getRouteShortName()}}: {{route.getRouteLongName()}}
+				</button>
+			</div>
+
+		</div>
+
+	</div>
+
+</div>

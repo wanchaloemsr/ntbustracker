@@ -1,0 +1,104 @@
+h3{
+	font-size: 1.3em;
+}
+
+.route-list{
+	white-space: normal;
+	margin-bottom: 5px;
+}
+
+.route-time{
+	padding: 0;
+	align-content: center;
+}
+
+.route-time .row{
+	
+	margin: 0;
+}
+
+.route-time .header{
+	
+	border-bottom: 1px solid #b7b7b7;
+}
+
+.route-time .row span{
+	color: #E65A00;
+	text-decoration: underline;
+}
+
+.trip-id{
+	width: 5rem;
+	height: 5rem;
+	margin: 0 auto;
+	line-height: 5rem;
+	font-size: 2rem;
+	text-align: center;
+	background-color: #343A40;
+	color: #e2e2e2;
+	border-radius: 5px;
+}
+
+.twoalpha .trip-id{
+	font-size: 1.5rem;
+}
+
+.threealpha .trip-id{
+	font-size: 1.5rem;
+}
+
+.morealpha .trip-id{
+	font-size: 1.3rem;
+}
+
+.trip-row{
+	padding: 0.5rem 0;
+}
+
+
+.trip-row:hover{
+	background-color: #F7F7F7;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+	.trip-id{
+		width: 4rem;
+		height: 4rem;
+		line-height: 4rem;
+	}
+
+	.morealpha .trip-id{
+		font-size: 1rem;
+	}
+
+	h3{
+    	font-size: 1.1em;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+	.trip-id{
+		width: 3rem;
+		height: 3rem;
+		line-height: 3rem;
+	}
+
+	.threealpha .trip-id{
+		font-size: 1rem;
+	}
+
+	.morealpha .trip-id{
+		font-size: 0.8rem;
+	}
+
+	h3{
+    	font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 448px) {
+    h3{
+    	font-size: 1em;
+    }
+}

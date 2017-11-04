@@ -59,7 +59,7 @@ export class RouteComponent implements OnInit{
     this.trips = this.allTrips.filter(item => item.route_id === this.route_id);
 
     this._dataService.getStops()
-      .subscribe(resData => this.allStops = resData);
+    .subscribe(resData => this.allStops = resData);
     this.sortingTripDate();
     this.checkIfTwoway();
   }
@@ -86,13 +86,13 @@ export class RouteComponent implements OnInit{
   }
 
   setFav(trip_id: string){
-      if(this.trip_id_cache.indexOf(trip_id)> -1){
-        this.save_txt = 'Saved!';
-        return 'fav-btn';
-      }else{
-        this.save_txt = 'Save Me';
-        return 'no-fav-btn';
-      }
+    if(this.trip_id_cache.indexOf(trip_id)> -1){
+      this.save_txt = 'Saved!';
+      return 'fav-btn';
+    }else{
+      this.save_txt = 'Save Me';
+      return 'no-fav-btn';
+    }
   }
 
   sortingTripDate(){
@@ -174,7 +174,7 @@ export class RouteComponent implements OnInit{
 
     if(this.route_id === '4' || this.route_id === '5' || this.route_id === '8' 
       || this.route_id === '9' || this.route_id === '10' || this.route_id === '17'
-       || this.route_id === '19' || this.route_id === '447' 
+      || this.route_id === '19' || this.route_id === '447' 
       || this.route_id === '450' || this.route_id === '446' || this.route_id === '21' 
       || this.route_id === '22' || this.route_id === '25' || this.route_id === '28'
       || this.route_id === '445' || this.route_id === 'OL2'){

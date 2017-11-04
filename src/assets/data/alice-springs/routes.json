@@ -1,0 +1,90 @@
+[
+ {
+   "route_id": 1415,
+   "agency_id": "PT",
+   "route_short_name": 100,
+   "route_long_name": "Braitling and Ciccone",
+   "route_desc": "",
+   "route_type": 3,
+   "route_url": "http://www.transport.nt.gov.au/public/bus/alice",
+   "route_color": "004C5B",
+   "route_text_color": "FFFFFF"
+ },
+ {
+   "route_id": 1463,
+   "agency_id": "PT",
+   "route_short_name": 101,
+   "route_long_name": "Braitling and Ciccone",
+   "route_desc": "",
+   "route_type": 3,
+   "route_url": "http://www.transport.nt.gov.au/public/bus/alice",
+   "route_color": "004C5B",
+   "route_text_color": "FFFFFF"
+ },
+ {
+   "route_id": 1514,
+   "agency_id": "PT",
+   "route_short_name": 200,
+   "route_long_name": "East Side and Sadadeen",
+   "route_desc": "",
+   "route_type": 3,
+   "route_url": "http://www.transport.nt.gov.au/public/bus/alice",
+   "route_color": "004C5B",
+   "route_text_color": "FFFFFF"
+ },
+ {
+   "route_id": 1553,
+   "agency_id": "PT",
+   "route_short_name": 300,
+   "route_long_name": "The Gap and Ross",
+   "route_desc": "",
+   "route_type": 3,
+   "route_url": "http://www.transport.nt.gov.au/public/bus/alice",
+   "route_color": "004C5B",
+   "route_text_color": "FFFFFF"
+ },
+ {
+   "route_id": 1600,
+   "agency_id": "PT",
+   "route_short_name": 301,
+   "route_long_name": "The Gap and Ross",
+   "route_desc": "",
+   "route_type": 3,
+   "route_url": "http://www.transport.nt.gov.au/public/bus/alice",
+   "route_color": "004C5B",
+   "route_text_color": "FFFFFF"
+ },
+ {
+   "route_id": 1649,
+   "agency_id": "PT",
+   "route_short_name": 400,
+   "route_long_name": "Gillen Araluen and Larapinta",
+   "route_desc": "",
+   "route_type": 3,
+   "route_url": "http://www.transport.nt.gov.au/public/bus/alice",
+   "route_color": "004C5B",
+   "route_text_color": "FFFFFF"
+ },
+ {
+   "route_id": 1706,
+   "agency_id": "PT",
+   "route_short_name": 401,
+   "route_long_name": "Gillen Araluen and Larapinta",
+   "route_desc": "",
+   "route_type": 3,
+   "route_url": "http://www.transport.nt.gov.au/public/bus/alice",
+   "route_color": "004C5B",
+   "route_text_color": "FFFFFF"
+ },
+ {
+   "route_id": 1825,
+   "agency_id": "PT",
+   "route_short_name": 500,
+   "route_long_name": "Alice Springs Hospital",
+   "route_desc": "",
+   "route_type": 3,
+   "route_url": "http://www.transport.nt.gov.au/public/bus/alice",
+   "route_color": "004C5B",
+   "route_text_color": "FFFFFF"
+ }
+]

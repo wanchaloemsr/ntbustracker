@@ -1,0 +1,40 @@
+<div class="col">
+	<ngb-accordion>
+		<h3></h3>
+		<ngb-panel *ngIf = "stop_time_by_FULLW_1.length > 0" >
+			<ng-template ngbPanelTitle>
+				<span>Monday to Friday</span>
+			</ng-template>
+			<ng-template ngbPanelContent>
+				<div class="trip" *ngFor = "let trip of stop_time_by_FULLW_1; let i = index">
+					<div class="row">
+						<div class="col-9 col-sm-9 col-lg-9">
+							<alice-route-time [routerLink]="['/timetables/route', trip.shape_id]" [aRoute]="aRoute" [stopTimes] = "stopTimes" [aTrip]="trip"></alice-route-time>
+						</div>
+						<div class="col-3 col-sm-3 col-lg-3 route-btn">
+							<div class="row" (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+								<button class="btn btn-light btn-sm my-favourite-btn"><span>{{save_txt}}</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</ng-template>
+		</ngb-panel>
+		<ngb-panel *ngIf = "stop_time_by_WESA_1.length > 0" title="Saturday">
+			<ng-template ngbPanelContent>
+				<div class="trip" *ngFor = "let trip of stop_time_by_WESA_1; let i = index">
+					<div class="row">
+						<div class="col-9 col-sm-9 col-lg-9">
+							<alice-route-time [routerLink]="['/timetables/route', trip.shape_id]" [aRoute]="aRoute" [stopTimes] = "stopTimes" [aTrip]="trip"></alice-route-time>
+						</div>
+						<div class="col-3 col-sm-3 col-lg-3 route-btn">
+							<div class="row" (click)="setFavourite(trip.trip_id)" [ngClass]="setFav(trip.trip_id)">
+								<button class="btn btn-light btn-sm my-favourite-btn"><span>{{save_txt}}</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</ng-template>
+		</ngb-panel>
+	</ngb-accordion>
+</div>

@@ -11,9 +11,9 @@
 				</select>
 				<hr>
 
-				<input *ngIf = "searchFilter == 'Route Number'" id="search field" type="text" class="form-control" aria-label="Please Enter Route Number" placeholder="Route Number" [(ngModel)]="searchtext" (input)="searchFromRouteNumber()" />
+				<input *ngIf = "searchFilter == 'Route Number'" id="search field" type="date" class="form-control" aria-label="Please Enter Route Number" placeholder="Route Number" [(ngModel)]="searchtext" (input)="searchFromRouteNumber()" />
 
-				<input *ngIf = "searchFilter == 'Location'" id="search field" type="text" class="form-control" aria-label="Please Enter Location" placeholder="Location" [(ngModel)]="searchtext"/>
+				<input *ngIf = "searchFilter == 'Location'" id="search field" type="search" class="form-control" aria-label="Please Enter Location" placeholder="Location" [(ngModel)]="searchtext"/>
 			</div>
 		</div>
 

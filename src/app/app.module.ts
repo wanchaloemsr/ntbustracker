@@ -27,11 +27,15 @@ import { MaprouteComponent } from './maproute/maproute.component';
 import {SelectModule} from 'ng2-select';
 
 import { DataService } from './data.service';
+import { AliceSpringsDataService } from './AliceSpringsData.service';
 
 import {CacheService, CacheStorageAbstract, CacheLocalStorage} from 'ng2-cache/ng2-cache';
 import { FilterLocationPipe } from './filter-location.pipe';
 import { UsefullinkComponent } from './usefullink/usefullink.component';
-
+import { AlicespringsTimetableComponent } from './alicesprings/alicesprings-timetable/alicesprings-timetable.component';
+import { AlicespringsMapComponent } from './alicesprings/alicesprings-map/alicesprings-map.component';
+import { AlicespringsRouteComponent } from './alicesprings/alicesprings-route/alicesprings-route.component';
+import { AliceRouteTimeComponent } from './alicesprings/alice-route-time/alice-route-time.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +52,11 @@ import { UsefullinkComponent } from './usefullink/usefullink.component';
     RouteTimeComponent,
     MaprouteComponent,
     FilterLocationPipe,
-    UsefullinkComponent
+    UsefullinkComponent,
+    AlicespringsTimetableComponent,
+    AlicespringsMapComponent,
+    AlicespringsRouteComponent,
+    AliceRouteTimeComponent
 
   ],
   imports: [
@@ -65,7 +73,8 @@ import { UsefullinkComponent } from './usefullink/usefullink.component';
   ],
 
   providers: [
-  DataService, 
+  DataService,
+  AliceSpringsDataService, 
   CacheService, 
   {provide: CacheStorageAbstract, useClass:CacheLocalStorage}
   ],
