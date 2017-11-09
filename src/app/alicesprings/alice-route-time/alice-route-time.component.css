@@ -39,16 +39,8 @@ h3{
 	border-radius: 5px;
 }
 
-.twoalpha .trip-id{
-	font-size: 1.5rem;
-}
-
 .threealpha .trip-id{
-	font-size: 1.5rem;
-}
-
-.morealpha .trip-id{
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 }
 
 .trip-row{
@@ -63,9 +55,9 @@ h3{
 
 @media only screen and (max-width: 992px) {
 	.trip-id{
-		width: 4rem;
-		height: 4rem;
-		line-height: 4rem;
+		width: 3.5rem;
+		height: 3.5rem;
+		line-height: 3.5rem;
 	}
 
 	.morealpha .trip-id{

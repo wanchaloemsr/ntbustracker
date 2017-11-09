@@ -17,7 +17,7 @@
 			</div>
 		</div>
 
-		<div class="col-md-8 desktop">
+		<div class="col-md-8">
 
 			<ngb-accordion #acc="ngbAccordion" [closeOthers]="true">
 				<ngb-panel *ngFor="let route of routes" title="Route  {{route.getRouteShortName()}}: {{route.getRouteLongName()}}">
@@ -29,7 +29,7 @@
 
 		</div>
 
-		<div class="col-md-8 mobile">
+		<!-- <div class="col-md-8 mobile">
 			
 			<div class="list-group">
 
@@ -38,8 +38,12 @@
 				</button>
 			</div>
 
-		</div>
+		</div> -->
 
 	</div>
 
 </div>
+
+<button class="float" (click)="toTheTop()" [ngClass]="onWindowScroll()">
+
+</button> 

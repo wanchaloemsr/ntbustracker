@@ -1,0 +1,35 @@
+ [
+
+
+ {
+   "shape_id": "i1_shp",
+   "shape_lat": -12.367250920652046,
+   "shape_lon": 130.8793544769287,
+   "zoom": 14
+ },
+ {
+   "shape_id": "i1a_shp",
+   "shape_lat": -12.36456805967801,
+   "shape_lon": 130.88295936584473,
+   "zoom": 14
+ },
+ {
+   "shape_id": "i1h_shp",
+   "shape_lat": -12.36456805967801,
+   "shape_lon": 130.88295936584473,
+   "zoom": 14
+ },
+ {
+   "shape_id": "i2_shp",
+   "shape_lat": -12.375299338283215,
+   "shape_lon": 130.89248657226562,
+   "zoom": 14
+ },
+ {
+   "shape_id": "i2c_shp",
+   "shape_lat": -12.382173831919161,
+   "shape_lon": 130.8918857574463,
+   "zoom": 14
+ }
+
+]

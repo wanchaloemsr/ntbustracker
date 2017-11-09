@@ -27,22 +27,8 @@ export class AliceRouteTimeComponent implements OnInit {
 	ngOnInit() {
 
 		this.stopTimesByTripId = this.stopTimes.filter(item => item.getTripId() === this.aTrip.getTripId())
-		this.a_trip_id = this.aTrip.getTripId();
+
 	}
-
-
-
-	  checkTextLength(){
-    if(this.a_trip_id.length == 2){
-      return 'twoalpha';
-    }else if(this.a_trip_id.length ==3){
-      return 'threealpha';
-    }else if(this.a_trip_id.length > 3){
-      return 'morealpha';
-    }else{
-      return 'onealpha';
-    }
-  }
 
 
 }

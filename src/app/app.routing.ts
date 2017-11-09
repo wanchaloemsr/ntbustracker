@@ -12,6 +12,7 @@ import { UsefullinkComponent } from './usefullink/usefullink.component'
 //AliceSprings
 import { AlicespringsTimetableComponent } from './alicesprings/alicesprings-timetable/alicesprings-timetable.component'
 import { AlicespringsMapComponent } from './alicesprings/alicesprings-map/alicesprings-map.component'
+import { AliceRouteMapComponent } from './alicesprings/alice-route-map/alice-route-map.component'
 
 
 const APP_ROUTES: Routes = [
@@ -23,7 +24,8 @@ const APP_ROUTES: Routes = [
 	{ path: 'timetables/route/:shape_id', component: MaprouteComponent},
 	{ path: 'usefullink', component: UsefullinkComponent},
 	{ path: 'alicesprings', component: AlicespringsTimetableComponent},
-	{ path: 'alicesprings/map', component: AlicespringsMapComponent}
+	{ path: 'alicesprings/map', component: AlicespringsMapComponent},
+	{ path: 'alicesprings/route/:shape_id', component: AliceRouteMapComponent}
 
 ];
 

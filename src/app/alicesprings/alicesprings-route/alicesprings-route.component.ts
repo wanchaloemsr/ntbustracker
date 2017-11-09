@@ -58,6 +58,10 @@ export class AlicespringsRouteComponent implements OnInit {
 		this.tripsById = this.trips.filter(item => item.getRouteId() === this.aRoute.getRouteId());
 		this.sortingTripDate();
 
+		setTimeout(()=>{
+			console.log(this.stopTimes.length);
+		},3000);
+
 	}
 
 	setStopTimes(resData: any[]){
@@ -77,6 +81,10 @@ export class AlicespringsRouteComponent implements OnInit {
 				));
 		}
 
+	}
+
+	setData(trip_id: any){
+		this._aliceDataService.trip_id = trip_id;
 	}
 
 	setFavourite(trip_id: string){

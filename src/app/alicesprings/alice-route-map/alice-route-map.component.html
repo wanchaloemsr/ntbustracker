@@ -1,0 +1,28 @@
+<agm-map [styles]='mapStyle' [latitude]="lat" [longitude]="long" [minZoom]="minZoom" [zoom] = '14' [fullscreenControl]=true [mapTypeControl] = true>
+
+	<agm-polyline [title]="'Routes'" [zIndex]='zindex'>
+		<agm-polyline-point *ngFor= "let shape of shapes" [latitude]="shape.getShapeLatitude()" [longitude]="shape.getShapeLongitude()">
+				
+		</agm-polyline-point>
+	</agm-polyline>
+
+
+	<div *ngFor= "let stop of stopListByID">
+				<agm-marker [latitude]="stop.stop_lat" [longitude]="stop.stop_lon" [title] = "stop.stop_id.toString()" [iconUrl]= 'stopIcon' [label]='setLabel(stop.stop_id)'>
+
+					<agm-snazzy-info-window (beforeOpen)="stopIsClick(stop.stop_id)" [maxWidth]="400" [closeWhenOthersOpen]="true" [padding]="'10px'" [borderRadius]="'10px 10px'" [backgroundColor]="'#fff5a5'">
+						<ng-template>
+							<div class="stop-info-content">
+								<h3>Stop Number <span class="badge badge-dark">{{aStopTime.stop_id}}</span></h3>
+								Estimate stop at: {{aStopTime.arrival_time}}
+							</div>
+							<div>
+								<small>{{stop.stop_desc}}</small>
+							</div>
+							
+						</ng-template>
+					</agm-snazzy-info-window>
+					
+				</agm-marker>
+		</div>
+</agm-map>

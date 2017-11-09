@@ -101,15 +101,15 @@ export class Routes{
 
   constructor(
 
-  route_id: string,
-  agency_id: string,
-  route_short_name: number,
-  route_long_name: string,
-  route_desc: string,
-  route_type: number,
-  route_url: string,
-  route_color: string,
-  route_text_color: string
+    route_id: string,
+    agency_id: string,
+    route_short_name: number,
+    route_long_name: string,
+    route_desc: string,
+    route_type: number,
+    route_url: string,
+    route_color: string,
+    route_text_color: string
     ){
 
     this.route_id = route_id;
@@ -165,32 +165,67 @@ export class Routes{
 //Shape
 export class Shape{
 
-   shape_id: string;
-   shape_pt_lat: number;
-   shape_pt_lon: number;
-   shape_pt_sequence: number;
-   shape_dist_traveled: number;
+  private shape_id: number;
+  private shape_pt_lat: number;
+  private shape_pt_lon: number;
+  private shape_pt_sequence: number;
+  private shape_dist_traveled: number;
+
+  constructor(
+    shape_id: number,
+    shape_pt_lat: number,
+    shape_pt_lon: number,
+    shape_pt_sequence: number,
+    shape_dist_traveled: number){
+
+    this.shape_id = shape_id;
+    this.shape_pt_lat = shape_pt_lat;
+    this.shape_pt_lon = shape_pt_lon;
+    this.shape_pt_sequence = shape_pt_sequence;
+    this.shape_dist_traveled = shape_dist_traveled;
+
+  }
+
+  getShapeId(){
+    return this.shape_id;
+  }
+
+  getShapeLatitude(){
+    return this.shape_pt_lat;
+  }
+
+  getShapeLongitude(){
+    return this.shape_pt_lon;
+  }
+
+  getShapeSequence(){
+    return this.shape_pt_sequence;
+  }
+
+  getShapeDistanceTraveled(){
+    return this.shape_dist_traveled;
+  }
 
 }
 
 //ShapeID
 export class ShapeID{
 
-   shape_id: string;
-   shape_lat: number;
-   shape_lon: number;
-   zoom: number;
+  shape_id: string;
+  shape_lat: number;
+  shape_lon: number;
+  zoom: number;
 
 }
 
 //Stop
 export class Stop{
   stop_id: string;
-   stop_name: string;
-   stop_desc: string;
-   stop_lat: number;
-   stop_lon: number;
-   zone_id: number;
+  stop_name: string;
+  stop_desc: string;
+  stop_lat: number;
+  stop_lon: number;
+  zone_id: number;
 }
 
 //StopTime
@@ -346,32 +381,32 @@ export class LiveData{
   private status: string;
 
   constructor(code: string,
-  datetime: string,
-  direction: string,
-  end: string,
-  end_time: string,
-  latitude: number,
-  longitude: number,
-  otr: number,
-  rego: string,
-  route: string,
-  start: string,
-  start_time: string,
-  status: string){
+    datetime: string,
+    direction: string,
+    end: string,
+    end_time: string,
+    latitude: number,
+    longitude: number,
+    otr: number,
+    rego: string,
+    route: string,
+    start: string,
+    start_time: string,
+    status: string){
 
-  this.code = code;
-  this.datetime = datetime;
-  this.direction = direction;
-  this.end = end;
-  this.end_time = end_time;
-  this.latitude = latitude;
-  this.longitude = longitude;
-  this.otr = otr;
-  this.rego = rego;
-  this.route = route;
-  this.start = start;
-  this.start_time = start_time;
-  this.status = status;
+    this.code = code;
+    this.datetime = datetime;
+    this.direction = direction;
+    this.end = end;
+    this.end_time = end_time;
+    this.latitude = latitude;
+    this.longitude = longitude;
+    this.otr = otr;
+    this.rego = rego;
+    this.route = route;
+    this.start = start;
+    this.start_time = start_time;
+    this.status = status;
 
   }
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { AliceSpringsDataService } from '../../AliceSpringsData.service';
 
 import {Observable} from 'rxjs/Observable';
@@ -70,6 +70,24 @@ export class AlicespringsTimetableComponent implements OnInit {
 
 				));
 		}
+	}
+
+	toTheTop(){
+
+		window.scrollTo(0, 0);
+
+	}
+
+	@HostListener("window:scroll", [])
+	onWindowScroll() {
+
+		let number = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    if (number > 20) {
+      return "scroll-top-btn-show";
+    } else{
+      return "scroll-top-btn-hide";
+    }
+		
 	}
 
 }

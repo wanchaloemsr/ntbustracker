@@ -52,10 +52,10 @@ export class DataService{
 
 		this.allStopTime = [];
 		this.getAllStopTime().subscribe(resData => this.allStopTimes = resData);
-		this.getLiveData();
-        this.interval = setInterval(() => { 
-                this.getLiveData();
-        }, 10000);
+		//this.getLiveData();
+        //this.interval = setInterval(() => { 
+        //        this.getLiveData();
+        //}, 10000);
 		
 		this.trip_id_cache = this.retrieveTripIdCache();
 

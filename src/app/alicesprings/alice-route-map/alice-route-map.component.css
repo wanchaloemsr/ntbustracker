@@ -1,0 +1,38 @@
+agm-map{
+	height: 300px;
+}
+
+
+h2{
+	font-size: 1.3em;
+	margin-bottom: 0rem;
+	font-weight: bold;
+}
+
+h3{
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.header{
+	background-color: #e9e9e9;
+	padding: 10px 0;
+}
+
+.stop-info-content{
+	padding-bottom: 5px;
+	border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 950px) {
+    h2{
+	font-size: 1.1em;
+}
+}
+
+@media only screen and (max-width: 550px) {
+
+	.desc{
+		font-size: 0.9rem;
+	}
+}

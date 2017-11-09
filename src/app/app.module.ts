@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'
-import { HttpModule } from '@angular/http'
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AgmCoreModule } from '@agm/core';
@@ -36,6 +36,7 @@ import { AlicespringsTimetableComponent } from './alicesprings/alicesprings-time
 import { AlicespringsMapComponent } from './alicesprings/alicesprings-map/alicesprings-map.component';
 import { AlicespringsRouteComponent } from './alicesprings/alicesprings-route/alicesprings-route.component';
 import { AliceRouteTimeComponent } from './alicesprings/alice-route-time/alice-route-time.component';
+import { AliceRouteMapComponent } from './alicesprings/alice-route-map/alice-route-map.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { AliceRouteTimeComponent } from './alicesprings/alice-route-time/alice-r
     AlicespringsTimetableComponent,
     AlicespringsMapComponent,
     AlicespringsRouteComponent,
-    AliceRouteTimeComponent
+    AliceRouteTimeComponent,
+    AliceRouteMapComponent
 
   ],
   imports: [
