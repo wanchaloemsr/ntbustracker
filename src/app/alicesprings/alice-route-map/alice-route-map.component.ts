@@ -29,6 +29,8 @@ export class AliceRouteMapComponent implements OnInit {
 
   public shapes: Shape[] = [];
 
+  screenHeight: number;
+
   stopTimes = [];
 
   stops = [];
@@ -62,16 +64,12 @@ export class AliceRouteMapComponent implements OnInit {
 
     }
     
-    
-
 
   }
 
   ngOnInit() {
-    console.log(this.shape_id);
-    console.log("Trip: " + this.trip_id);
-    console.log("Stop: " + this.stops.length);
     this.setData();
+    this.screenHeight = window.screen.height - 200;
 
   }
 

@@ -30,7 +30,11 @@ import { DataService } from './data.service';
 import { AliceSpringsDataService } from './AliceSpringsData.service';
 
 import {CacheService, CacheStorageAbstract, CacheLocalStorage} from 'ng2-cache/ng2-cache';
+
 import { FilterLocationPipe } from './filter-location.pipe';
+import { FilterAliceLocationPipe } from './alice-filter-location.pipe';
+import { FilterAliceRoutePipe } from './alice-filter-route.pipe';
+
 import { UsefullinkComponent } from './usefullink/usefullink.component';
 import { AlicespringsTimetableComponent } from './alicesprings/alicesprings-timetable/alicesprings-timetable.component';
 import { AlicespringsMapComponent } from './alicesprings/alicesprings-map/alicesprings-map.component';
@@ -53,6 +57,8 @@ import { AliceRouteMapComponent } from './alicesprings/alice-route-map/alice-rou
     RouteTimeComponent,
     MaprouteComponent,
     FilterLocationPipe,
+    FilterAliceLocationPipe,
+    FilterAliceRoutePipe,
     UsefullinkComponent,
     AlicespringsTimetableComponent,
     AlicespringsMapComponent,

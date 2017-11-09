@@ -1,4 +1,69 @@
-.side-nav{
-	height: 0px;
-	width: 100;
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0;
+    background-color: #3e4347;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #b2b2b2;
+    border-bottom: #b2b2b2 solid 1px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.btn-menu{
+	width: 50px;
+	height: 40px;
+	background-color: transparent;
+	background-image: url("../assets/icon/menu.png");
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.btn-close{
+	width: 50px;
+	height: 40px;
+	background-color: transparent;
+	background-image: url("../assets/icon/close.png");
+	background-size: 40px 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.menu-hide{
+}
+
+.menu-show{
+	display: none;
+
+}
+
+
+@media (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }

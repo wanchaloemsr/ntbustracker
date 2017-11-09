@@ -1,4 +1,4 @@
-<agm-map [styles]='mapStyle' [latitude]="lat" [longitude]="long" [minZoom]="minZoom" [zoom] = '14' [fullscreenControl]=true [mapTypeControl] = true>
+<agm-map [styles]='mapStyle' [latitude]="lat" [longitude]="long" [minZoom]="minZoom" [zoom] = '14' [fullscreenControl]=true [mapTypeControl] = true [style.height.px] = "screenHeight">
 
 	<agm-polyline [title]="'Routes'" [zIndex]='zindex'>
 		<agm-polyline-point *ngFor= "let shape of shapes" [latitude]="shape.getShapeLatitude()" [longitude]="shape.getShapeLongitude()">

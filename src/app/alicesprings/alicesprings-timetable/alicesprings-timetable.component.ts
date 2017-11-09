@@ -27,6 +27,9 @@ export class AlicespringsTimetableComponent implements OnInit {
 	public trips: Trip[];
 	public tripByRouteID: Trip[];
 
+	searchtext: string = '';
+	searchFilter:string;
+
 	constructor(private _dataService: AliceSpringsDataService) { 
 
 
